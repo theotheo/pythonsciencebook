@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 # ---
 # jupyter:
 #   jupytext:
@@ -14,22 +13,4 @@
 #     name: python3
 # ---
 
-#
-# ## Функции -- их можно создавать
-#
-# ```
-# def name(var):
-#     """doc string"""
-#     body
-#     return stm
-# ```
-#
-# ```
-# my_var = name(obj)
-# ```
 
-# +
-def foo(i, j):
-    print(i*3)
-
-foo(1, 2)

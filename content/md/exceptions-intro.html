@@ -6,15 +6,15 @@
   <meta name="viewport" content="width=device-width,minimum-scale=1">
 
   <title>Python Science</title>
-  <meta name="description" content="## Пакеты### Установка```bashpip install jupyter``````pythonjupyter notebook```### Импортирование```pythonimport pandas```">
+  <meta name="description" content="# Exceptions## Examples```python10 / 0``````pythonprin(10)``````pythonfor i in [1, 2]    print(i)```## Handling Exceptions```pythontry:    10 / 0except Excep...">
 
-  <link rel="canonical" href="https://theotheo.github.io/pythonsciencebook/content/md/packages.html">
+  <link rel="canonical" href="https://theotheo.github.io/pythonsciencebook/content/md/exceptions-intro.html">
   <link rel="alternate" type="application/rss+xml" title="Python Science" href="https://theotheo.github.io/pythonsciencebook/feed.xml">
 
-  <meta property="og:url"         content="https://theotheo.github.io/pythonsciencebook/content/md/packages.html" />
+  <meta property="og:url"         content="https://theotheo.github.io/pythonsciencebook/content/md/exceptions-intro.html" />
 <meta property="og:type"        content="article" />
 <meta property="og:title"       content="Python Science" />
-<meta property="og:description" content="## Пакеты### Установка```bashpip install jupyter``````pythonjupyter notebook```### Импортирование```pythonimport pandas```" />
+<meta property="og:description" content="# Exceptions## Examples```python10 / 0``````pythonprin(10)``````pythonfor i in [1, 2]    print(i)```## Handling Exceptions```pythontry:    10 / 0except Excep..." />
 <meta property="og:image"       content="https://theotheo.github.io/pythonsciencebook/images/logo/logo.png" />
 
 <meta name="twitter:card" content="summary">
@@ -24,11 +24,11 @@
   {
   "@context": "http://schema.org",
   "@type": "NewsArticle",
-  "mainEntityOfPage": "https://theotheo.github.io/pythonsciencebook/content/md/packages.html",
+  "mainEntityOfPage": "https://theotheo.github.io/pythonsciencebook/content/md/exceptions-intro.html",
   "headline": "Python Science",
-  "datePublished": "2019-10-31T17:14:09+03:00",
-  "dateModified": "2019-10-31T17:14:09+03:00",
-  "description": "## Пакеты### Установка```bashpip install jupyter``````pythonjupyter notebook```### Импортирование```pythonimport pandas```",
+  "datePublished": "2019-10-31T17:28:16+03:00",
+  "dateModified": "2019-10-31T17:28:16+03:00",
+  "description": "# Exceptions## Examples```python10 / 0``````pythonprin(10)``````pythonfor i in [1, 2]    print(i)```## Handling Exceptions```pythontry:    10 / 0except Excep...",
   "author": {
     "@type": "Person",
     "name": "Ildar Belyalov"
@@ -577,6 +577,8 @@ initFunction(initPrint)
           href="/pythonsciencebook/intro.html"
         >
           
+            1.
+          
           Home
         </a>
 
@@ -598,7 +600,9 @@ initFunction(initPrint)
           href="/pythonsciencebook/ipynb/intro.html"
         >
           
-          Home
+            2.
+          
+          Python
         </a>
 
         
@@ -750,7 +754,7 @@ initFunction(initPrint)
           href="/pythonsciencebook/ipynb/oop_chapter.html"
         >
           
-          OOP
+          OOPython
         </a>
 
         
@@ -838,37 +842,6 @@ initFunction(initPrint)
 
       
     
-      
-      
-
-      
-      
-
-      
-      
-      <li class="c-sidebar__chapter">
-        <a class="c-sidebar__entry "
-          href=".html"
-        >
-          
-            1.
-          
-          Search
-        </a>
-
-        
-      </li>
-
-      
-    
-      
-      
-        <li class="c-sidebar__divider"></li>
-        
-      
-      
-        <li><h2 class="c-sidebar__title">Demo textbook</li>
-        
   </ul>
   <p class="sidebar_footer">В разработке</p>
 </nav>
@@ -911,20 +884,165 @@ initFunction(initPrint)
 
       <main class="c-textbook__page" tabindex="-1">
             <div class="c-textbook__content" id="textbook_content">
-              <h2 id="пакеты">Пакеты</h2>
+              <h1 id="exceptions">Exceptions</h1>
 
-<h3 id="установка">Установка</h3>
+<h2 id="examples">Examples</h2>
 
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pip <span class="nb">install </span>jupyter
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="mi">10</span> <span class="o">/</span> <span class="mi">0</span>
 </code></pre></div></div>
 
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">jupyter</span> <span class="n">notebook</span>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">prin</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
 </code></pre></div></div>
 
-<h3 id="импортирование">Импортирование</h3>
-
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">pandas</span>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">]</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
 </code></pre></div></div>
+
+<h2 id="handling-exceptions">Handling Exceptions</h2>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">try</span><span class="p">:</span>
+    <span class="mi">10</span> <span class="o">/</span> <span class="mi">0</span>
+<span class="k">except</span> <span class="nb">Exception</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">'Exception'</span><span class="p">)</span>
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">try</span><span class="p">:</span>
+    <span class="mi">10</span> <span class="o">/</span> <span class="mi">0</span>
+<span class="k">except</span> <span class="nb">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">'Exception: {}'</span><span class="o">.</span><span class="nb">format</span><span class="p">(</span><span class="n">e</span><span class="p">))</span>
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">while</span> <span class="bp">True</span><span class="p">:</span>
+    <span class="k">try</span><span class="p">:</span>
+        <span class="n">x</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">raw_input</span><span class="p">(</span><span class="s">"Please enter a number: "</span><span class="p">))</span>
+        <span class="k">break</span>
+    <span class="k">except</span> <span class="nb">ValueError</span><span class="p">:</span>
+        <span class="k">print</span><span class="p">(</span> <span class="s">"Oops!  That was no valid number.  Try again..."</span><span class="p">)</span>
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">sys</span>
+
+<span class="k">try</span><span class="p">:</span>
+    <span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s">'myfile.txt'</span><span class="p">)</span>
+    <span class="n">s</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">readline</span><span class="p">()</span>
+    <span class="n">i</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">s</span><span class="o">.</span><span class="n">strip</span><span class="p">())</span>
+<span class="k">except</span> <span class="nb">IOError</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span> <span class="s">"I/O error({0}): {1}"</span><span class="o">.</span><span class="nb">format</span><span class="p">(</span><span class="n">e</span><span class="o">.</span><span class="n">errno</span><span class="p">,</span> <span class="n">e</span><span class="o">.</span><span class="n">strerror</span><span class="p">))</span>
+<span class="k">except</span> <span class="nb">ValueError</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span> <span class="s">"Could not convert data to an integer."</span><span class="p">)</span>
+<span class="k">except</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span> <span class="s">"Unexpected error:"</span><span class="p">,</span> <span class="n">sys</span><span class="o">.</span><span class="n">exc_info</span><span class="p">()[</span><span class="mi">0</span><span class="p">])</span>
+    <span class="k">raise</span>
+</code></pre></div></div>
+
+<h2 id="built-in-exceptions">Built-in exceptions</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  BaseException
+  +-- SystemExit
+  +-- KeyboardInterrupt
+  +-- GeneratorExit
+  +-- Exception
+  +-- StopIteration
+  +-- StopAsyncIteration
+  +-- ArithmeticError
+  | +-- FloatingPointError
+  | +-- OverflowError
+  | +-- ZeroDivisionError
+  +-- AssertionError
+  +-- AttributeError
+  +-- BufferError
+  +-- EOFError
+  +-- ImportError
+  +-- ModuleNotFoundError
+  +-- LookupError
+  | +-- IndexError
+  | +-- KeyError
+  +-- MemoryError
+  +-- NameError
+  | +-- UnboundLocalError
+  +-- OSError
+  | +-- BlockingIOError
+  | +-- ChildProcessError
+  | +-- ConnectionError
+  | | +-- BrokenPipeError
+  | | +-- ConnectionAbortedError
+  | | +-- ConnectionRefusedError
+  | | +-- ConnectionResetError
+  | +-- FileExistsError
+  | +-- FileNotFoundError
+  | +-- InterruptedError
+  | +-- IsADirectoryError
+  | +-- NotADirectoryError
+  | +-- PermissionError
+  | +-- ProcessLookupError
+  | +-- TimeoutError
+  +-- ReferenceError
+  +-- RuntimeError
+  | +-- NotImplementedError
+  | +-- RecursionError
+  +-- SyntaxError
+  | +-- IndentationError
+  | +-- TabError
+  +-- SystemError
+  +-- TypeError
+  +-- ValueError
+  | +-- UnicodeError
+  | +-- UnicodeDecodeError
+  | +-- UnicodeEncodeError
+  | +-- UnicodeTranslateError
+  +-- Warning
+  +-- DeprecationWarning
+  +-- PendingDeprecationWarning
+  +-- RuntimeWarning
+  +-- SyntaxWarning
+  +-- UserWarning
+  +-- FutureWarning
+  +-- ImportWarning
+  +-- UnicodeWarning
+  +-- BytesWarning
+  +-- ResourceWarning
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">HTML</span>
+<span class="n">HTML</span><span class="p">(</span><span class="s">'&lt;iframe src="https://docs.python.org/3/library/exceptions.html#concrete-exceptions" width=600 height=600&gt;'</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h2 id="raise">Raise</h2>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">raise</span> <span class="nb">NameError</span><span class="p">(</span><span class="s">'HiThere'</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h2 id="finally">finally</h2>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">i</span> <span class="o">=</span> <span class="mi">1</span>
+
+<span class="k">try</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="mi">10</span> <span class="o">/</span> <span class="n">i</span><span class="p">)</span>
+<span class="k">except</span> <span class="nb">ZeroDivisionError</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">'ZeroDivisionError'</span><span class="p">)</span>
+<span class="k">finally</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">'Goodbye, world!'</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h2 id="user-defined-exceptions">User-defined exceptions</h2>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">validate</span><span class="p">(</span><span class="n">name</span><span class="p">):</span>
+    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">name</span><span class="p">)</span> <span class="o">&lt;</span> <span class="mi">10</span><span class="p">:</span>
+        <span class="k">raise</span> <span class="nb">ValueError</span>
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">validate</span><span class="p">(</span><span class="s">'joe'</span><span class="p">)</span>
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">class</span> <span class="nc">NameTooShortError</span><span class="p">(</span><span class="nb">ValueError</span><span class="p">):</span>
+    <span class="k">pass</span>
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">validate</span><span class="p">(</span><span class="n">name</span><span class="p">):</span>
+    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">name</span><span class="p">)</span> <span class="o">&lt;</span> <span class="mi">10</span><span class="p">:</span>
+        <span class="k">raise</span> <span class="n">NameTooShortError</span><span class="p">(</span><span class="n">name</span><span class="p">)</span>
+<span class="c1">##
+</span></code></pre></div></div>
 
             </div>
             <div class="c-textbook__footer" id="textbook_footer">

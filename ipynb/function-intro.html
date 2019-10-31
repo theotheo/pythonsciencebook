@@ -5,16 +5,16 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width,minimum-scale=1">
 
-  <title>Python Science</title>
-  <meta name="description" content="## Функции -- их можно создавать```def name(var):    """doc string"""    body    return stm``````my_var = name(obj)``````pythondef foo(i, j):    print(i*3)fo...">
+  <title>Функции</title>
+  <meta name="description" content="        &#1060;&#1091;&#1085;&#1082;&#1094;&#1080;&#1080; -- &#1080;&#1093; &#1084;&#1086;&#1078;&#1085;&#1086; &#1089;&#1086;&#1079;&#1076;&#1072;&#1074;&#1...">
 
-  <link rel="canonical" href="https://theotheo.github.io/pythonsciencebook/content/md/function-intro.html">
+  <link rel="canonical" href="https://theotheo.github.io/pythonsciencebook/ipynb/function-intro.html">
   <link rel="alternate" type="application/rss+xml" title="Python Science" href="https://theotheo.github.io/pythonsciencebook/feed.xml">
 
-  <meta property="og:url"         content="https://theotheo.github.io/pythonsciencebook/content/md/function-intro.html" />
+  <meta property="og:url"         content="https://theotheo.github.io/pythonsciencebook/ipynb/function-intro.html" />
 <meta property="og:type"        content="article" />
-<meta property="og:title"       content="Python Science" />
-<meta property="og:description" content="## Функции -- их можно создавать```def name(var):    """doc string"""    body    return stm``````my_var = name(obj)``````pythondef foo(i, j):    print(i*3)fo..." />
+<meta property="og:title"       content="Функции" />
+<meta property="og:description" content="        &#1060;&#1091;&#1085;&#1082;&#1094;&#1080;&#1080; -- &#1080;&#1093; &#1084;&#1086;&#1078;&#1085;&#1086; &#1089;&#1086;&#1079;&#1076;&#1072;&#1074;&#1..." />
 <meta property="og:image"       content="https://theotheo.github.io/pythonsciencebook/images/logo/logo.png" />
 
 <meta name="twitter:card" content="summary">
@@ -24,11 +24,11 @@
   {
   "@context": "http://schema.org",
   "@type": "NewsArticle",
-  "mainEntityOfPage": "https://theotheo.github.io/pythonsciencebook/content/md/function-intro.html",
-  "headline": "Python Science",
+  "mainEntityOfPage": "https://theotheo.github.io/pythonsciencebook/ipynb/function-intro.html",
+  "headline": "Функции",
   "datePublished": "2019-10-31T17:28:16+03:00",
   "dateModified": "2019-10-31T17:28:16+03:00",
-  "description": "## Функции -- их можно создавать```def name(var):    """doc string"""    body    return stm``````my_var = name(obj)``````pythondef foo(i, j):    print(i*3)fo...",
+  "description": "        &#1060;&#1091;&#1085;&#1082;&#1094;&#1080;&#1080; -- &#1080;&#1093; &#1084;&#1086;&#1078;&#1085;&#1086; &#1089;&#1086;&#1079;&#1076;&#1072;&#1074;&#1...",
   "author": {
     "@type": "Person",
     "name": "Ildar Belyalov"
@@ -688,7 +688,7 @@ initFunction(initPrint)
               
 
               <li class="c-sidebar__section">
-                <a class="c-sidebar__entry "
+                <a class="c-sidebar__entry c-sidebar__entry--active"
                   href="/pythonsciencebook/ipynb/function-intro.html"
                 >
                   
@@ -862,10 +862,27 @@ initFunction(initPrint)
 <div class="download-buttons-dropdown">
     <button id="dropdown-button-trigger" class="interact-button"><img src="/pythonsciencebook/assets/images/download-solid.svg" alt="Download" /></button>
     <div class="download-buttons">
+        <a href="/pythonsciencebook/content/ipynb/function-intro.ipynb" download>
+        <button id="interact-button-download" class="interact-button">.ipynb</button>
+        </a>
         
         <a id="interact-button-print"><button id="interact-button-download" class="interact-button">.pdf</button></a>
     </div>
 </div>
+
+
+  <button id="interact-button-thebelab" class="interact-button">Thebelab</button>
+
+  
+  
+
+
+
+
+
+
+<a href="https://mybinder.org/v2/gh/theotheo/pythonsciencebook/gh-pages?filepath=content%2Fipynb%2Ffunction-intro.ipynb"><button class="interact-button" id="interact-button-binder"><img class="interact-button-logo" src="/pythonsciencebook/assets/images/logo_binder.svg" alt="Interact" />Interact</button></a>
+  
 
 
 </div>
@@ -884,30 +901,65 @@ initFunction(initPrint)
 
       <main class="c-textbook__page" tabindex="-1">
             <div class="c-textbook__content" id="textbook_content">
-              <!-- #region -->
-<h2 id="функции--их-можно-создавать">Функции – их можно создавать</h2>
+                  <main class="jupyter-page">
+    
+<div class="jb_cell">
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>def name(var):
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="&#1060;&#1091;&#1085;&#1082;&#1094;&#1080;&#1080;----&#1080;&#1093;-&#1084;&#1086;&#1078;&#1085;&#1086;-&#1089;&#1086;&#1079;&#1076;&#1072;&#1074;&#1072;&#1090;&#1100;">&#1060;&#1091;&#1085;&#1082;&#1094;&#1080;&#1080; -- &#1080;&#1093; &#1084;&#1086;&#1078;&#1085;&#1086; &#1089;&#1086;&#1079;&#1076;&#1072;&#1074;&#1072;&#1090;&#1100;<a class="anchor-link" href="#&#1060;&#1091;&#1085;&#1082;&#1094;&#1080;&#1080;----&#1080;&#1093;-&#1084;&#1086;&#1078;&#1085;&#1086;-&#1089;&#1086;&#1079;&#1076;&#1072;&#1074;&#1072;&#1090;&#1100;"> </a></h2>
+<pre><code>def name(var):
     """doc string"""
     body
-    return stm
-</code></pre></div></div>
+    return stm</code></pre>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>my_var = name(obj)
-</code></pre></div></div>
-<!-- #endregion -->
+<pre><code>my_var = name(obj)</code></pre>
 
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">foo</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="n">j</span><span class="p">):</span>
-    <span class="k">print</span><span class="p">(</span><span class="n">i</span><span class="o">*</span><span class="mi">3</span><span class="p">)</span>
+</div>
+</div>
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">foo</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="n">j</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="o">*</span><span class="mi">3</span><span class="p">)</span>
 
 <span class="n">foo</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
-</code></pre></div></div>
+</pre></div>
 
+    </div>
+</div>
+</div>
+
+</div>
+</div>
+
+ 
+
+
+    </main>
+    
             </div>
             <div class="c-textbook__footer" id="textbook_footer">
               <nav class="c-page__nav">
   
+    
+    <a id="js-page__nav__prev" class="c-page__nav__prev" href="/pythonsciencebook/ipynb/control_structures.html">
+      〈 <span class="u-margin-right-tiny"></span> Контрольные структуры
+    </a>
+  
 
+  
+    
+    <a id="js-page__nav__next" class="c-page__nav__next" href="/pythonsciencebook/ipynb/collections.html">
+      Коллекции <span class="u-margin-right-tiny"></span> 〉
+    </a>
   
 </nav>
 

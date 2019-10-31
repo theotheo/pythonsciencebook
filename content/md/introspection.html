@@ -6,15 +6,15 @@
   <meta name="viewport" content="width=device-width,minimum-scale=1">
 
   <title>Python Science</title>
-  <meta name="description" content="## Функции -- их можно создавать```def name(var):    """doc string"""    body    return stm``````my_var = name(obj)``````pythondef foo(i, j):    print(i*3)fo...">
+  <meta name="description" content="# Reflections## type ```pythontype(3)``````pythontype(1.0)``````pythontype(1 + 1j)``````pythontype('Hello') ``````pythontype([1, 2])``````pythontype([1, [2, ...">
 
-  <link rel="canonical" href="https://theotheo.github.io/pythonsciencebook/content/md/function-intro.html">
+  <link rel="canonical" href="https://theotheo.github.io/pythonsciencebook/content/md/introspection.html">
   <link rel="alternate" type="application/rss+xml" title="Python Science" href="https://theotheo.github.io/pythonsciencebook/feed.xml">
 
-  <meta property="og:url"         content="https://theotheo.github.io/pythonsciencebook/content/md/function-intro.html" />
+  <meta property="og:url"         content="https://theotheo.github.io/pythonsciencebook/content/md/introspection.html" />
 <meta property="og:type"        content="article" />
 <meta property="og:title"       content="Python Science" />
-<meta property="og:description" content="## Функции -- их можно создавать```def name(var):    """doc string"""    body    return stm``````my_var = name(obj)``````pythondef foo(i, j):    print(i*3)fo..." />
+<meta property="og:description" content="# Reflections## type ```pythontype(3)``````pythontype(1.0)``````pythontype(1 + 1j)``````pythontype('Hello') ``````pythontype([1, 2])``````pythontype([1, [2, ..." />
 <meta property="og:image"       content="https://theotheo.github.io/pythonsciencebook/images/logo/logo.png" />
 
 <meta name="twitter:card" content="summary">
@@ -24,11 +24,11 @@
   {
   "@context": "http://schema.org",
   "@type": "NewsArticle",
-  "mainEntityOfPage": "https://theotheo.github.io/pythonsciencebook/content/md/function-intro.html",
+  "mainEntityOfPage": "https://theotheo.github.io/pythonsciencebook/content/md/introspection.html",
   "headline": "Python Science",
   "datePublished": "2019-10-31T17:28:16+03:00",
   "dateModified": "2019-10-31T17:28:16+03:00",
-  "description": "## Функции -- их можно создавать```def name(var):    """doc string"""    body    return stm``````my_var = name(obj)``````pythondef foo(i, j):    print(i*3)fo...",
+  "description": "# Reflections## type ```pythontype(3)``````pythontype(1.0)``````pythontype(1 + 1j)``````pythontype('Hello') ``````pythontype([1, 2])``````pythontype([1, [2, ...",
   "author": {
     "@type": "Person",
     "name": "Ildar Belyalov"
@@ -573,7 +573,7 @@ initFunction(initPrint)
       
       
       <li class="c-sidebar__chapter">
-        <a class="c-sidebar__entry "
+        <a class="c-sidebar__entry c-sidebar__entry--active"
           href="/pythonsciencebook/intro.html"
         >
           
@@ -884,23 +884,129 @@ initFunction(initPrint)
 
       <main class="c-textbook__page" tabindex="-1">
             <div class="c-textbook__content" id="textbook_content">
-              <!-- #region -->
-<h2 id="функции--их-можно-создавать">Функции – их можно создавать</h2>
+              <h1 id="reflections">Reflections</h1>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>def name(var):
-    """doc string"""
-    body
-    return stm
+<h2 id="type">type</h2>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">type</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
 </code></pre></div></div>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>my_var = name(obj)
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">type</span><span class="p">(</span><span class="mf">1.0</span><span class="p">)</span>
 </code></pre></div></div>
-<!-- #endregion -->
 
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">foo</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="n">j</span><span class="p">):</span>
-    <span class="k">print</span><span class="p">(</span><span class="n">i</span><span class="o">*</span><span class="mi">3</span><span class="p">)</span>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">type</span><span class="p">(</span><span class="mi">1</span> <span class="o">+</span> <span class="mf">1j</span><span class="p">)</span>
+</code></pre></div></div>
 
-<span class="n">foo</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">type</span><span class="p">(</span><span class="s">'Hello'</span><span class="p">)</span> 
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">type</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">])</span>
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">type</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="s">'Hello'</span><span class="p">]])</span> 
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">type</span><span class="p">({</span><span class="s">'city'</span><span class="p">:</span> <span class="s">'Paris'</span><span class="p">})</span> 
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">type</span><span class="p">((</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">))</span> 
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">type</span><span class="p">(</span><span class="nb">set</span><span class="p">())</span> 
+</code></pre></div></div>
+
+<h2 id="isinstance">Isinstance</h2>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">isinstance</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="nb">int</span><span class="p">)</span>
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">isinstance</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">],</span> <span class="nb">list</span><span class="p">)</span>
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">isinstance</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="nb">object</span><span class="p">)</span>
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">isinstance</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">],</span> <span class="nb">object</span><span class="p">)</span>
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">class</span> <span class="nc">Parent</span><span class="p">:</span> <span class="k">pass</span>                   
+<span class="n">Parent</span>
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">class</span> <span class="nc">Child</span><span class="p">(</span><span class="n">Parent</span><span class="p">):</span> <span class="k">pass</span>   
+<span class="n">Child</span>
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">child</span> <span class="o">=</span> <span class="n">Child</span><span class="p">()</span>                           
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">print</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">child</span><span class="p">,</span> <span class="n">Child</span><span class="p">)</span>    
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">print</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">child</span><span class="p">,</span> <span class="n">Parent</span><span class="p">)</span> 
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">print</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">child</span><span class="p">,</span> <span class="nb">object</span><span class="p">)</span> 
+</code></pre></div></div>
+
+<h2 id="issubclass">issubclass</h2>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">issubclass</span><span class="p">(</span><span class="n">Child</span><span class="p">,</span> <span class="n">Parent</span><span class="p">)</span>
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">issubclass</span><span class="p">(</span><span class="n">Parent</span><span class="p">,</span> <span class="n">Child</span><span class="p">)</span>    
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">issubclass</span><span class="p">(</span><span class="n">Child</span><span class="p">,</span> <span class="nb">object</span><span class="p">)</span>    
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">issubclass</span><span class="p">(</span><span class="n">Parent</span><span class="p">,</span> <span class="nb">object</span><span class="p">)</span>    
+</code></pre></div></div>
+
+<h2 id="dir">dir</h2>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">dir</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">dir</span><span class="p">(</span><span class="s">'string'</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h2 id="getattr">getattr</h2>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">getattr</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="s">"imag"</span><span class="p">)</span>
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">f</span> <span class="o">=</span> <span class="nb">getattr</span><span class="p">(</span><span class="s">'string'</span><span class="p">,</span> <span class="s">'upper'</span><span class="p">)</span>
+<span class="n">f</span>
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">f</span><span class="p">()</span>
+</code></pre></div></div>
+
+<h2 id="callable">callable</h2>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">callable</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">callable</span><span class="p">(</span><span class="nb">len</span><span class="p">)</span>
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">foo</span><span class="p">():</span>
+    <span class="k">pass</span>
+<span class="nb">callable</span><span class="p">(</span><span class="n">foo</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h2 id="keyword">keyword</h2>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">keyword</span>
+<span class="n">pykeywords</span> <span class="o">=</span> <span class="n">keyword</span><span class="o">.</span><span class="n">kwlist</span>
+<span class="n">keyword</span><span class="o">.</span><span class="n">iskeyword</span><span class="p">(</span><span class="s">"if"</span><span class="p">)</span>
+<span class="n">keyword</span><span class="o">.</span><span class="n">iskeyword</span><span class="p">(</span><span class="s">"True"</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h2 id="builtins"><strong>builtins</strong></h2>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">dir</span><span class="p">(</span><span class="n">__builtins__</span><span class="p">)</span>  
 </code></pre></div></div>
 
             </div>
