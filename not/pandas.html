@@ -5,16 +5,16 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width,minimum-scale=1">
 
-  <title>Search the site</title>
-  <meta name="description" content="        ">
+  <title>Pandas</title>
+  <meta name="description" content="        Здесь мы обсудим работу с важнейшней библиотекой Pandas&#1041;&#1072;&#1079;&#1086;&#1074;&#1099;&#1077; &#1086;&#1087;&#1077;&#1088;&#1072;&#1094;&#...">
 
-  <link rel="canonical" href="https://theotheo.github.io/pythonsciencebook/search">
+  <link rel="canonical" href="https://theotheo.github.io/pythonsciencebook/not/pandas.html">
   <link rel="alternate" type="application/rss+xml" title="Python Science" href="https://theotheo.github.io/pythonsciencebook/feed.xml">
 
-  <meta property="og:url"         content="https://theotheo.github.io/pythonsciencebook/search" />
+  <meta property="og:url"         content="https://theotheo.github.io/pythonsciencebook/not/pandas.html" />
 <meta property="og:type"        content="article" />
-<meta property="og:title"       content="Search the site" />
-<meta property="og:description" content="        " />
+<meta property="og:title"       content="Pandas" />
+<meta property="og:description" content="        Здесь мы обсудим работу с важнейшней библиотекой Pandas&#1041;&#1072;&#1079;&#1086;&#1074;&#1099;&#1077; &#1086;&#1087;&#1077;&#1088;&#1072;&#1094;&#..." />
 <meta property="og:image"       content="https://theotheo.github.io/pythonsciencebook/images/logo/logo.png" />
 
 <meta name="twitter:card" content="summary">
@@ -24,11 +24,11 @@
   {
   "@context": "http://schema.org",
   "@type": "NewsArticle",
-  "mainEntityOfPage": "https://theotheo.github.io/pythonsciencebook/search",
-  "headline": "Search the site",
+  "mainEntityOfPage": "https://theotheo.github.io/pythonsciencebook/not/pandas.html",
+  "headline": "Pandas",
   "datePublished": "2019-10-31T18:18:49+03:00",
   "dateModified": "2019-10-31T18:18:49+03:00",
-  "description": "        ",
+  "description": "        Здесь мы обсудим работу с важнейшней библиотекой Pandas&#1041;&#1072;&#1079;&#1086;&#1074;&#1099;&#1077; &#1086;&#1087;&#1077;&#1088;&#1072;&#1094;&#...",
   "author": {
     "@type": "Person",
     "name": "Ildar Belyalov"
@@ -972,13 +972,13 @@ initFunction(initPrint)
 
           
 
-          <ul class="c-sidebar__sections u-hidden-visually">
+          <ul class="c-sidebar__sections ">
             
               
               
 
               <li class="c-sidebar__section">
-                <a class="c-sidebar__entry "
+                <a class="c-sidebar__entry c-sidebar__entry--active"
                   href="/pythonsciencebook/not/pandas.html"
                 >
                   
@@ -1133,244 +1133,39 @@ initFunction(initPrint)
 
       <main class="c-textbook__page" tabindex="-1">
             <div class="c-textbook__content" id="textbook_content">
-              <div class="search-content__inner-wrap">
-    <input type="text" id="lunr_search" class="search-input" tabindex="-1" placeholder="'Enter your search term...''" />
-    <div id="results" class="results"></div>
+                  <main class="jupyter-page">
+    
+<div class="jb_cell">
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Здесь мы обсудим работу с важнейшней библиотекой Pandas</p>
+<h2 id="&#1041;&#1072;&#1079;&#1086;&#1074;&#1099;&#1077;-&#1086;&#1087;&#1077;&#1088;&#1072;&#1094;&#1080;&#1080;">&#1041;&#1072;&#1079;&#1086;&#1074;&#1099;&#1077; &#1086;&#1087;&#1077;&#1088;&#1072;&#1094;&#1080;&#1080;<a class="anchor-link" href="#&#1041;&#1072;&#1079;&#1086;&#1074;&#1099;&#1077;-&#1086;&#1087;&#1077;&#1088;&#1072;&#1094;&#1080;&#1080;"> </a></h2><h2 id="&#1052;&#1077;&#1088;&#1076;&#1078;&#1080;,-&#1087;&#1080;&#1074;&#1086;&#1090;&#1099;,-&#1089;&#1090;&#1077;&#1082;&#1080;&#1085;&#1075;">&#1052;&#1077;&#1088;&#1076;&#1078;&#1080;, &#1087;&#1080;&#1074;&#1086;&#1090;&#1099;, &#1089;&#1090;&#1077;&#1082;&#1080;&#1085;&#1075;<a class="anchor-link" href="#&#1052;&#1077;&#1088;&#1076;&#1078;&#1080;,-&#1087;&#1080;&#1074;&#1086;&#1090;&#1099;,-&#1089;&#1090;&#1077;&#1082;&#1080;&#1085;&#1075;"> </a></h2><h2 id="&#1053;&#1102;&#1072;&#1085;&#1089;&#1099;-&#1087;&#1088;&#1086;&#1080;&#1079;&#1074;&#1086;&#1076;&#1080;&#1090;&#1077;&#1083;&#1100;&#1085;&#1086;&#1089;&#1090;&#1080;">&#1053;&#1102;&#1072;&#1085;&#1089;&#1099; &#1087;&#1088;&#1086;&#1080;&#1079;&#1074;&#1086;&#1076;&#1080;&#1090;&#1077;&#1083;&#1100;&#1085;&#1086;&#1089;&#1090;&#1080;<a class="anchor-link" href="#&#1053;&#1102;&#1072;&#1085;&#1089;&#1099;-&#1087;&#1088;&#1086;&#1080;&#1079;&#1074;&#1086;&#1076;&#1080;&#1090;&#1077;&#1083;&#1100;&#1085;&#1086;&#1089;&#1090;&#1080;"> </a></h2><h2 id="&#1056;&#1072;&#1089;&#1087;&#1088;&#1077;&#1076;&#1077;&#1083;&#1077;&#1085;&#1085;&#1099;&#1077;-Pandas">&#1056;&#1072;&#1089;&#1087;&#1088;&#1077;&#1076;&#1077;&#1083;&#1077;&#1085;&#1085;&#1099;&#1077; Pandas<a class="anchor-link" href="#&#1056;&#1072;&#1089;&#1087;&#1088;&#1077;&#1076;&#1077;&#1083;&#1077;&#1085;&#1085;&#1099;&#1077;-Pandas"> </a></h2>
+</div>
+</div>
+</div>
 </div>
 
-<script>
-    // Add the lunr store since we will now search it
-    var store = [{
-        "title": "Features and customization",
-        
-        "excerpt":
-            "Features This is a short demonstration textbook to show the general layout / style of textbooks built with Jupyter and Jekyll. The markdown files for this page (and others in the textbook) is generated from the notebooks with the scripts/generate_textbook.py script, which is called when you run make book. The content for the book is contained in a folder in the book's repository called content/. It has a combination of markdown and Jupyter notebooks. This content is rendered into the textbook that you see here! To begin, click on one of the chapter sections in the sidebar to the left....",
-        "categories": [],
-        "tags": [],
-        "url": "https://theotheo.github.io/pythonsciencebook/features/features.html",
-        "teaser":null},{
-        "title": "Markdown files",
-        
-        "excerpt":
-            "Creating book content The two kinds of files that contain course content are: Jupyter Notebooks Markdown files Each are contained in the content/ folder and referenced from _data/toc.yml. If the file is markdown, it will be copied over with front-matter YAML added so that Jekyll can parse it Sidebars with Jekyll You may notice that there's a sidebar to the right (if your screen is wide enough). These are automatically generated from the headers that are present in your page. The sidebar will automatically capture all 2nd and 3rd level section headers. The best way to designate these headers is...",
-        "categories": [],
-        "tags": [],
-        "url": "https://theotheo.github.io/pythonsciencebook/features/markdown.html",
-        "teaser":null},{
-        "title": "Jupyter notebooks",
-        
-        "excerpt":
-            "Content with notebooks You can also create content with Jupyter Notebooks. The content for the current page is contained in a Jupyter Notebook in the notebooks/ folder of the repository. This means that we can include code blocks and their outputs, and export them to Jekyll markdown. You can find the original notebook for this page at this address Markdown + notebooks As it is markdown, you can embed images, HTML, etc into your posts! You an also $add_{math}$ and $$ math^{blocks} $$or $$ \\begin{align*} \\mbox{mean} la_{tex} \\\\ \\\\ math blocks \\end{align*} $$But make sure you \\$Escape \\$your \\$dollar signs...",
-        "categories": [],
-        "tags": [],
-        "url": "https://theotheo.github.io/pythonsciencebook/features/notebooks.html",
-        "teaser":null},{
-        "title": "Home",
-        
-        "excerpt":
-            "              Python Science Book  Добро пожаловать на страницу курса.  Пока здесь не очень интересно. Но работа над материалам идет полным ходом. Stay tuned.  &#1057;&#1086;&#1076;&#1077;&#1088;&#1078;&#1072;&#1085;&#1080;&#1077;   101 введение в основы Python   The Jupyter Book Guide will step you through the process of configuring and building your own Jupyter Book.    &#1042;&#1086;&#1087;&#1088;&#1086;&#1089;&#1099;  По всем вопросам и предложениям смело пишите http://t.me/ibelyalov                     ",
-        "categories": [],
-        "tags": [],
-        "url": "https://theotheo.github.io/pythonsciencebook/intro.html",
-        "teaser":null},{
-        "title": "Exercises",
-        
-        "excerpt":
-            "1. C&#1086;&#1079;&#1076;&#1072;&#1085;&#1080;&#1077; &#1082;&#1083;&#1072;&#1089;&#1089;&#1072; &#1079;&#1072;&#1076;&#1072;&#1095;&#1072; 1.1: class, атрибуты, методы, __init__, self Создайте класс Movie и определите конструктор класса с такими параметрами, как - заголовок, - директор, - год выпуска. Создайте такие объекты, как - «Титаник» (реж. Джеймс Кэмерон, 1997), - «Звездные войны» (реж. Джордж Лукас, 1977), - «Бойцовский клуб» (реж. Дэвид Финчер, 1999). Затем создайте метод, который возвращает возраст фильма в годах. &#1088;&#1077;&#1096;&#1077;&#1085;&#1080;&#1077;: class Movie: def __init__(self, ...): self.header = def get_movie_age(self): pass #2019 - self.year 2. A&#1090;&#1088;&#1080;&#1073;&#1091;&#1090;&#1099; &#1082;&#1083;&#1072;&#1089;&#1089;&#1072; &#1079;&#1072;&#1076;&#1072;&#1095;&#1072; 2.1: Объясните разницу между атрибутами: - name, - surname - и profession, а так же какие значения они могут принимать для...",
-        "categories": [],
-        "tags": [],
-        "url": "https://theotheo.github.io/pythonsciencebook/ipynb/OOP_Exercises.html",
-        "teaser":null},{
-        "title": "Builtins",
-        
-        "excerpt":
-            "&#1041;&#1072;&#1079;&#1086;&#1074;&#1099;&#1077; &#1090;&#1080;&#1087;&#1099; int (integer; &#1094;&#1077;&#1083;&#1086;&#1077; &#1095;&#1080;&#1089;&#1083;&#1086;; &#1094;&#1077;&#1083;&#1086;&#1095;&#1080;&#1089;&#1083;&#1077;&#1085;&#1085;&#1099;&#1081; &#1090;&#1080;&#1087;) 10 10 -3 -3 0x10 16 0b10111 23 float (float; &#1095;&#1080;&#1089;&#1083;&#1086; &#1089; &#1087;&#1083;&#1072;&#1074;&#1072;&#1102;&#1097;&#1077;&#1081; &#1079;&#1072;&#1087;&#1103;&#1090;&#1086;&#1081;) 7.41 7.41 -0.006 -0.006 0.1 0.1 .2 0.2 2e10 20000000000.0 2 * 10**10 20000000000 2**10 1024 str (string; &#1089;&#1090;&#1088;&#1086;&#1082;&#1072;; &#1087;&#1086;&#1089;&#1083;&#1077;&#1076;&#1086;&#1074;&#1072;&#1090;&#1077;&#1083;&#1100;&#1085;&#1086;&#1089;&#1090;&#1100; &#1079;&#1072;&#1082;&#1083;&#1102;&#1095;&#1077;&#1085;&#1085;&#1072;&#1103; &#1074; &#1082;&#1072;&#1074;&#1099;&#1095;&#1082;&#1080;) &#39;строка в одинарных кавычек&#39; &#39;строка в одинарных кавычек&#39; &quot;строка в двойных кавычках&quot; &#39;строка в двойных кавычках&#39; &quot;строка в двойных кавычках со &#39;строкой из одинарных&#39;&quot; &#34;строка в двойных кавычках со &#39;строкой из одинарных&#39;&#34; &#39;строка из одинарных кавычек с &quot;строкой из двойных&quot;&#39; &#39;строка из одинарных кавычек с &#34;строкой из двойных&#34;&#39; &quot;&quot;&quot;sun shine&quot;&quot;&quot; &#39;sun\\nshine&#39; &quot;su&quot; &#39;su&#39; &#39;&#39;&#39;строка в...",
-        "categories": [],
-        "tags": [],
-        "url": "https://theotheo.github.io/pythonsciencebook/ipynb/builtins.html",
-        "teaser":null},{
-        "title": "Коллекции",
-        
-        "excerpt":
-            "              Sets                   x = set([1, 2, 3]) type(x)                         y = {2, 3, 5} type(y)                  mutable                   x.add(10) x                  unordered                   x[1]                  operations            union                   x.union(y)                   intersection                   x.intersection(y)                  difference                   x - y                  vienna diagramm for fun                   ! pip install --user matplotlib-venn                         from matplotlib_venn import venn2 %matplotlib inline                         venn2([x, y])                  enumerate                   abc = [&#39;a&#39;, &#39;c&#39;, &#39;d&#39;] enumerate(abc)                         for index, el  in enumerate(abc):     print(index)                           ",
-        "categories": [],
-        "tags": [],
-        "url": "https://theotheo.github.io/pythonsciencebook/ipynb/collections.html",
-        "teaser":null},{
-        "title": "Comprehensions",
-        
-        "excerpt":
-            "              List comprehensions  https://www.python.org/dev/peps/pep-0279/            list                   sample = [1, 2, 3, 4]                          [a for a in sample if a % 2]                  set                   {a*2 for a in sample}                  dict                   {i:a for i, a in enumerate(sample) }                  nested                   my_list = []  for x in [20, 40, 60]:     for y in [2, 4, 6]:         my_list.append(x * y)          my_list                         [x * y for x in [20, 40, 60] for y in [2, 4, 6]]                           ",
-        "categories": [],
-        "tags": [],
-        "url": "https://theotheo.github.io/pythonsciencebook/ipynb/comprehensions.html",
-        "teaser":null},{
-        "title": "Контрольные структуры",
-        
-        "excerpt":
-            "&#1059;&#1087;&#1088;&#1072;&#1074;&#1083;&#1103;&#1102;&#1097;&#1080;&#1077; &#1089;&#1090;&#1088;&#1091;&#1082;&#1090;&#1091;&#1088;&#1099; if 1 == 0 False if (1 != 0): print(1) print(11) print(10) 1 11 10 if(2 &gt; 3): print(&#39;2 &gt; 3&#39;) else: print(&#39;2 &lt; 3&#39;) 2 &lt; 3 from_user = &#39;F&#39; if (from_user == &#39;M&#39;): print(&#39;введено M&#39;) elif (from_user == &#39;F&#39;): print(&#39;введено F&#39;) elif (from_user == &#39;FM&#39;): print(&#39;введено FM&#39;) elif (from_user == &#39;&#39;): print(&#39;пустая строка&#39;) else: print(&#39;что-то еще&#39;) введено F for food_orders = [&#39;pizza&#39;, &#39;not pizza&#39;] for food in food_orders: print(food.upper()) PIZZA NOT PIZZA for el in [1, 2, 3]: print(el) 1 2 3 while i = 0 while i &lt; 10: i = i + 1 print(i)...",
-        "categories": [],
-        "tags": [],
-        "url": "https://theotheo.github.io/pythonsciencebook/ipynb/control_structures.html",
-        "teaser":null},{
-        "title": "Исключения",
-        
-        "excerpt":
-            "Exceptions Examples 10 / 0 prin(10) for i in [1, 2] print(i) Handling Exceptions try: 10 / 0 except Exception: print(&#39;Exception&#39;) try: 10 / 0 except Exception as e: print(&#39;Exception: {}&#39;.format(e)) while True: try: x = int(raw_input(&quot;Please enter a number: &quot;)) break except ValueError: print( &quot;Oops! That was no valid number. Try again...&quot;) import sys try: f = open(&#39;myfile.txt&#39;) s = f.readline() i = int(s.strip()) except IOError as e: print( &quot;I/O error({0}): {1}&quot;.format(e.errno, e.strerror)) except ValueError: print( &quot;Could not convert data to an integer.&quot;) except: print( &quot;Unexpected error:&quot;, sys.exc_info()[0]) raise Built-in exceptions BaseException +-- SystemExit +-- KeyboardInterrupt +-- GeneratorExit +--...",
-        "categories": [],
-        "tags": [],
-        "url": "https://theotheo.github.io/pythonsciencebook/ipynb/exceptions-intro.html",
-        "teaser":null},{
-        "title": "Функции",
-        
-        "excerpt":
-            "              &#1060;&#1091;&#1085;&#1082;&#1094;&#1080;&#1080; -- &#1080;&#1093; &#1084;&#1086;&#1078;&#1085;&#1086; &#1089;&#1086;&#1079;&#1076;&#1072;&#1074;&#1072;&#1090;&#1100;   def name(var):     \"\"\"doc string\"\"\"     body     return stm  my_var = name(obj)                  def foo(i, j):     print(i*3)  foo(1, 2)                           ",
-        "categories": [],
-        "tags": [],
-        "url": "https://theotheo.github.io/pythonsciencebook/ipynb/function-intro.html",
-        "teaser":null},{
-        "title": "Function",
-        
-        "excerpt":
-            "Function first-class citizens Функции можно присваивать переменным, сохранять в структурах данных, передавать как аргументы другим функциям и возвращать как значение функций &#1087;&#1088;&#1080;&#1089;&#1074;&#1086;&#1077;&#1085;&#1080;&#1077; def yell(text): return text.upper() + &#39;!&#39; bark = yell # присваиваем bark(&#39;woof&#39;) del yell # удаляем yell(&#39;hello?&#39;) bark(&#39;hey&#39;) bark.__name__ # имя для дебага # ### сохраняем funcs = [bark, str.lower, str.capitalize] funcs for f in funcs: print(f, f(&#39;hey there&#39;)) funcs[0](&#39;heyho&#39;) &#1087;&#1077;&#1088;&#1077;&#1076;&#1072;&#1077;&#1084; &#1074; &#1092;&#1091;&#1085;&#1082;&#1094;&#1080;&#1102; def greet(func): greeting = func(&#39;Hi, I am a Python program&#39;) print(greeting) greet(bark) def whisper(text): return text.lower() + &#39;...&#39; greet(whisper) higher-order functions -- функции, которые принимают другие функции. например, map list(map(bark, [&#39;hello&#39;, &#39;hey&#39;, &#39;hi&#39;])) &#1074;&#1083;&#1086;&#1078;&#1077;&#1085;&#1085;&#1099;&#1077; &#1092;&#1091;&#1085;&#1082;&#1094;&#1080;&#1080;...",
-        "categories": [],
-        "tags": [],
-        "url": "https://theotheo.github.io/pythonsciencebook/ipynb/functions.html",
-        "teaser":null},{
-        "title": "История",
-        
-        "excerpt":
-            "              &#1055;&#1080;&#1090;&#1086;&#1085; &#1087;&#1086;&#1083;&#1079;&#1077;&#1090; &#1074;&#1074;&#1077;&#1088;&#1093;   https://www.tiobe.com/tiobe-index/   http://pypl.github.io/PYPL.html   https://spectrum.ieee.org/computing/software/the-2017-top-programming-languages   https://stackoverflow.blog/2017/09/06/incredible-growth-python/                        &#1042;&#1077;&#1088;&#1089;&#1080;&#1080;    https://en.wikipedia.org/wiki/History_of_Python https://en.wikibooks.org/wiki/Python_Programming/Version_history                                 ",
-        "categories": [],
-        "tags": [],
-        "url": "https://theotheo.github.io/pythonsciencebook/ipynb/history.html",
-        "teaser":null},{
-        "title": "Python",
-        
-        "excerpt":
-            "Сколько бы преподаватель не знал и не понимал, он зачастую не знает важного -- сколько знает и что понимает его студент! Ильдар &#1042;&#1074;&#1077;&#1076;&#1077;&#1085;&#1080;&#1077; &#1074; &#1055;&#1080;&#1090;&#1086;&#1085; &#1063;&#1080;&#1090;&#1072;&#1077;&#1084; &#1084;&#1077;&#1078;&#1076;&#1091; &#1089;&#1090;&#1088;&#1086;&#1082; Python is an easy to learn, powerful programming language. It has efficient high-level data structures and a simple but effective approach to object-oriented programming. Python’s elegant syntax and dynamic typing, together with its interpreted nature, make it an ideal language for scripting and rapid application development in many areas on most platforms. https://docs.python.org/3/tutorial/index.html Python (https://en.wikipedia.org/wiki/Monty_Python) easy to learn (https://cacm.acm.org/blogs/blog-cacm/176450-python-is-now-the-most-popular-introductory-teaching-language-at-top-u-s-universities/fulltext) powerful programming language (https://docs.python.org/3/reference/grammar.html) efficient high-level data structures simple but effective approach to...",
-        "categories": [],
-        "tags": [],
-        "url": "https://theotheo.github.io/pythonsciencebook/ipynb/intro.html",
-        "teaser":null},{
-        "title": "Интроспекция",
-        
-        "excerpt":
-            "              Reflections            type                   type(3)                         type(1.0)                         type(1 + 1j)                         type(&#39;Hello&#39;)                          type([1, 2])                         type([1, [2, &#39;Hello&#39;]])                          type({&#39;city&#39;: &#39;Paris&#39;})                          type((1,2))                          type(set())                   Isinstance                   isinstance(3, int)                         isinstance([1, 2], list)                         isinstance(3, object)                         isinstance([1, 2], object)                         class Parent: pass                    Parent                         class Child(Parent): pass    Child                         child = Child()                                                    print isinstance(child, Child)                             print isinstance(child, Parent)                          print isinstance(child, object)                   issubclass                   issubclass(Child, Parent)                         issubclass(Parent, Child)                             issubclass(Child, object)                             issubclass(Parent, object)                      dir                   dir(1)                         dir(&#39;string&#39;)                  getattr                   getattr(3, &quot;imag&quot;)                         f = getattr(&#39;string&#39;, &#39;upper&#39;) f                         f()                  callable                   callable(2)                         callable(len)                         def foo():     pass callable(foo)                  keyword                   import keyword pykeywords = keyword.kwlist keyword.iskeyword(&quot;if&quot;) keyword.iskeyword(&quot;True&quot;)                  builtins                   dir(__builtins__)                             ",
-        "categories": [],
-        "tags": [],
-        "url": "https://theotheo.github.io/pythonsciencebook/ipynb/introspection.html",
-        "teaser":null},{
-        "title": "Jupyter",
-        
-        "excerpt":
-            "              Jupyter  extensions    https://jupyter-contrib-nbextensions.readthedocs.io/en/latest/ https://github.com/Jupyter-contrib/jupyter_nbextensions_configurator  nbtutor  %load_ext nbtutor  %%nbtutor             https://github.com/lgpage/nbtutor                     ",
-        "categories": [],
-        "tags": [],
-        "url": "https://theotheo.github.io/pythonsciencebook/ipynb/jupyter.html",
-        "teaser":null},{
-        "title": "Именование",
-        
-        "excerpt":
-            "&#1080;&#1084;&#1077;&#1085;&#1086;&#1074;&#1072;&#1085;&#1080;&#1077; имена переменных могут состоять из букв цифр знака подчеркивания но начинаться только с букв и подчеркивания abc1 = 1 _abc1 = 1 ab.c = 1 1_abc = 1 break = 1 30+ keywords and as assert break class continue def del elif else except exec finally for from global if import in is lambda nonlocal not or pass raise return try while with yield True False None from IPython.display import HTML HTML(&#39;&lt;iframe width=800 height=400 src=&quot;https://martinfowler.com/bliki/TwoHardThings.html&quot;&gt;&#39;) underscore, dunders одно подчеркивание в начале: _var одно подчеркивание с конца: var_ двойное подчеркивание в начале: __var двойное подчеркивание в начале и с конца:...",
-        "categories": [],
-        "tags": [],
-        "url": "https://theotheo.github.io/pythonsciencebook/ipynb/naming.html",
-        "teaser":null},{
-        "title": "Inheritance",
-        
-        "excerpt":
-            "              &#1053;&#1072;&#1089;&#1083;&#1077;&#1076;&#1086;&#1074;&#1072;&#1085;&#1080;&#1077;  Для начала рассмотрим простой пример.                   class A():     pass  class B(A):     pass                  Часто встречающаяся иллюстрация к наследованию в ООП -- это таксономия животных.  На мой взгляд, это больше аллюзия, чем аналогия. Дело в том, что логика программирования связана с другими императивами, чем логика эволюции.    https://ru.wikipedia.org/wiki/Животные            Скорее иерархия классов в программирование будет похожа на ту, что описана Борхесом    https://pikabu.ru/story/kitayskie_zhivotnyie_5733992                     ",
-        "categories": [],
-        "tags": [],
-        "url": "https://theotheo.github.io/pythonsciencebook/ipynb/oop-inheritance.html",
-        "teaser":null},{
-        "title": "Example",
-        
-        "excerpt":
-            "              Схема алгоритма    https://www.kdnuggets.com/2016/01/implementing-your-own-knn-using-python.html                   from sklearn.datasets import load_iris from sklearn.model_selection import train_test_split import numpy as np   iris = load_iris() X_train, X_test, y_train, y_test = train_test_split(iris.data, iris.target, test_size=0.4, random_state=1)   # reformat train/test datasets for convenience train = np.array(zip(X_train,y_train)) test = np.array(zip(X_test, y_test))                           ",
-        "categories": [],
-        "tags": [],
-        "url": "https://theotheo.github.io/pythonsciencebook/ipynb/oop-knn.html",
-        "teaser":null},{
-        "title": "OOPython",
-        
-        "excerpt":
-            "                     2 + 2                    4                        ",
-        "categories": [],
-        "tags": [],
-        "url": "https://theotheo.github.io/pythonsciencebook/ipynb/oop_chapter.html",
-        "teaser":null},{
-        "title": "Intro",
-        
-        "excerpt":
-            "ОБЪЕКТ, -а; м. [от лат. objectum - предметный] 1. Филос. То, что существует вне нас и независимо от нас; внешний мир, действительность, на которые направлена предметно-практическая и познавательная деятельность субъекта. Мир объектов. О. в себе. 2. Явление, предмет, лицо, на которое направлена чья-л. деятельность, чьё-л. внимание и т.п. О. наблюдений. О. изучения. Неопознанный летающий о. О. морского промысла. Вести наблюдение за объектом. Человек не должен быть объектом эксплуатации. Избрал объектом для постоянных шуток безобидного парня. 3. Предприятие, стройка, отдельный участок и т.п. чего-л. как единица хозяйственного или оборонного значения. Промышленный о. Оборонный о. Пусковой о. Перешли работать на новый о....",
-        "categories": [],
-        "tags": [],
-        "url": "https://theotheo.github.io/pythonsciencebook/ipynb/oop_intro.html",
-        "teaser":null},{
-        "title": "Advanced Python",
-        
-        "excerpt":
-            "              В этом разделе собраны разные вопросы, касающиеся продвинутых возможностей Python                     ",
-        "categories": [],
-        "tags": [],
-        "url": "https://theotheo.github.io/pythonsciencebook/not/advanced.html",
-        "teaser":null},{
-        "title": "Данные",
-        
-        "excerpt":
-            "              &#1055;&#1086;&#1080;&#1089;&#1082; &#1076;&#1072;&#1090;&#1072;&#1089;&#1077;&#1090;&#1086;&#1074;  Web-scraping  API &#1089;&#1090;&#1086;&#1088;&#1086;&#1085;&#1085;&#1080;&#1093; &#1089;&#1077;&#1088;&#1074;&#1080;&#1089;&#1086;&#1074;                     ",
-        "categories": [],
-        "tags": [],
-        "url": "https://theotheo.github.io/pythonsciencebook/not/data-management.html",
-        "teaser":null},{
-        "title": "Деплой и инжиниринг",
-        
-        "excerpt":
-            "              Здесь мы обсудим вопросы деплоя  Data Engineering  &#1052;&#1080;&#1082;&#1088;&#1086;&#1089;&#1077;&#1088;&#1074;&#1080;&#1089;&#1099;, Flask  &#1060;&#1086;&#1088;&#1084;&#1072;&#1090;&#1099; &#1087;&#1077;&#1088;&#1077;&#1085;&#1086;&#1089;&#1072; &#1084;&#1086;&#1076;&#1077;&#1083;&#1077;&#1081;  &#1044;&#1077;&#1087;&#1083;&#1086;&#1081; &#1085;&#1072; &#1076;&#1088;&#1091;&#1075;&#1080;&#1093; &#1103;&#1079;&#1099;&#1082;&#1072;&#1093;                     ",
-        "categories": [],
-        "tags": [],
-        "url": "https://theotheo.github.io/pythonsciencebook/not/deploy.html",
-        "teaser":null},{
-        "title": "Гео",
-        
-        "excerpt":
-            "              Здесь мы обсудим работу с гео-данными  &#1060;&#1086;&#1088;&#1084;&#1072;&#1090;&#1099; &#1076;&#1072;&#1085;&#1085;&#1099;&#1093;  GIS-&#1089;&#1080;&#1089;&#1090;&#1077;&#1084;&#1099;  Pysal  Geopandas  SQL-&#1088;&#1072;&#1089;&#1096;&#1080;&#1088;&#1077;&#1085;&#1080;&#1103;: PostGIS, sqlite-geo                     ",
-        "categories": [],
-        "tags": [],
-        "url": "https://theotheo.github.io/pythonsciencebook/not/geo.html",
-        "teaser":null},{
-        "title": "Pandas",
-        
-        "excerpt":
-            "              Здесь мы обсудим работу с важнейшней библиотекой Pandas  &#1041;&#1072;&#1079;&#1086;&#1074;&#1099;&#1077; &#1086;&#1087;&#1077;&#1088;&#1072;&#1094;&#1080;&#1080;  &#1052;&#1077;&#1088;&#1076;&#1078;&#1080;, &#1087;&#1080;&#1074;&#1086;&#1090;&#1099;, &#1089;&#1090;&#1077;&#1082;&#1080;&#1085;&#1075;  &#1053;&#1102;&#1072;&#1085;&#1089;&#1099; &#1087;&#1088;&#1086;&#1080;&#1079;&#1074;&#1086;&#1076;&#1080;&#1090;&#1077;&#1083;&#1100;&#1085;&#1086;&#1089;&#1090;&#1080;  &#1056;&#1072;&#1089;&#1087;&#1088;&#1077;&#1076;&#1077;&#1083;&#1077;&#1085;&#1085;&#1099;&#1077; Pandas                     ",
-        "categories": [],
-        "tags": [],
-        "url": "https://theotheo.github.io/pythonsciencebook/not/pandas.html",
-        "teaser":null},{
-        "title": "Текст",
-        
-        "excerpt":
-            "              Основы работы с текстовыми данными  &#1086;&#1089;&#1086;&#1073;&#1077;&#1085;&#1085;&#1086;&#1089;&#1090;&#1080; &#1090;&#1077;&#1082;&#1089;&#1090;&#1086;&#1074;, &#1079;&#1072;&#1082;&#1086;&#1085; &#1062;&#1080;&#1087;&#1092;&#1072; &#1080; &#1085;&#1077;&#1086;&#1076;&#1085;&#1086;&#1079;&#1085;&#1072;&#1095;&#1085;&#1086;&#1089;&#1090;&#1100; &#1085;&#1072; &#1074;&#1089;&#1077;&#1093; &#1091;&#1088;&#1086;&#1074;&#1085;&#1103;&#1093;  gensim  spacy                     ",
-        "categories": [],
-        "tags": [],
-        "url": "https://theotheo.github.io/pythonsciencebook/not/text.html",
-        "teaser":null},{
-        "title": "Визуализация",
-        
-        "excerpt":
-            "              Здесь мы обсудим вопросы визуализации  &#1058;&#1080;&#1087;&#1099; &#1075;&#1088;&#1072;&#1092;&#1080;&#1082;&#1086;&#1074;  Matplotlib  Seaborn  &#1043;&#1088;&#1072;&#1084;&#1084;&#1072;&#1090;&#1080;&#1082;&#1072; &#1075;&#1088;&#1072;&#1092;&#1080;&#1082;&#1080; &#1080; GGPlot  &#1048;&#1085;&#1090;&#1077;&#1088;&#1072;&#1082;&#1090;&#1080;&#1074;&#1085;&#1099;&#1077; &#1075;&#1088;&#1072;&#1092;&#1080;&#1082;&#1080;  Plot.ly  Altair  &#1044;&#1072;&#1096;&#1073;&#1086;&#1088;&#1076;&#1099;                     ",
-        "categories": [],
-        "tags": [],
-        "url": "https://theotheo.github.io/pythonsciencebook/not/visualization.html",
-        "teaser":null},]
-</script>
+ 
+
+
+    </main>
+    
             </div>
             <div class="c-textbook__footer" id="textbook_footer">
               <nav class="c-page__nav">
   
+    
+    <a id="js-page__nav__prev" class="c-page__nav__prev" href="/pythonsciencebook/not/data-management.html">
+      〈 <span class="u-margin-right-tiny"></span> Данные
+    </a>
+  
 
+  
+    
+    <a id="js-page__nav__next" class="c-page__nav__next" href="/pythonsciencebook/not/geo.html">
+      Гео <span class="u-margin-right-tiny"></span> 〉
+    </a>
   
 </nav>
 
