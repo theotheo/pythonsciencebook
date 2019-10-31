@@ -8,6 +8,10 @@ jupyter:
       format_name: markdown
       format_version: '1.1'
       jupytext_version: 1.2.4
+  kernelspec:
+    display_name: Python 3
+    language: python
+    name: python3
 ---
 
 ## Управляющие структуры
@@ -93,4 +97,8 @@ while True:
     print(i)
     if i > 9:
         break
+```
+
+```python
+
 ```
