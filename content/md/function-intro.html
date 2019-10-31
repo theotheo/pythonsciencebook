@@ -6,15 +6,15 @@
   <meta name="viewport" content="width=device-width,minimum-scale=1">
 
   <title>Python Science</title>
-  <meta name="description" content="```python2 + 2```">
+  <meta name="description" content="## Функции -- их можно создавать```def name(var):    """doc string"""    body    return stm``````my_var = name(obj)``````pythondef foo(i, j):    print(i*3)fo...">
 
-  <link rel="canonical" href="https://theotheo.github.io/pythonsciencebook/content/md/oop_chapter.html">
+  <link rel="canonical" href="https://theotheo.github.io/pythonsciencebook/content/md/function-intro.html">
   <link rel="alternate" type="application/rss+xml" title="Python Science" href="https://theotheo.github.io/pythonsciencebook/feed.xml">
 
-  <meta property="og:url"         content="https://theotheo.github.io/pythonsciencebook/content/md/oop_chapter.html" />
+  <meta property="og:url"         content="https://theotheo.github.io/pythonsciencebook/content/md/function-intro.html" />
 <meta property="og:type"        content="article" />
 <meta property="og:title"       content="Python Science" />
-<meta property="og:description" content="```python2 + 2```" />
+<meta property="og:description" content="## Функции -- их можно создавать```def name(var):    """doc string"""    body    return stm``````my_var = name(obj)``````pythondef foo(i, j):    print(i*3)fo..." />
 <meta property="og:image"       content="https://theotheo.github.io/pythonsciencebook/images/logo/logo.png" />
 
 <meta name="twitter:card" content="summary">
@@ -24,11 +24,11 @@
   {
   "@context": "http://schema.org",
   "@type": "NewsArticle",
-  "mainEntityOfPage": "https://theotheo.github.io/pythonsciencebook/content/md/oop_chapter.html",
+  "mainEntityOfPage": "https://theotheo.github.io/pythonsciencebook/content/md/function-intro.html",
   "headline": "Python Science",
   "datePublished": "2019-10-31T17:14:09+03:00",
   "dateModified": "2019-10-31T17:14:09+03:00",
-  "description": "```python2 + 2```",
+  "description": "## Функции -- их можно создавать```def name(var):    """doc string"""    body    return stm``````my_var = name(obj)``````pythondef foo(i, j):    print(i*3)fo...",
   "author": {
     "@type": "Person",
     "name": "Ildar Belyalov"
@@ -911,7 +911,23 @@ initFunction(initPrint)
 
       <main class="c-textbook__page" tabindex="-1">
             <div class="c-textbook__content" id="textbook_content">
-              <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="mi">2</span> <span class="o">+</span> <span class="mi">2</span>
+              <!-- #region -->
+<h2 id="функции--их-можно-создавать">Функции – их можно создавать</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>def name(var):
+    """doc string"""
+    body
+    return stm
+</code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>my_var = name(obj)
+</code></pre></div></div>
+<!-- #endregion -->
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">foo</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="n">j</span><span class="p">):</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">i</span><span class="o">*</span><span class="mi">3</span><span class="p">)</span>
+
+<span class="n">foo</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
 </code></pre></div></div>
 
             </div>

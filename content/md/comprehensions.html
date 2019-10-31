@@ -6,15 +6,15 @@
   <meta name="viewport" content="width=device-width,minimum-scale=1">
 
   <title>Python Science</title>
-  <meta name="description" content="```python2 + 2```">
+  <meta name="description" content="## List comprehensionshttps://www.python.org/dev/peps/pep-0279/### list```pythonsample = [1, 2, 3, 4] ``````python[a for a in sample if a % 2]```### set```py...">
 
-  <link rel="canonical" href="https://theotheo.github.io/pythonsciencebook/content/md/oop_chapter.html">
+  <link rel="canonical" href="https://theotheo.github.io/pythonsciencebook/content/md/comprehensions.html">
   <link rel="alternate" type="application/rss+xml" title="Python Science" href="https://theotheo.github.io/pythonsciencebook/feed.xml">
 
-  <meta property="og:url"         content="https://theotheo.github.io/pythonsciencebook/content/md/oop_chapter.html" />
+  <meta property="og:url"         content="https://theotheo.github.io/pythonsciencebook/content/md/comprehensions.html" />
 <meta property="og:type"        content="article" />
 <meta property="og:title"       content="Python Science" />
-<meta property="og:description" content="```python2 + 2```" />
+<meta property="og:description" content="## List comprehensionshttps://www.python.org/dev/peps/pep-0279/### list```pythonsample = [1, 2, 3, 4] ``````python[a for a in sample if a % 2]```### set```py..." />
 <meta property="og:image"       content="https://theotheo.github.io/pythonsciencebook/images/logo/logo.png" />
 
 <meta name="twitter:card" content="summary">
@@ -24,11 +24,11 @@
   {
   "@context": "http://schema.org",
   "@type": "NewsArticle",
-  "mainEntityOfPage": "https://theotheo.github.io/pythonsciencebook/content/md/oop_chapter.html",
+  "mainEntityOfPage": "https://theotheo.github.io/pythonsciencebook/content/md/comprehensions.html",
   "headline": "Python Science",
   "datePublished": "2019-10-31T17:14:09+03:00",
   "dateModified": "2019-10-31T17:14:09+03:00",
-  "description": "```python2 + 2```",
+  "description": "## List comprehensionshttps://www.python.org/dev/peps/pep-0279/### list```pythonsample = [1, 2, 3, 4] ``````python[a for a in sample if a % 2]```### set```py...",
   "author": {
     "@type": "Person",
     "name": "Ildar Belyalov"
@@ -911,7 +911,39 @@ initFunction(initPrint)
 
       <main class="c-textbook__page" tabindex="-1">
             <div class="c-textbook__content" id="textbook_content">
-              <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="mi">2</span> <span class="o">+</span> <span class="mi">2</span>
+              <h2 id="list-comprehensions">List comprehensions</h2>
+<p>https://www.python.org/dev/peps/pep-0279/</p>
+
+<h3 id="list">list</h3>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">sample</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">]</span> 
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">[</span><span class="n">a</span> <span class="k">for</span> <span class="n">a</span> <span class="ow">in</span> <span class="n">sample</span> <span class="k">if</span> <span class="n">a</span> <span class="o">%</span> <span class="mi">2</span><span class="p">]</span>
+</code></pre></div></div>
+
+<h3 id="set">set</h3>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="n">a</span><span class="o">*</span><span class="mi">2</span> <span class="k">for</span> <span class="n">a</span> <span class="ow">in</span> <span class="n">sample</span><span class="p">}</span>
+</code></pre></div></div>
+
+<h3 id="dict">dict</h3>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="n">i</span><span class="p">:</span><span class="n">a</span> <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">a</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">sample</span><span class="p">)</span> <span class="p">}</span>
+</code></pre></div></div>
+
+<h2 id="nested">nested</h2>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">my_list</span> <span class="o">=</span> <span class="p">[]</span>
+
+<span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="p">[</span><span class="mi">20</span><span class="p">,</span> <span class="mi">40</span><span class="p">,</span> <span class="mi">60</span><span class="p">]:</span>
+    <span class="k">for</span> <span class="n">y</span> <span class="ow">in</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">6</span><span class="p">]:</span>
+        <span class="n">my_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">x</span> <span class="o">*</span> <span class="n">y</span><span class="p">)</span>
+        
+<span class="n">my_list</span>
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">[</span><span class="n">x</span> <span class="o">*</span> <span class="n">y</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="p">[</span><span class="mi">20</span><span class="p">,</span> <span class="mi">40</span><span class="p">,</span> <span class="mi">60</span><span class="p">]</span> <span class="k">for</span> <span class="n">y</span> <span class="ow">in</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">6</span><span class="p">]]</span>
 </code></pre></div></div>
 
             </div>

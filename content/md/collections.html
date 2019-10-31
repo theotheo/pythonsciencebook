@@ -6,15 +6,15 @@
   <meta name="viewport" content="width=device-width,minimum-scale=1">
 
   <title>Python Science</title>
-  <meta name="description" content="```python2 + 2```">
+  <meta name="description" content="## Sets```pythonx = set([1, 2, 3])type(x)``````pythony = {2, 3, 5}type(y)```### mutable```pythonx.add(10)x```### unordered```pythonx[1]```### operations#### ...">
 
-  <link rel="canonical" href="https://theotheo.github.io/pythonsciencebook/content/md/oop_chapter.html">
+  <link rel="canonical" href="https://theotheo.github.io/pythonsciencebook/content/md/collections.html">
   <link rel="alternate" type="application/rss+xml" title="Python Science" href="https://theotheo.github.io/pythonsciencebook/feed.xml">
 
-  <meta property="og:url"         content="https://theotheo.github.io/pythonsciencebook/content/md/oop_chapter.html" />
+  <meta property="og:url"         content="https://theotheo.github.io/pythonsciencebook/content/md/collections.html" />
 <meta property="og:type"        content="article" />
 <meta property="og:title"       content="Python Science" />
-<meta property="og:description" content="```python2 + 2```" />
+<meta property="og:description" content="## Sets```pythonx = set([1, 2, 3])type(x)``````pythony = {2, 3, 5}type(y)```### mutable```pythonx.add(10)x```### unordered```pythonx[1]```### operations#### ..." />
 <meta property="og:image"       content="https://theotheo.github.io/pythonsciencebook/images/logo/logo.png" />
 
 <meta name="twitter:card" content="summary">
@@ -24,11 +24,11 @@
   {
   "@context": "http://schema.org",
   "@type": "NewsArticle",
-  "mainEntityOfPage": "https://theotheo.github.io/pythonsciencebook/content/md/oop_chapter.html",
+  "mainEntityOfPage": "https://theotheo.github.io/pythonsciencebook/content/md/collections.html",
   "headline": "Python Science",
   "datePublished": "2019-10-31T17:14:09+03:00",
   "dateModified": "2019-10-31T17:14:09+03:00",
-  "description": "```python2 + 2```",
+  "description": "## Sets```pythonx = set([1, 2, 3])type(x)``````pythony = {2, 3, 5}type(y)```### mutable```pythonx.add(10)x```### unordered```pythonx[1]```### operations#### ...",
   "author": {
     "@type": "Person",
     "name": "Ildar Belyalov"
@@ -911,7 +911,64 @@ initFunction(initPrint)
 
       <main class="c-textbook__page" tabindex="-1">
             <div class="c-textbook__content" id="textbook_content">
-              <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="mi">2</span> <span class="o">+</span> <span class="mi">2</span>
+              <h2 id="sets">Sets</h2>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">x</span> <span class="o">=</span> <span class="nb">set</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">])</span>
+<span class="nb">type</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">y</span> <span class="o">=</span> <span class="p">{</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">}</span>
+<span class="nb">type</span><span class="p">(</span><span class="n">y</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h3 id="mutable">mutable</h3>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">x</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
+<span class="n">x</span>
+</code></pre></div></div>
+
+<h3 id="unordered">unordered</h3>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">x</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+</code></pre></div></div>
+
+<h3 id="operations">operations</h3>
+
+<h4 id="union">union</h4>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">x</span><span class="o">.</span><span class="n">union</span><span class="p">(</span><span class="n">y</span><span class="p">)</span> 
+</code></pre></div></div>
+
+<h4 id="intersection">intersection</h4>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">x</span><span class="o">.</span><span class="n">intersection</span><span class="p">(</span><span class="n">y</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h4 id="difference">difference</h4>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">x</span> <span class="o">-</span> <span class="n">y</span>
+</code></pre></div></div>
+
+<h3 id="vienna-diagramm-for-fun">vienna diagramm for fun</h3>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="err">!</span> <span class="n">pip</span> <span class="n">install</span> <span class="o">--</span><span class="n">user</span> <span class="n">matplotlib</span><span class="o">-</span><span class="n">venn</span>
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="nn">matplotlib_venn</span> <span class="kn">import</span> <span class="n">venn2</span>
+<span class="o">%</span><span class="n">matplotlib</span> <span class="n">inline</span>
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">venn2</span><span class="p">([</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">])</span>
+</code></pre></div></div>
+
+<h2 id="enumerate">enumerate</h2>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">abc</span> <span class="o">=</span> <span class="p">[</span><span class="s">'a'</span><span class="p">,</span> <span class="s">'c'</span><span class="p">,</span> <span class="s">'d'</span><span class="p">]</span>
+<span class="nb">enumerate</span><span class="p">(</span><span class="n">abc</span><span class="p">)</span>
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">for</span> <span class="n">index</span><span class="p">,</span> <span class="n">el</span>  <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">abc</span><span class="p">):</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">index</span><span class="p">)</span>
 </code></pre></div></div>
 
             </div>
