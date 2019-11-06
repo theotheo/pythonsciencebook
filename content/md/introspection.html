@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width,minimum-scale=1">
 
   <title>Python Science</title>
-  <meta name="description" content="# Reflections## type ```pythontype(3)``````pythontype(1.0)``````pythontype(1 + 1j)``````pythontype('Hello') ``````pythontype([1, 2])``````pythontype([1, [2, ...">
+  <meta name="description" content="# Интроспекция и рефлексияВ философии и психологии инстроспекцией называют акт самонаблюдения, в процессе которого происходит более глубокое познание себя и ...">
 
   <link rel="canonical" href="https://theotheo.github.io/pythonsciencebook/content/md/introspection.html">
   <link rel="alternate" type="application/rss+xml" title="Python Science" href="https://theotheo.github.io/pythonsciencebook/feed.xml">
@@ -14,7 +14,7 @@
   <meta property="og:url"         content="https://theotheo.github.io/pythonsciencebook/content/md/introspection.html" />
 <meta property="og:type"        content="article" />
 <meta property="og:title"       content="Python Science" />
-<meta property="og:description" content="# Reflections## type ```pythontype(3)``````pythontype(1.0)``````pythontype(1 + 1j)``````pythontype('Hello') ``````pythontype([1, 2])``````pythontype([1, [2, ..." />
+<meta property="og:description" content="# Интроспекция и рефлексияВ философии и психологии инстроспекцией называют акт самонаблюдения, в процессе которого происходит более глубокое познание себя и ..." />
 <meta property="og:image"       content="https://theotheo.github.io/pythonsciencebook/images/logo/logo.png" />
 
 <meta name="twitter:card" content="summary">
@@ -26,9 +26,9 @@
   "@type": "NewsArticle",
   "mainEntityOfPage": "https://theotheo.github.io/pythonsciencebook/content/md/introspection.html",
   "headline": "Python Science",
-  "datePublished": "2019-11-06T22:07:54+03:00",
-  "dateModified": "2019-11-06T22:07:54+03:00",
-  "description": "# Reflections## type ```pythontype(3)``````pythontype(1.0)``````pythontype(1 + 1j)``````pythontype('Hello') ``````pythontype([1, 2])``````pythontype([1, [2, ...",
+  "datePublished": "2019-11-07T00:05:51+03:00",
+  "dateModified": "2019-11-07T00:05:51+03:00",
+  "description": "# Интроспекция и рефлексияВ философии и психологии инстроспекцией называют акт самонаблюдения, в процессе которого происходит более глубокое познание себя и ...",
   "author": {
     "@type": "Person",
     "name": "Ildar Belyalov"
@@ -1334,9 +1334,61 @@ initFunction(initPrint)
 
       <main class="c-textbook__page" tabindex="-1">
             <div class="c-textbook__content" id="textbook_content">
-              <h1 id="reflections">Reflections</h1>
+              <h1 id="интроспекция-и-рефлексия">Интроспекция и рефлексия</h1>
+
+<p>В философии и психологии инстроспекцией называют акт самонаблюдения, в процессе которого происходит более глубокое познание себя и своей психики.</p>
+
+<p><strong>Интроспекцией</strong> (introspection) в computer science называют способность программы узнавать типы и свойства объектов во время выполнения. Так же существует термин <strong>рефлексия</strong> (reflection) развивающий идею интроспекции – это уже способность программы менять свойства объектов.</p>
+
+<p>Интроспекция является важной частью Python и реализует в нем целым рядом способов.</p>
+
+<h2 id="dir">dir</h2>
+
+<p>Пожалуй, самый полезный интроспективный метод. <code class="highlighter-rouge">dir</code> возвращает список того, что “содержится” в объекте: его функции и переменные. Или говоря корректнее, его методы и свойства.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">dir</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">dir</span><span class="p">(</span><span class="s">'string'</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>Нельзя не обратить внимание, что в длинном перечне большая часть занимают имена вида <code class="highlighter-rouge">__xxxxx__</code>. Это так называемые специальные (special) или магические методы (magic), которые реализуют и на самом деле функционал операторов. Например, в методе <code class="highlighter-rouge">__add__</code> чисел и спрятан код, который работает при их сложении. Подробнее, о них мы поговорим в отдельной главе. А чтобы убедиться, что это так можно вызвав метод напрямую</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="mi">2</span> <span class="o">+</span> <span class="mi">2</span>
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">(</span><span class="mi">2</span><span class="p">)</span><span class="o">.</span><span class="n">__add__</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span> <span class="c1"># первые скобки нужны, чтобы точка не посчиталось частью числа
+</span></code></pre></div></div>
+
+<p>Есть еще один способ сделать то же самое – без подробностей:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">operator</span>
+<span class="n">operator</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>Так как все в Питоне является объектом, то можно посмотреть с помощью <code class="highlighter-rouge">dir</code> содержимое какого-нибудь модуля</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">math</span>
+<span class="nb">dir</span><span class="p">(</span><span class="n">math</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>Так же вероятно неожиданным является возможность посмотреть содержимое текущей области видимости: для этого надо вызвать <code class="highlighter-rouge">dir</code> без параметров.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">dir</span><span class="p">()</span>
+</code></pre></div></div>
+
+<p>в Jupyter в текущей области видимости будет много переменных вида <code class="highlighter-rouge">_X</code>, где X – это число.</p>
+
+<p>// TODO: пояснить</p>
+
+<p>И другой интересный пример интроспекции с помощью <code class="highlighter-rouge">dir</code> – это взгляд на содержимое <code class="highlighter-rouge">__builtins__</code></p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">dir</span><span class="p">(</span><span class="n">__builtins__</span><span class="p">)</span>  
+</code></pre></div></div>
 
 <h2 id="type">type</h2>
+
+<p><code class="highlighter-rouge">type</code> показывает класс объекта</p>
 
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">type</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
 </code></pre></div></div>
@@ -1365,7 +1417,12 @@ initFunction(initPrint)
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">type</span><span class="p">(</span><span class="nb">set</span><span class="p">())</span> 
 </code></pre></div></div>
 
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">type</span><span class="p">(</span><span class="n">math</span><span class="p">)</span>
+</code></pre></div></div>
+
 <h2 id="isinstance">Isinstance</h2>
+
+<p>Проверяет является ли объект экземпляром данного класса (типа).</p>
 
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">isinstance</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="nb">int</span><span class="p">)</span>
 </code></pre></div></div>
@@ -1379,6 +1436,8 @@ initFunction(initPrint)
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">isinstance</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">],</span> <span class="nb">object</span><span class="p">)</span>
 </code></pre></div></div>
 
+<p>Надо понимать, что если у класса есть родители, то экземпляр данного класса так же является экземпляром класса родителя. Давайте посмотрим на примере.</p>
+
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">class</span> <span class="nc">Parent</span><span class="p">:</span> <span class="k">pass</span>                   
 <span class="n">Parent</span>
 </code></pre></div></div>
@@ -1390,16 +1449,20 @@ initFunction(initPrint)
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">child</span> <span class="o">=</span> <span class="n">Child</span><span class="p">()</span>                           
 </code></pre></div></div>
 
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">print</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">child</span><span class="p">,</span> <span class="n">Child</span><span class="p">)</span>    
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">isinstance</span><span class="p">(</span><span class="n">child</span><span class="p">,</span> <span class="n">Child</span><span class="p">)</span>    
 </code></pre></div></div>
 
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">print</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">child</span><span class="p">,</span> <span class="n">Parent</span><span class="p">)</span> 
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">isinstance</span><span class="p">(</span><span class="n">child</span><span class="p">,</span> <span class="n">Parent</span><span class="p">)</span> 
 </code></pre></div></div>
 
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">print</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">child</span><span class="p">,</span> <span class="nb">object</span><span class="p">)</span> 
+<p>И, соответственно, так как все объекты в Python имеют своим прародителем класс <code class="highlighter-rouge">object</code>, то и любой объект является экземпляром этого класса</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">isinstance</span><span class="p">(</span><span class="n">child</span><span class="p">,</span> <span class="nb">object</span><span class="p">)</span> 
 </code></pre></div></div>
 
 <h2 id="issubclass">issubclass</h2>
+
+<p>Проверяет является ли один класс подклассом другого класса, то есть отнаследован ли один класс от другого.</p>
 
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">issubclass</span><span class="p">(</span><span class="n">Child</span><span class="p">,</span> <span class="n">Parent</span><span class="p">)</span>
 </code></pre></div></div>
@@ -1413,27 +1476,9 @@ initFunction(initPrint)
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">issubclass</span><span class="p">(</span><span class="n">Parent</span><span class="p">,</span> <span class="nb">object</span><span class="p">)</span>    
 </code></pre></div></div>
 
-<h2 id="dir">dir</h2>
-
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">dir</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
-</code></pre></div></div>
-
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">dir</span><span class="p">(</span><span class="s">'string'</span><span class="p">)</span>
-</code></pre></div></div>
-
-<h2 id="getattr">getattr</h2>
-
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">getattr</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="s">"imag"</span><span class="p">)</span>
-</code></pre></div></div>
-
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">f</span> <span class="o">=</span> <span class="nb">getattr</span><span class="p">(</span><span class="s">'string'</span><span class="p">,</span> <span class="s">'upper'</span><span class="p">)</span>
-<span class="n">f</span>
-</code></pre></div></div>
-
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">f</span><span class="p">()</span>
-</code></pre></div></div>
-
 <h2 id="callable">callable</h2>
+
+<p>Показывает является ли объект callable, то есть вызываемым. Другими словами, можно ли вызвать данный объект как функцию.</p>
 
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">callable</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
 </code></pre></div></div>
@@ -1443,22 +1488,35 @@ initFunction(initPrint)
 
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">foo</span><span class="p">():</span>
     <span class="k">pass</span>
+
 <span class="nb">callable</span><span class="p">(</span><span class="n">foo</span><span class="p">)</span>
 </code></pre></div></div>
 
 <h2 id="keyword">keyword</h2>
 
+<p>Модуль <code class="highlighter-rouge">keyword</code> помогает понять какие слова являются зарезервированными</p>
+
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">keyword</span>
-<span class="n">pykeywords</span> <span class="o">=</span> <span class="n">keyword</span><span class="o">.</span><span class="n">kwlist</span>
-<span class="n">keyword</span><span class="o">.</span><span class="n">iskeyword</span><span class="p">(</span><span class="s">"if"</span><span class="p">)</span>
-<span class="n">keyword</span><span class="o">.</span><span class="n">iskeyword</span><span class="p">(</span><span class="s">"True"</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="n">keyword</span><span class="o">.</span><span class="n">kwlist</span><span class="p">)</span>
 </code></pre></div></div>
 
-<h2 id="builtins"><strong>builtins</strong></h2>
-
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">dir</span><span class="p">(</span><span class="n">__builtins__</span><span class="p">)</span>  
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">len</span><span class="p">(</span><span class="n">keyword</span><span class="o">.</span><span class="n">kwlist</span><span class="p">)</span>
 </code></pre></div></div>
 
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">keyword</span><span class="o">.</span><span class="n">iskeyword</span><span class="p">(</span><span class="s">"if"</span><span class="p">)</span>
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">keyword</span><span class="o">.</span><span class="n">iskeyword</span><span class="p">(</span><span class="s">"True"</span><span class="p">)</span>
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">keyword</span><span class="o">.</span><span class="n">iskeyword</span><span class="p">(</span><span class="s">"foo"</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>Источники и дополнительное чтение:</p>
+<ul>
+  <li>https://en.wikibooks.org/wiki/Python_Programming/Reflection</li>
+  <li>https://www.ibm.com/developerworks/library/l-pyint/index.html</li>
+</ul>
 
             </div>
             <div class="c-textbook__footer" id="textbook_footer">
