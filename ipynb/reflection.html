@@ -5,16 +5,16 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width,minimum-scale=1">
 
-  <title>Python 101</title>
-  <meta name="description" content="        Сколько бы преподаватель не знал и не понимал, он зачастую не знает важного -- сколько знает и что понимает его студент!  Ильдар &#1042;&#1074;&#1077...">
+  <title>Рефлексия</title>
+  <meta name="description" content="        &#1056;&#1077;&#1092;&#1083;&#1077;&#1082;&#1089;&#1080;&#1103; getattr Позволяет получить любой аттрибут объект по его имени    getattr(3, &quot;ima...">
 
-  <link rel="canonical" href="https://theotheo.github.io/pythonsciencebook/ipynb/intro.html">
+  <link rel="canonical" href="https://theotheo.github.io/pythonsciencebook/ipynb/reflection.html">
   <link rel="alternate" type="application/rss+xml" title="Python Science" href="https://theotheo.github.io/pythonsciencebook/feed.xml">
 
-  <meta property="og:url"         content="https://theotheo.github.io/pythonsciencebook/ipynb/intro.html" />
+  <meta property="og:url"         content="https://theotheo.github.io/pythonsciencebook/ipynb/reflection.html" />
 <meta property="og:type"        content="article" />
-<meta property="og:title"       content="Python 101" />
-<meta property="og:description" content="        Сколько бы преподаватель не знал и не понимал, он зачастую не знает важного -- сколько знает и что понимает его студент!  Ильдар &#1042;&#1074;&#1077..." />
+<meta property="og:title"       content="Рефлексия" />
+<meta property="og:description" content="        &#1056;&#1077;&#1092;&#1083;&#1077;&#1082;&#1089;&#1080;&#1103; getattr Позволяет получить любой аттрибут объект по его имени    getattr(3, &quot;ima..." />
 <meta property="og:image"       content="https://theotheo.github.io/pythonsciencebook/images/logo/logo.png" />
 
 <meta name="twitter:card" content="summary">
@@ -24,11 +24,11 @@
   {
   "@context": "http://schema.org",
   "@type": "NewsArticle",
-  "mainEntityOfPage": "https://theotheo.github.io/pythonsciencebook/ipynb/intro.html",
-  "headline": "Python 101",
+  "mainEntityOfPage": "https://theotheo.github.io/pythonsciencebook/ipynb/reflection.html",
+  "headline": "Рефлексия",
   "datePublished": "2019-11-07T00:08:09+03:00",
   "dateModified": "2019-11-07T00:08:09+03:00",
-  "description": "        Сколько бы преподаватель не знал и не понимал, он зачастую не знает важного -- сколько знает и что понимает его студент!  Ильдар &#1042;&#1074;&#1077...",
+  "description": "        &#1056;&#1077;&#1092;&#1083;&#1077;&#1082;&#1089;&#1080;&#1103; getattr Позволяет получить любой аттрибут объект по его имени    getattr(3, &quot;ima...",
   "author": {
     "@type": "Person",
     "name": "Ildar Belyalov"
@@ -573,7 +573,7 @@ initFunction(initPrint)
       
       
       <li class="c-sidebar__chapter">
-        <a class="c-sidebar__entry c-sidebar__entry--active"
+        <a class="c-sidebar__entry "
           href="/pythonsciencebook/intro.html"
         >
           
@@ -594,7 +594,7 @@ initFunction(initPrint)
       
       
       <li class="c-sidebar__chapter">
-        <a class="c-sidebar__entry c-sidebar__entry--active"
+        <a class="c-sidebar__entry "
           href="/pythonsciencebook/ipynb/intro.html"
         >
           
@@ -780,7 +780,7 @@ initFunction(initPrint)
                   
 
                   <li class="c-sidebar__subsection">
-                    <a class="c-sidebar__entry "
+                    <a class="c-sidebar__entry c-sidebar__entry--active"
                       href="/pythonsciencebook/ipynb/reflection.html"
                     >
                       
@@ -1340,7 +1340,7 @@ initFunction(initPrint)
 <div class="download-buttons-dropdown">
     <button id="dropdown-button-trigger" class="interact-button"><img src="/pythonsciencebook/assets/images/download-solid.svg" alt="Download" /></button>
     <div class="download-buttons">
-        <a href="/pythonsciencebook/content/ipynb/intro.ipynb" download>
+        <a href="/pythonsciencebook/content/ipynb/reflection.ipynb" download>
         <button id="interact-button-download" class="interact-button">.ipynb</button>
         </a>
         
@@ -1359,7 +1359,7 @@ initFunction(initPrint)
 
 
 
-<a href="https://mybinder.org/v2/gh/theotheo/pythonsciencebook/gh-pages?filepath=content%2Fipynb%2Fintro.ipynb"><button class="interact-button" id="interact-button-binder"><img class="interact-button-logo" src="/pythonsciencebook/assets/images/logo_binder.svg" alt="Interact" />Interact</button></a>
+<a href="https://mybinder.org/v2/gh/theotheo/pythonsciencebook/gh-pages?filepath=content%2Fipynb%2Freflection.ipynb"><button class="interact-button" id="interact-button-binder"><img class="interact-button-logo" src="/pythonsciencebook/assets/images/logo_binder.svg" alt="Interact" />Interact</button></a>
   
 
 
@@ -1385,8 +1385,7 @@ initFunction(initPrint)
 
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<div class="alert alert-block alert-info">Сколько бы преподаватель не знал и не понимал, он зачастую не знает важного -- сколько знает и что понимает его студент!</div>
- <div style="text-align: right"> Ильдар </div>
+<h1 id="&#1056;&#1077;&#1092;&#1083;&#1077;&#1082;&#1089;&#1080;&#1103;">&#1056;&#1077;&#1092;&#1083;&#1077;&#1082;&#1089;&#1080;&#1103;<a class="anchor-link" href="#&#1056;&#1077;&#1092;&#1083;&#1077;&#1082;&#1089;&#1080;&#1103;"> </a></h1>
 </div>
 </div>
 </div>
@@ -1396,171 +1395,7 @@ initFunction(initPrint)
 
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="&#1042;&#1074;&#1077;&#1076;&#1077;&#1085;&#1080;&#1077;-&#1074;-&#1055;&#1080;&#1090;&#1086;&#1085;">&#1042;&#1074;&#1077;&#1076;&#1077;&#1085;&#1080;&#1077; &#1074; &#1055;&#1080;&#1090;&#1086;&#1085;<a class="anchor-link" href="#&#1042;&#1074;&#1077;&#1076;&#1077;&#1085;&#1080;&#1077;-&#1074;-&#1055;&#1080;&#1090;&#1086;&#1085;"> </a></h1>
-</div>
-</div>
-</div>
-</div>
-
-<div class="jb_cell">
-
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="&#1063;&#1080;&#1090;&#1072;&#1077;&#1084;-&#1084;&#1077;&#1078;&#1076;&#1091;-&#1089;&#1090;&#1088;&#1086;&#1082;">&#1063;&#1080;&#1090;&#1072;&#1077;&#1084; &#1084;&#1077;&#1078;&#1076;&#1091; &#1089;&#1090;&#1088;&#1086;&#1082;<a class="anchor-link" href="#&#1063;&#1080;&#1090;&#1072;&#1077;&#1084;-&#1084;&#1077;&#1078;&#1076;&#1091;-&#1089;&#1090;&#1088;&#1086;&#1082;"> </a></h2>
-</div>
-</div>
-</div>
-</div>
-
-<div class="jb_cell">
-
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<blockquote><p>Python is an easy to learn, powerful programming language. It has efficient high-level data structures and a simple but effective approach to object-oriented programming. Python’s elegant syntax and dynamic typing, together with its interpreted nature, make it an ideal language for scripting and rapid application development in many areas on most platforms.</p>
-</blockquote>
-<p><a href="https://docs.python.org/3/tutorial/index.html">https://docs.python.org/3/tutorial/index.html</a></p>
-
-</div>
-</div>
-</div>
-</div>
-
-<div class="jb_cell">
-
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p><img src="https://upload.wikimedia.org/wikipedia/en/c/cb/Flyingcircus_2.jpg" alt=""></p>
-
-</div>
-</div>
-</div>
-</div>
-
-<div class="jb_cell">
-
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<ul>
-<li>Python (<a href="https://en.wikipedia.org/wiki/Monty_Python">https://en.wikipedia.org/wiki/Monty_Python</a>)</li>
-<li>easy to learn (<a href="https://cacm.acm.org/blogs/blog-cacm/176450-python-is-now-the-most-popular-introductory-teaching-language-at-top-u-s-universities/fulltext">https://cacm.acm.org/blogs/blog-cacm/176450-python-is-now-the-most-popular-introductory-teaching-language-at-top-u-s-universities/fulltext</a>)</li>
-<li>powerful </li>
-<li>programming </li>
-<li>language (<a href="https://docs.python.org/3/reference/grammar.html">https://docs.python.org/3/reference/grammar.html</a>)</li>
-<li>efficient high-level data structures </li>
-<li>simple but effective approach to object-oriented programming</li>
-<li>elegant syntax (<a href="https://en.wikipedia.org/wiki/Comparison_of_programming_languages_(syntax">https://en.wikipedia.org/wiki/Comparison_of_programming_languages_(syntax</a>))</li>
-<li>dynamic typing </li>
-<li>interpreted nature</li>
-<li>scripting</li>
-<li>rapid application development</li>
-<li>many areas</li>
-<li>most platforms</li>
-</ul>
-
-</div>
-</div>
-</div>
-</div>
-
-<div class="jb_cell">
-
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<blockquote><p>The Python interpreter and the extensive standard library are freely available in source or binary form for all major platforms from the Python Web site, <a href="https://www.python.org/">https://www.python.org/</a>, and may be freely distributed. The same site also contains distributions of and pointers to many free third party Python modules, programs and tools, and additional documentation.</p>
-<p>The Python interpreter is easily extended with new functions and data types implemented in C or C++ (or other languages callable from C). Python is also suitable as an extension language for customizable applications.</p>
-</blockquote>
-<p><a href="https://docs.python.org/3/tutorial/index.html">https://docs.python.org/3/tutorial/index.html</a></p>
-
-</div>
-</div>
-</div>
-</div>
-
-<div class="jb_cell">
-
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<ul>
-<li>extensive standard library (<a href="https://docs.python.org/3/library/index.html">https://docs.python.org/3/library/index.html</a>)</li>
-<li>freely available in source or binary (<a href="https://github.com/python/cpython">https://github.com/python/cpython</a>)</li>
-<li>for all major platforms</li>
-<li>freely distributed</li>
-<li>many free third party Python modules (<a href="https://pypi.python.org/pypi">https://pypi.python.org/pypi</a>)</li>
-<li>programs and tools, and additional documentation</li>
-<li>easily extended with new functions and data types</li>
-<li>also suitable as an extension language for customizable applications </li>
-</ul>
-
-</div>
-</div>
-</div>
-</div>
-
-<div class="jb_cell">
-
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="&#1059;&#1089;&#1090;&#1072;&#1085;&#1086;&#1074;&#1082;&#1072;.-&#1044;&#1080;&#1089;&#1090;&#1088;&#1080;&#1073;&#1091;&#1090;&#1080;&#1074;&#1099;.-&#1041;&#1080;&#1073;&#1083;&#1080;&#1086;&#1090;&#1077;&#1082;&#1080;">&#1059;&#1089;&#1090;&#1072;&#1085;&#1086;&#1074;&#1082;&#1072;. &#1044;&#1080;&#1089;&#1090;&#1088;&#1080;&#1073;&#1091;&#1090;&#1080;&#1074;&#1099;. &#1041;&#1080;&#1073;&#1083;&#1080;&#1086;&#1090;&#1077;&#1082;&#1080;<a class="anchor-link" href="#&#1059;&#1089;&#1090;&#1072;&#1085;&#1086;&#1074;&#1082;&#1072;.-&#1044;&#1080;&#1089;&#1090;&#1088;&#1080;&#1073;&#1091;&#1090;&#1080;&#1074;&#1099;.-&#1041;&#1080;&#1073;&#1083;&#1080;&#1086;&#1090;&#1077;&#1082;&#1080;"> </a></h2>
-</div>
-</div>
-</div>
-</div>
-
-<div class="jb_cell">
-
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="&#1048;&#1085;&#1090;&#1077;&#1088;&#1087;&#1088;&#1077;&#1090;&#1072;&#1090;&#1086;&#1088;-and-hello-world">&#1048;&#1085;&#1090;&#1077;&#1088;&#1087;&#1088;&#1077;&#1090;&#1072;&#1090;&#1086;&#1088; and hello world<a class="anchor-link" href="#&#1048;&#1085;&#1090;&#1077;&#1088;&#1087;&#1088;&#1077;&#1090;&#1072;&#1090;&#1086;&#1088;-and-hello-world"> </a></h2><p><img src="images/prompt.png" alt=""></p>
-<div style="text-align: right"> за скриншот спасибо Нике Глазуновой </div>
-</div>
-</div>
-</div>
-</div>
-
-<div class="jb_cell">
-print("hello world!") 
-</div>
-
-<div class="jb_cell">
-
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>python C:/Users/Ksenia/hello.py
-python ".../hello py.txt"</p>
-
-</div>
-</div>
-</div>
-</div>
-
-<div class="jb_cell">
-
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="&#1050;&#1072;&#1082;&#1086;&#1081;-&#1089;&#1080;&#1084;&#1074;&#1086;&#1083;-&#1074;&#1089;&#1090;&#1088;&#1077;&#1095;&#1072;&#1077;&#1090;&#1089;&#1103;-&#1095;&#1072;&#1097;&#1077;-&#1074;&#1089;&#1077;&#1075;&#1086;-&#1074;-&#1087;&#1088;&#1080;&#1074;&#1077;&#1076;&#1077;&#1085;&#1085;&#1086;&#1084;-&#1082;&#1086;&#1076;&#1077;?">&#1050;&#1072;&#1082;&#1086;&#1081; &#1089;&#1080;&#1084;&#1074;&#1086;&#1083; &#1074;&#1089;&#1090;&#1088;&#1077;&#1095;&#1072;&#1077;&#1090;&#1089;&#1103; &#1095;&#1072;&#1097;&#1077; &#1074;&#1089;&#1077;&#1075;&#1086; &#1074; &#1087;&#1088;&#1080;&#1074;&#1077;&#1076;&#1077;&#1085;&#1085;&#1086;&#1084; &#1082;&#1086;&#1076;&#1077;?<a class="anchor-link" href="#&#1050;&#1072;&#1082;&#1086;&#1081;-&#1089;&#1080;&#1084;&#1074;&#1086;&#1083;-&#1074;&#1089;&#1090;&#1088;&#1077;&#1095;&#1072;&#1077;&#1090;&#1089;&#1103;-&#1095;&#1072;&#1097;&#1077;-&#1074;&#1089;&#1077;&#1075;&#1086;-&#1074;-&#1087;&#1088;&#1080;&#1074;&#1077;&#1076;&#1077;&#1085;&#1085;&#1086;&#1084;-&#1082;&#1086;&#1076;&#1077;?"> </a></h2>
-<pre><code>import clr
-clr.AddReference('ProtoGeometry')
-from Autodesk.DesignScript.Geometry import *
-
-solid = IN[0]
-seed = IN[1]
-xCount = IN[2]
-yCount = IN[3]
-
-solids = []
-
-yDist = solid.BoundingBox.MaxPoint.Y-solid.BoundingBox.MinPoint.Y
-xDist = solid.BoundingBox.MaxPoint.X-solid.BoundingBox.MinPoint.X
-
-for i in xRange:
-    for j in yRange:
-        fromCoord = solid.ContextCoordinateSystem
-        toCoord = fromCoord.Rotate(solid.ContextCoordinateSystem.Origin,Vector.ByCoordinates(0,0,1),(90*(i+j%val)))
-        vec = Vector.ByCoordinates((xDist*i),(yDist*j),0)
-        toCoord = toCoord.Translate(vec)
-        solids.append(solid.Transform(fromCoord,toCoord))
-
-OUT = solids</code></pre>
+<h2 id="getattr">getattr<a class="anchor-link" href="#getattr"> </a></h2><p>Позволяет получить любой аттрибут объект по его имени</p>
 
 </div>
 </div>
@@ -1574,32 +1409,7 @@ OUT = solids</code></pre>
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">code</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;import clr</span>
-<span class="s2">clr.AddReference(&#39;ProtoGeometry&#39;)</span>
-<span class="s2">from Autodesk.DesignScript.Geometry import *</span>
-
-<span class="s2">solid = IN[0]</span>
-<span class="s2">seed = IN[1]</span>
-<span class="s2">xCount = IN[2]</span>
-<span class="s2">yCount = IN[3]</span>
-
-<span class="s2">solids = []</span>
-
-<span class="s2">yDist = solid.BoundingBox.MaxPoint.Y-solid.BoundingBox.MinPoint.Y</span>
-<span class="s2">xDist = solid.BoundingBox.MaxPoint.X-solid.BoundingBox.MinPoint.X</span>
-
-<span class="s2">for i in xRange:</span>
-<span class="s2">    for j in yRange:</span>
-<span class="s2">        fromCoord = solid.ContextCoordinateSystem</span>
-<span class="s2">        toCoord = fromCoord.Rotate(solid.ContextCoordinateSystem.Origin,Vector.ByCoordinates(0,0,1),(90*(i+j%val)))</span>
-<span class="s2">        vec = Vector.ByCoordinates((xDist*i),(yDist*j),0)</span>
-<span class="s2">        toCoord = toCoord.Translate(vec)</span>
-<span class="s2">        solids.append(solid.Transform(fromCoord,toCoord))</span>
-
-<span class="s2">OUT = solids&quot;&quot;&quot;</span>
-
-<span class="kn">from</span> <span class="nn">collections</span> <span class="k">import</span> <span class="n">Counter</span>
-<span class="n">Counter</span><span class="p">([</span><span class="n">char</span> <span class="k">for</span> <span class="n">char</span> <span class="ow">in</span> <span class="n">code</span><span class="p">])</span><span class="o">.</span><span class="n">most_common</span><span class="p">()</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">getattr</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="s2">&quot;imag&quot;</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -1615,64 +1425,76 @@ OUT = solids</code></pre>
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>[(&#39; &#39;, 78),
- (&#39;o&#39;, 70),
- (&#39;i&#39;, 40),
- (&#39;t&#39;, 36),
- (&#39;r&#39;, 32),
- (&#39;n&#39;, 32),
- (&#39;d&#39;, 31),
- (&#39;e&#39;, 29),
- (&#39;s&#39;, 27),
- (&#39;.&#39;, 24),
- (&#39;\n&#39;, 22),
- (&#39;C&#39;, 15),
- (&#39;l&#39;, 15),
- (&#39;a&#39;, 14),
- (&#39;x&#39;, 12),
- (&#39;=&#39;, 12),
- (&#39;m&#39;, 11),
- (&#39;)&#39;, 11),
- (&#39;(&#39;, 11),
- (&#39;y&#39;, 10),
- (&#39;B&#39;, 10),
- (&#39;c&#39;, 8),
- (&#39;g&#39;, 8),
- (&#39;f&#39;, 8),
- (&#39;,&#39;, 7),
- (&#39;u&#39;, 7),
- (&#39;]&#39;, 5),
- (&#39;0&#39;, 5),
- (&#39;p&#39;, 5),
- (&#39;P&#39;, 5),
- (&#39;D&#39;, 5),
- (&#39;[&#39;, 5),
- (&#39;*&#39;, 4),
- (&#39;I&#39;, 4),
- (&#39;R&#39;, 4),
- (&#39;M&#39;, 4),
- (&#39;N&#39;, 4),
- (&#39;v&#39;, 3),
- (&#39;T&#39;, 3),
- (&#39;j&#39;, 3),
- (&#39;S&#39;, 3),
- (&#39;G&#39;, 2),
- (&#34;&#39;&#34;, 2),
- (&#39;:&#39;, 2),
- (&#39;X&#39;, 2),
- (&#39;V&#39;, 2),
- (&#39;-&#39;, 2),
- (&#39;O&#39;, 2),
- (&#39;A&#39;, 2),
- (&#39;Y&#39;, 2),
- (&#39;1&#39;, 2),
- (&#39;9&#39;, 1),
- (&#39;U&#39;, 1),
- (&#39;+&#39;, 1),
- (&#39;3&#39;, 1),
- (&#39;k&#39;, 1),
- (&#39;%&#39;, 1),
- (&#39;2&#39;, 1)]</pre>
+<pre>0</pre>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">f</span> <span class="o">=</span> <span class="nb">getattr</span><span class="p">(</span><span class="s1">&#39;string&#39;</span><span class="p">,</span> <span class="s1">&#39;upper&#39;</span><span class="p">)</span>
+<span class="n">f</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="jb_output_wrapper }}">
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>&lt;function str.upper&gt;</pre>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">f</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="jb_output_wrapper }}">
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>&#39;STRING&#39;</pre>
 </div>
 
 </div>
@@ -1687,7 +1509,9 @@ OUT = solids</code></pre>
 
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Working-directory">Working directory<a class="anchor-link" href="#Working-directory"> </a></h2>
+<p>getattr еще не меняет свойства объекта, это делает его напарник: <code>setattr</code></p>
+<h2 id="setattr">setattr<a class="anchor-link" href="#setattr"> </a></h2><p>// TODO: дописать описание примеры</p>
+
 </div>
 </div>
 </div>
@@ -1695,39 +1519,14 @@ OUT = solids</code></pre>
 
 <div class="jb_cell">
 
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="&#1048;&#1089;&#1090;&#1086;&#1095;&#1085;&#1080;&#1082;&#1080;-&#1080;-&#1076;&#1086;&#1087;&#1086;&#1083;&#1085;&#1080;&#1090;&#1077;&#1083;&#1100;&#1085;&#1099;&#1077;-&#1089;&#1089;&#1099;&#1083;&#1082;&#1080;:">&#1048;&#1089;&#1090;&#1086;&#1095;&#1085;&#1080;&#1082;&#1080; &#1080; &#1076;&#1086;&#1087;&#1086;&#1083;&#1085;&#1080;&#1090;&#1077;&#1083;&#1100;&#1085;&#1099;&#1077; &#1089;&#1089;&#1099;&#1083;&#1082;&#1080;:<a class="anchor-link" href="#&#1048;&#1089;&#1090;&#1086;&#1095;&#1085;&#1080;&#1082;&#1080;-&#1080;-&#1076;&#1086;&#1087;&#1086;&#1083;&#1085;&#1080;&#1090;&#1077;&#1083;&#1100;&#1085;&#1099;&#1077;-&#1089;&#1089;&#1099;&#1083;&#1082;&#1080;:"> </a></h2><ul>
+<li><a href="https://www.bnmetrics.com/blog/introspection-reflection-in-python">https://www.bnmetrics.com/blog/introspection-reflection-in-python</a></li>
+</ul>
 
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">os</span>
-<span class="n">curdir</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">getcwd</span><span class="p">()</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">curdir</span><span class="p">)</span>
-<span class="n">os</span><span class="o">.</span><span class="n">chdir</span><span class="p">(</span><span class="s1">&#39;/tmp&#39;</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">getcwd</span><span class="p">())</span>
-<span class="n">os</span><span class="o">.</span><span class="n">chdir</span><span class="p">(</span><span class="n">curdir</span><span class="p">)</span>
-</pre></div>
-
-    </div>
 </div>
 </div>
-
-<div class="output_wrapper">
-<div class="output">
-
-<div class="jb_output_wrapper }}">
-<div class="output_area">
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>/home/i/80/hse/python/1
-/tmp
-</pre>
-</div>
-</div>
-</div>
-</div>
-</div>
-
 </div>
 </div>
 
@@ -1741,15 +1540,15 @@ OUT = solids</code></pre>
               <nav class="c-page__nav">
   
     
-    <a id="js-page__nav__prev" class="c-page__nav__prev" href="/pythonsciencebook/intro.html">
-      〈 <span class="u-margin-right-tiny"></span> Home
+    <a id="js-page__nav__prev" class="c-page__nav__prev" href="/pythonsciencebook/ipynb/sys.html">
+      〈 <span class="u-margin-right-tiny"></span> Модуль sys
     </a>
   
 
   
     
-    <a id="js-page__nav__next" class="c-page__nav__next" href="/pythonsciencebook/ipynb/history.html">
-      История <span class="u-margin-right-tiny"></span> 〉
+    <a id="js-page__nav__next" class="c-page__nav__next" href="/pythonsciencebook/ipynb/exceptions-intro.html">
+      Исключения <span class="u-margin-right-tiny"></span> 〉
     </a>
   
 </nav>
