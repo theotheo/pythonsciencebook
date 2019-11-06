@@ -158,6 +158,6 @@ keyword.iskeyword("True")
 
 keyword.iskeyword("foo")
 
-# Источники и дополнительное чтение:
+# ## Источники и дополнительное чтение:
 # - https://en.wikibooks.org/wiki/Python_Programming/Reflection
 # - https://www.ibm.com/developerworks/library/l-pyint/index.html
