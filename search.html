@@ -26,8 +26,8 @@
   "@type": "NewsArticle",
   "mainEntityOfPage": "https://theotheo.github.io/pythonsciencebook/search",
   "headline": "Search the site",
-  "datePublished": "2019-11-07T01:13:20+03:00",
-  "dateModified": "2019-11-07T01:13:20+03:00",
+  "datePublished": "2019-11-07T01:16:40+03:00",
+  "dateModified": "2019-11-07T01:16:40+03:00",
   "description": "        ",
   "author": {
     "@type": "Person",
@@ -1002,7 +1002,7 @@ initFunction(initPrint)
 
               <li class="c-sidebar__section">
                 <a class="c-sidebar__entry "
-                  href="/pythonsciencebook/ipynb/not/abstraction.html"
+                  href="/pythonsciencebook/not/abstraction.html"
                 >
                   
                     3.1
@@ -1517,6 +1517,46 @@ initFunction(initPrint)
         "tags": [],
         "url": "https://theotheo.github.io/pythonsciencebook/ipynb/oop-knn.html",
         "teaser":null},{
+        "title": "Exercises",
+        
+        "excerpt":
+            "1. C&#1086;&#1079;&#1076;&#1072;&#1085;&#1080;&#1077; &#1082;&#1083;&#1072;&#1089;&#1089;&#1072; &#1047;&#1072;&#1076;&#1072;&#1095;&#1072; 1.1: class, атрибуты, методы, __init__, self Создайте класс Movie и определите конструктор класса со следующими параметрами: заголовок режиссёр год выпуска Создайте объекты: «Титаник» (реж. Джеймс Кэмерон, 1997) «Звездные войны» (реж. Джордж Лукас, 1977) «Бойцовский клуб» (реж. Дэвид Финчер, 1999) Затем создайте метод, который возвращает возраст фильма в годах 2. A&#1090;&#1088;&#1080;&#1073;&#1091;&#1090;&#1099; &#1082;&#1083;&#1072;&#1089;&#1089;&#1072; &#1047;&#1072;&#1076;&#1072;&#1095;&#1072; 2.1: Объясните разницу между атрибутами: name surname profession а так же какие значения они могут принимать для различных объектов данного класса. class Smith: surname = &quot;Smith&quot; profession = &quot;smith&quot; def __init__(self, name, profession=None): self.name = name if profession is not None: self.profession = profession...",
+        "categories": [],
+        "tags": [],
+        "url": "https://theotheo.github.io/pythonsciencebook/ipynb/oop/exercises.html",
+        "teaser":null},{
+        "title": "Inheritance",
+        
+        "excerpt":
+            "              &#1053;&#1072;&#1089;&#1083;&#1077;&#1076;&#1086;&#1074;&#1072;&#1085;&#1080;&#1077;  Для начала рассмотрим простой пример.                   class A():     pass  class B(A):     pass                  Часто встречающаяся иллюстрация к наследованию в ООП -- это таксономия животных.  На мой взгляд, это больше аллюзия, чем аналогия. Дело в том, что логика программирования связана с другими императивами, чем логика эволюции.    https://ru.wikipedia.org/wiki/Животные            Скорее иерархия классов в программирование будет похожа на ту, что описана Борхесом    https://pikabu.ru/story/kitayskie_zhivotnyie_5733992                     ",
+        "categories": [],
+        "tags": [],
+        "url": "https://theotheo.github.io/pythonsciencebook/ipynb/oop/inheritance.html",
+        "teaser":null},{
+        "title": "Объектно-ориентированный подход",
+        
+        "excerpt":
+            "ОБЪЕКТ, -а; м. [от лат. objectum - предметный] &lt;...&gt; 2. Явление, предмет, лицо, на которое направлена чья-л. деятельность, чьё-л. внимание и т.п. О. наблюдений. О. изучения. Неопознанный летающий о. О. морского промысла. Вести наблюдение за объектом. Человек не должен быть объектом эксплуатации. Избрал объектом для постоянных шуток безобидного парня. &lt;... &gt;5. Лингв. Семантико-грамматическая категория, обозначающая того, на кого (что) направлено действие или состояние. &lt;Объектный, -ая, -ое. (1, 5 зн.). Субъектно-объектные отношения. О-ое значение. Объектовый, -ая, -ое. (3 зн.). Грамота В данным разделе мы поговорим о так называемое объектно-ориентированном программировании или, сокращенно, ООП. Ключевой концепцией ООП является объект. Что же такое...",
+        "categories": [],
+        "tags": [],
+        "url": "https://theotheo.github.io/pythonsciencebook/ipynb/oop/intro.html",
+        "teaser":null},{
+        "title": "Example",
+        
+        "excerpt":
+            "              Схема алгоритма    https://www.kdnuggets.com/2016/01/implementing-your-own-knn-using-python.html                   from sklearn.datasets import load_iris from sklearn.model_selection import train_test_split import numpy as np   iris = load_iris() X_train, X_test, y_train, y_test = train_test_split(iris.data, iris.target, test_size=0.4, random_state=1)   # reformat train/test datasets for convenience train = np.array(zip(X_train,y_train)) test = np.array(zip(X_test, y_test))                           ",
+        "categories": [],
+        "tags": [],
+        "url": "https://theotheo.github.io/pythonsciencebook/ipynb/oop/knn.html",
+        "teaser":null},{
+        "title": "Special methods",
+        
+        "excerpt":
+            "              &#1057;&#1087;&#1077;&#1094;&#1080;&#1072;&#1083;&#1100;&#1085;&#1099;&#1077; &#1084;&#1077;&#1090;&#1086;&#1076;&#1099;  Специальные (special) методы, так же иногда называемые магическими (magic) или дандерc-методы (dunders).            &#1052;&#1077;&#1090;&#1086;&#1076;&#1099; &#1080;&#1085;&#1080;&#1094;&#1080;&#1072;&#1083;&#1080;&#1079;&#1072;&#1094;&#1080;&#1080;  Начнем с методов, связанных с жизненным циклом объекта.  __init__  __init__ -- пожалуй, самый важный метод и уже знакомый вам. Его часто называют конструктором, по аналогии с конструкторами объектов в других языках. В действительно, это скорее не самый корректный термин для этого метода.  __init__(self, *args, **kwargs)  __new__  __new__(class_name, *args, **kwargs)  __del__  __del__(self)  Данный метод вызывает когда сборщик мусора добирается до объекта.            &#1042;&#1099;&#1074;&#1086;&#1076;  __str__  __repr__            &#1040;&#1088;&#1080;&#1092;&#1084;&#1077;&#1090;&#1080;&#1095;&#1077;&#1089;&#1082;&#1080;&#1077; &#1086;&#1087;&#1077;&#1088;&#1072;&#1094;&#1080;&#1080;  __add__  __sub__            &#1057;&#1088;&#1072;&#1074;&#1085;&#1077;&#1085;&#1080;&#1077;            &#1050;&#1086;&#1085;&#1074;&#1077;&#1088;&#1089;&#1080;&#1103; &#1090;&#1080;&#1087;&#1086;&#1074;            &#1048;&#1090;&#1077;&#1088;&#1072;&#1094;&#1080;&#1080;            &#1048;&#1089;&#1090;&#1086;&#1095;&#1085;&#1080;&#1082;&#1080; &#1080; &#1076;&#1086;&#1087;&#1086;&#1083;&#1085;&#1080;&#1090;&#1077;&#1083;&#1100;&#1085;&#1086;&#1077; &#1095;&#1090;&#1077;&#1085;&#1080;&#1077;   https://docs.python.org/3/reference/datamodel.html#special-method-names https://web.archive.org/web/20110131211638/http://diveintopython3.org/special-method-names.html http://www.ironpythoninaction.com/magic-methods.html https://www.omkarpathak.in/2018/08/26/python-magic-methods/ https://dbader.org/blog/python-dunder-methods https://docs.python.org/2.0/ref/specialnames.html https://www.python-course.eu/python3_magic_methods.php                     ",
+        "categories": [],
+        "tags": [],
+        "url": "https://theotheo.github.io/pythonsciencebook/ipynb/oop/special_methods.html",
+        "teaser":null},{
         "title": "OOPython",
         
         "excerpt":
@@ -1548,6 +1588,14 @@ initFunction(initPrint)
         "categories": [],
         "tags": [],
         "url": "https://theotheo.github.io/pythonsciencebook/ipynb/sys.html",
+        "teaser":null},{
+        "title": "Абстракция и инкапсуляция",
+        
+        "excerpt":
+            "                       ",
+        "categories": [],
+        "tags": [],
+        "url": "https://theotheo.github.io/pythonsciencebook/not/abstraction.html",
         "teaser":null},{
         "title": "Advanced Python",
         

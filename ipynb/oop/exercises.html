@@ -5,16 +5,16 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width,minimum-scale=1">
 
-  <title>Функции -- first-class citizen</title>
-  <meta name="description" content="        Function first-class citizens Функции можно присваивать переменным, сохранять в структурах данных, передавать как аргументы другим функциям и возвращ...">
+  <title>Exercises</title>
+  <meta name="description" content="        1. C&#1086;&#1079;&#1076;&#1072;&#1085;&#1080;&#1077; &#1082;&#1083;&#1072;&#1089;&#1089;&#1072; &#1047;&#1072;&#1076;&#1072;&#1095;&#1072; 1.1: clas...">
 
-  <link rel="canonical" href="https://theotheo.github.io/pythonsciencebook/ipynb/functions.html">
+  <link rel="canonical" href="https://theotheo.github.io/pythonsciencebook/ipynb/oop/exercises.html">
   <link rel="alternate" type="application/rss+xml" title="Python Science" href="https://theotheo.github.io/pythonsciencebook/feed.xml">
 
-  <meta property="og:url"         content="https://theotheo.github.io/pythonsciencebook/ipynb/functions.html" />
+  <meta property="og:url"         content="https://theotheo.github.io/pythonsciencebook/ipynb/oop/exercises.html" />
 <meta property="og:type"        content="article" />
-<meta property="og:title"       content="Функции -- first-class citizen" />
-<meta property="og:description" content="        Function first-class citizens Функции можно присваивать переменным, сохранять в структурах данных, передавать как аргументы другим функциям и возвращ..." />
+<meta property="og:title"       content="Exercises" />
+<meta property="og:description" content="        1. C&#1086;&#1079;&#1076;&#1072;&#1085;&#1080;&#1077; &#1082;&#1083;&#1072;&#1089;&#1089;&#1072; &#1047;&#1072;&#1076;&#1072;&#1095;&#1072; 1.1: clas..." />
 <meta property="og:image"       content="https://theotheo.github.io/pythonsciencebook/images/logo/logo.png" />
 
 <meta name="twitter:card" content="summary">
@@ -24,11 +24,11 @@
   {
   "@context": "http://schema.org",
   "@type": "NewsArticle",
-  "mainEntityOfPage": "https://theotheo.github.io/pythonsciencebook/ipynb/functions.html",
-  "headline": "Функции -- first-class citizen",
+  "mainEntityOfPage": "https://theotheo.github.io/pythonsciencebook/ipynb/oop/exercises.html",
+  "headline": "Exercises",
   "datePublished": "2019-11-07T01:16:40+03:00",
   "dateModified": "2019-11-07T01:16:40+03:00",
-  "description": "        Function first-class citizens Функции можно присваивать переменным, сохранять в структурах данных, передавать как аргументы другим функциям и возвращ...",
+  "description": "        1. C&#1086;&#1079;&#1076;&#1072;&#1085;&#1080;&#1077; &#1082;&#1083;&#1072;&#1089;&#1089;&#1072; &#1047;&#1072;&#1076;&#1072;&#1095;&#1072; 1.1: clas...",
   "author": {
     "@type": "Person",
     "name": "Ildar Belyalov"
@@ -871,7 +871,7 @@ initFunction(initPrint)
               
 
               <li class="c-sidebar__section">
-                <a class="c-sidebar__entry c-sidebar__entry--active"
+                <a class="c-sidebar__entry "
                   href="/pythonsciencebook/ipynb/functions.html"
                 >
                   
@@ -1058,7 +1058,7 @@ initFunction(initPrint)
               
 
               <li class="c-sidebar__section">
-                <a class="c-sidebar__entry "
+                <a class="c-sidebar__entry c-sidebar__entry--active"
                   href="/pythonsciencebook/ipynb/oop/exercises.html"
                 >
                   
@@ -1359,7 +1359,7 @@ initFunction(initPrint)
 <div class="download-buttons-dropdown">
     <button id="dropdown-button-trigger" class="interact-button"><img src="/pythonsciencebook/assets/images/download-solid.svg" alt="Download" /></button>
     <div class="download-buttons">
-        <a href="/pythonsciencebook/content/ipynb/functions.ipynb" download>
+        <a href="/pythonsciencebook/content/ipynb/oop/exercises.ipynb" download>
         <button id="interact-button-download" class="interact-button">.ipynb</button>
         </a>
         
@@ -1378,7 +1378,7 @@ initFunction(initPrint)
 
 
 
-<a href="https://mybinder.org/v2/gh/theotheo/pythonsciencebook/gh-pages?filepath=content%2Fipynb%2Ffunctions.ipynb"><button class="interact-button" id="interact-button-binder"><img class="interact-button-logo" src="/pythonsciencebook/assets/images/logo_binder.svg" alt="Interact" />Interact</button></a>
+<a href="https://mybinder.org/v2/gh/theotheo/pythonsciencebook/gh-pages?filepath=content%2Fipynb%2Foop%2Fexercises.ipynb"><button class="interact-button" id="interact-button-binder"><img class="interact-button-logo" src="/pythonsciencebook/assets/images/logo_binder.svg" alt="Interact" />Interact</button></a>
   
 
 
@@ -1404,8 +1404,38 @@ initFunction(initPrint)
 
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Function-first-class-citizens">Function first-class citizens<a class="anchor-link" href="#Function-first-class-citizens"> </a></h2><p>Функции можно присваивать переменным, сохранять в структурах данных, передавать как аргументы другим функциям и возвращать как значение функций</p>
-<h3 id="&#1087;&#1088;&#1080;&#1089;&#1074;&#1086;&#1077;&#1085;&#1080;&#1077;">&#1087;&#1088;&#1080;&#1089;&#1074;&#1086;&#1077;&#1085;&#1080;&#1077;<a class="anchor-link" href="#&#1087;&#1088;&#1080;&#1089;&#1074;&#1086;&#1077;&#1085;&#1080;&#1077;"> </a></h3>
+<h1 id="1.-C&#1086;&#1079;&#1076;&#1072;&#1085;&#1080;&#1077;-&#1082;&#1083;&#1072;&#1089;&#1089;&#1072;">1. C&#1086;&#1079;&#1076;&#1072;&#1085;&#1080;&#1077; &#1082;&#1083;&#1072;&#1089;&#1089;&#1072;<a class="anchor-link" href="#1.-C&#1086;&#1079;&#1076;&#1072;&#1085;&#1080;&#1077;-&#1082;&#1083;&#1072;&#1089;&#1089;&#1072;"> </a></h1><h3 id="&#1047;&#1072;&#1076;&#1072;&#1095;&#1072;-1.1:">&#1047;&#1072;&#1076;&#1072;&#1095;&#1072; 1.1:<a class="anchor-link" href="#&#1047;&#1072;&#1076;&#1072;&#1095;&#1072;-1.1:"> </a></h3><p><code>class</code>, <code>атрибуты</code>, <code>методы</code>, <code>__init__</code>, <code>self</code></p>
+<p>Создайте класс Movie и определите конструктор класса со следующими параметрами:</p>
+<ul>
+<li>заголовок</li>
+<li>режиссёр</li>
+<li>год выпуска</li>
+</ul>
+<p>Создайте объекты:</p>
+<ul>
+<li>«Титаник» (реж. Джеймс Кэмерон, 1997)</li>
+<li>«Звездные войны» (реж. Джордж Лукас, 1977)</li>
+<li>«Бойцовский клуб» (реж. Дэвид Финчер, 1999)</li>
+</ul>
+<p>Затем создайте метод, который возвращает возраст фильма в годах</p>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="2.-A&#1090;&#1088;&#1080;&#1073;&#1091;&#1090;&#1099;-&#1082;&#1083;&#1072;&#1089;&#1089;&#1072;">2. A&#1090;&#1088;&#1080;&#1073;&#1091;&#1090;&#1099; &#1082;&#1083;&#1072;&#1089;&#1089;&#1072;<a class="anchor-link" href="#2.-A&#1090;&#1088;&#1080;&#1073;&#1091;&#1090;&#1099;-&#1082;&#1083;&#1072;&#1089;&#1089;&#1072;"> </a></h1><h3 id="&#1047;&#1072;&#1076;&#1072;&#1095;&#1072;-2.1:">&#1047;&#1072;&#1076;&#1072;&#1095;&#1072; 2.1:<a class="anchor-link" href="#&#1047;&#1072;&#1076;&#1072;&#1095;&#1072;-2.1:"> </a></h3><p>Объясните разницу между атрибутами:</p>
+<ul>
+<li>name</li>
+<li>surname</li>
+<li>profession</li>
+</ul>
+<p>а так же какие значения они могут принимать для различных объектов данного класса.</p>
+
 </div>
 </div>
 </div>
@@ -1418,150 +1448,15 @@ initFunction(initPrint)
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">yell</span><span class="p">(</span><span class="n">text</span><span class="p">):</span>
-    <span class="k">return</span> <span class="n">text</span><span class="o">.</span><span class="n">upper</span><span class="p">()</span> <span class="o">+</span> <span class="s1">&#39;!&#39;</span>
-</pre></div>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">class</span> <span class="nc">Smith</span><span class="p">:</span>
+    <span class="n">surname</span> <span class="o">=</span> <span class="s2">&quot;Smith&quot;</span>
+    <span class="n">profession</span> <span class="o">=</span> <span class="s2">&quot;smith&quot;</span>
 
-    </div>
-</div>
-</div>
-
-</div>
-</div>
-
-<div class="jb_cell">
-
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">bark</span> <span class="o">=</span> <span class="n">yell</span> <span class="c1"># присваиваем</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-</div>
-
-<div class="jb_cell">
-
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">bark</span><span class="p">(</span><span class="s1">&#39;woof&#39;</span><span class="p">)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-</div>
-
-<div class="jb_cell">
-
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">del</span> <span class="n">yell</span> <span class="c1"># удаляем</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-</div>
-
-<div class="jb_cell">
-
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">yell</span><span class="p">(</span><span class="s1">&#39;hello?&#39;</span><span class="p">)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-</div>
-
-<div class="jb_cell">
-
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">bark</span><span class="p">(</span><span class="s1">&#39;hey&#39;</span><span class="p">)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-</div>
-
-<div class="jb_cell">
-
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">bark</span><span class="o">.</span><span class="vm">__name__</span> <span class="c1"># имя для дебага</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-</div>
-
-<div class="jb_cell">
-
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># ### сохраняем</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-</div>
-
-<div class="jb_cell">
-
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">funcs</span> <span class="o">=</span> <span class="p">[</span><span class="n">bark</span><span class="p">,</span> <span class="nb">str</span><span class="o">.</span><span class="n">lower</span><span class="p">,</span> <span class="nb">str</span><span class="o">.</span><span class="n">capitalize</span><span class="p">]</span>
-<span class="n">funcs</span>
-
-<span class="k">for</span> <span class="n">f</span> <span class="ow">in</span> <span class="n">funcs</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="n">f</span><span class="p">(</span><span class="s1">&#39;hey there&#39;</span><span class="p">))</span>
-
-<span class="n">funcs</span><span class="p">[</span><span class="mi">0</span><span class="p">](</span><span class="s1">&#39;heyho&#39;</span><span class="p">)</span>
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">profession</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
+        
+        <span class="k">if</span> <span class="n">profession</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">profession</span> <span class="o">=</span> <span class="n">profession</span>
 </pre></div>
 
     </div>
@@ -1575,7 +1470,29 @@ initFunction(initPrint)
 
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="&#1087;&#1077;&#1088;&#1077;&#1076;&#1072;&#1077;&#1084;-&#1074;-&#1092;&#1091;&#1085;&#1082;&#1094;&#1080;&#1102;">&#1087;&#1077;&#1088;&#1077;&#1076;&#1072;&#1077;&#1084; &#1074; &#1092;&#1091;&#1085;&#1082;&#1094;&#1080;&#1102;<a class="anchor-link" href="#&#1087;&#1077;&#1088;&#1077;&#1076;&#1072;&#1077;&#1084;-&#1074;-&#1092;&#1091;&#1085;&#1082;&#1094;&#1080;&#1102;"> </a></h3>
+<h1 id="3.-&#1044;&#1077;&#1082;&#1086;&#1088;&#1072;&#1090;&#1086;&#1088;&#1099;-&#1082;&#1083;&#1072;&#1089;&#1089;&#1072;">3. &#1044;&#1077;&#1082;&#1086;&#1088;&#1072;&#1090;&#1086;&#1088;&#1099; &#1082;&#1083;&#1072;&#1089;&#1089;&#1072;<a class="anchor-link" href="#3.-&#1044;&#1077;&#1082;&#1086;&#1088;&#1072;&#1090;&#1086;&#1088;&#1099;-&#1082;&#1083;&#1072;&#1089;&#1089;&#1072;"> </a></h1><p><code>classmethod</code>, <code>staticmethod</code>, <code>property</code>, <code>name.setter</code>, <code>name.deleter</code></p>
+<h3 id="&#1047;&#1072;&#1076;&#1072;&#1095;&#1072;-3.1:">&#1047;&#1072;&#1076;&#1072;&#1095;&#1072; 3.1:<a class="anchor-link" href="#&#1047;&#1072;&#1076;&#1072;&#1095;&#1072;-3.1:"> </a></h3><p>Создайте класс <code>Numbers</code> с одним атрибутом <code>MULTIPLIER</code>, и с конструктором, который принимает параметры <code>x</code> and <code>y</code> (они должны быть числами).</p>
+<ul>
+<li>Напишите метод <code>add</code> который возвращает сумму атрибутов <code>x</code> и <code>y</code></li>
+<li>Напишите метод класса <code>multiply</code>, который принимает один числовой параметр <code>a</code> и возвращает произведение <code>a</code> и <code>MULTIPLIER</code></li>
+<li>Напишите статический метод <code>subtract</code>, который принимает два числовых параметра <code>b</code> and <code>c</code> и возвращает <code>b - c</code></li>
+<li>Напишите метод <code>value</code> который возвращает кортеж, содержащий значения <code>x</code> и <code>y</code></li>
+<li>Превратите этот метод в свойство (<code>property</code>)</li>
+<li>и напишите <code>setter</code> и <code>deleter</code> для работы с переменными <code>x</code> и <code>y</code></li>
+</ul>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="4.-&#1055;&#1077;&#1088;&#1077;&#1075;&#1088;&#1091;&#1079;&#1082;&#1072;-&#1084;&#1072;&#1075;&#1080;&#1095;&#1077;&#1089;&#1082;&#1080;&#1093;-&#1084;&#1077;&#1090;&#1086;&#1076;&#1086;&#1074;">4. &#1055;&#1077;&#1088;&#1077;&#1075;&#1088;&#1091;&#1079;&#1082;&#1072; &#1084;&#1072;&#1075;&#1080;&#1095;&#1077;&#1089;&#1082;&#1080;&#1093; &#1084;&#1077;&#1090;&#1086;&#1076;&#1086;&#1074;<a class="anchor-link" href="#4.-&#1055;&#1077;&#1088;&#1077;&#1075;&#1088;&#1091;&#1079;&#1082;&#1072;-&#1084;&#1072;&#1075;&#1080;&#1095;&#1077;&#1089;&#1082;&#1080;&#1093;-&#1084;&#1077;&#1090;&#1086;&#1076;&#1086;&#1074;"> </a></h1><h3 id="&#1047;&#1072;&#1076;&#1072;&#1095;&#1072;-4.1:">&#1047;&#1072;&#1076;&#1072;&#1095;&#1072; 4.1:<a class="anchor-link" href="#&#1047;&#1072;&#1076;&#1072;&#1095;&#1072;-4.1:"> </a></h3><p><code>__init__</code>, <code>__str__</code></p>
+<p>Посмотрите на класс <code>Element</code>:</p>
+
 </div>
 </div>
 </div>
@@ -1588,61 +1505,19 @@ initFunction(initPrint)
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">greet</span><span class="p">(</span><span class="n">func</span><span class="p">):</span>
-    <span class="n">greeting</span> <span class="o">=</span> <span class="n">func</span><span class="p">(</span><span class="s1">&#39;Hi, I am a Python program&#39;</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">greeting</span><span class="p">)</span>
-</pre></div>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">class</span> <span class="nc">Element</span><span class="p">:</span>
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">symbol</span><span class="p">,</span> <span class="n">number</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">symbol</span> <span class="o">=</span> <span class="n">symbol</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">number</span> <span class="o">=</span> <span class="n">number</span>
 
-    </div>
-</div>
-</div>
+    <span class="k">def</span> <span class="nf">dump</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;name=</span><span class="si">{}</span><span class="s1">, symbol=</span><span class="si">{}</span><span class="s1">, number=</span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">name</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">symbol</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">number</span><span class="p">))</span>
 
-</div>
-</div>
+<span class="n">kwargs</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;name&#39;</span><span class="p">:</span> <span class="s1">&#39;Hydrogen&#39;</span><span class="p">,</span> <span class="s1">&#39;symbol&#39;</span><span class="p">:</span> <span class="s1">&#39;H&#39;</span><span class="p">,</span> <span class="s1">&#39;number&#39;</span><span class="p">:</span> <span class="mi">1</span><span class="p">}</span>
 
-<div class="jb_cell">
-
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">greet</span><span class="p">(</span><span class="n">bark</span><span class="p">)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-</div>
-
-<div class="jb_cell">
-
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">whisper</span><span class="p">(</span><span class="n">text</span><span class="p">):</span>
-    <span class="k">return</span> <span class="n">text</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="o">+</span> <span class="s1">&#39;...&#39;</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-</div>
-
-<div class="jb_cell">
-
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">greet</span><span class="p">(</span><span class="n">whisper</span><span class="p">)</span>
+<span class="n">hydrogen</span> <span class="o">=</span> <span class="n">Element</span><span class="p">(</span><span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+<span class="n">hydrogen</span><span class="o">.</span><span class="n">dump</span><span class="p">()</span>
 </pre></div>
 
     </div>
@@ -1656,7 +1531,22 @@ initFunction(initPrint)
 
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>higher-order functions -- функции, которые принимают другие функции. например, <code>map</code></p>
+<p>Вызовите метод <code>print(hydrogen)</code>.</p>
+<p>В классе <code>Element</code> измените имя метода <code>dump</code> на <code>__str__</code></p>
+<p>Cоздайте новый объект hydrogen и вызовите <code>print(hydrogen)</code> снова.</p>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="&#1047;&#1072;&#1076;&#1072;&#1095;&#1072;-4.2:">&#1047;&#1072;&#1076;&#1072;&#1095;&#1072; 4.2:<a class="anchor-link" href="#&#1047;&#1072;&#1076;&#1072;&#1095;&#1072;-4.2:"> </a></h3><p><code>__class__.__name__</code>, <code>__dict__</code>, <code>__str__</code>, <code>setattr(obj, key, value)</code></p>
+<p>Напишите класс для создания генеративных объектов. Его конструктор должен принимать любое количество пар ключ-значение и устанавливать значения в качестве атрибутов объекта, а ключи – в качестве имен данных атрибутов.</p>
+<p>Напишите метод <code>__str__</code> для класса. Возвращаемая строка должна содержать имя класса и значения всех пользовательских атрибутов объекта.</p>
 
 </div>
 </div>
@@ -1670,7 +1560,8 @@ initFunction(initPrint)
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">list</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span><span class="n">bark</span><span class="p">,</span> <span class="p">[</span><span class="s1">&#39;hello&#39;</span><span class="p">,</span> <span class="s1">&#39;hey&#39;</span><span class="p">,</span> <span class="s1">&#39;hi&#39;</span><span class="p">]))</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="n">AnyClass</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="s1">&#39;Dr&#39;</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;John&#39;</span><span class="p">,</span> <span class="n">surname</span><span class="o">=</span><span class="s1">&#39;Doe&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -1684,7 +1575,21 @@ initFunction(initPrint)
 
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="&#1074;&#1083;&#1086;&#1078;&#1077;&#1085;&#1085;&#1099;&#1077;-&#1092;&#1091;&#1085;&#1082;&#1094;&#1080;&#1080;">&#1074;&#1083;&#1086;&#1078;&#1077;&#1085;&#1085;&#1099;&#1077; &#1092;&#1091;&#1085;&#1082;&#1094;&#1080;&#1080;<a class="anchor-link" href="#&#1074;&#1083;&#1086;&#1078;&#1077;&#1085;&#1085;&#1099;&#1077;-&#1092;&#1091;&#1085;&#1082;&#1094;&#1080;&#1080;"> </a></h3>
+<h1 id="5.-&#1053;&#1072;&#1089;&#1083;&#1077;&#1076;&#1086;&#1074;&#1072;&#1085;&#1080;&#1077;">5. &#1053;&#1072;&#1089;&#1083;&#1077;&#1076;&#1086;&#1074;&#1072;&#1085;&#1080;&#1077;<a class="anchor-link" href="#5.-&#1053;&#1072;&#1089;&#1083;&#1077;&#1076;&#1086;&#1074;&#1072;&#1085;&#1080;&#1077;"> </a></h1><p><code>Exception</code></p>
+<h3 id="&#1047;&#1072;&#1076;&#1072;&#1095;&#1072;-5.1:">&#1047;&#1072;&#1076;&#1072;&#1095;&#1072; 5.1:<a class="anchor-link" href="#&#1047;&#1072;&#1076;&#1072;&#1095;&#1072;-5.1:"> </a></h3><p>Очень распространенным вариантом использования наследования является создание пользовательской иерархии исключений.</p>
+<p>Напишите простую программу, которая перебирает список пользовательских данных (кортежи, содержащие имя пользователя, адрес электронной почты и возраст) и добавляет каждого пользователя в каталог, если он проходит по заданным ниже условиям.</p>
+<p>Напишите простую иерархию исключений, которая определяет разные исключения для каждого из следующих состояний ошибки:</p>
+<ul>
+<li>имя пользователя не уникально</li>
+<li>возраст не является положительным целым числом</li>
+<li>пользователь моложе 16 лет</li>
+<li>адрес электронной почты недействителен (достаточно просто проверить имя пользователя, символ @ и доменное имя). </li>
+</ul>
+<p>При несоблюдении этих условий поднимите соответвующие исключения в своей программе.</p>
+<p>Всякий раз, когда возникает исключение, ваша программа должна перейти к следующему набору данных в списке.</p>
+<p>Распечатайте разные сообщения об ошибках для каждого вида исключения.</p>
+<p>Вы можете считать адрес электронной почты действительным, если он содержит один символ @ и имеет непустое имя пользователя и имя домена.</p>
+
 </div>
 </div>
 </div>
@@ -1697,10 +1602,14 @@ initFunction(initPrint)
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">speak</span><span class="p">(</span><span class="n">text</span><span class="p">):</span>
-    <span class="k">def</span> <span class="nf">whisper</span><span class="p">(</span><span class="n">t</span><span class="p">):</span>
-        <span class="k">return</span> <span class="n">t</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="o">+</span> <span class="s1">&#39;...&#39;</span>
-    <span class="k">return</span> <span class="n">whisper</span><span class="p">(</span><span class="n">text</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">user_data</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="p">(</span><span class="s2">&quot;jane&quot;</span><span class="p">,</span> <span class="s2">&quot;jane@example.com&quot;</span><span class="p">,</span> <span class="mi">21</span><span class="p">),</span>
+    <span class="p">(</span><span class="s2">&quot;bob&quot;</span><span class="p">,</span> <span class="s2">&quot;bob@example&quot;</span><span class="p">,</span> <span class="mi">19</span><span class="p">),</span>
+    <span class="p">(</span><span class="s2">&quot;jane&quot;</span><span class="p">,</span> <span class="s2">&quot;jane2@example.com&quot;</span><span class="p">,</span> <span class="mi">25</span><span class="p">),</span>
+    <span class="p">(</span><span class="s2">&quot;steve&quot;</span><span class="p">,</span> <span class="s2">&quot;steve@somewhere&quot;</span><span class="p">,</span> <span class="mi">15</span><span class="p">),</span>
+    <span class="p">(</span><span class="s2">&quot;joe&quot;</span><span class="p">,</span> <span class="s2">&quot;joe&quot;</span><span class="p">,</span> <span class="mi">23</span><span class="p">),</span>
+    <span class="p">(</span><span class="s2">&quot;anna&quot;</span><span class="p">,</span> <span class="s2">&quot;anna@example.com&quot;</span><span class="p">,</span> <span class="o">-</span><span class="mi">3</span><span class="p">),</span>
+<span class="p">]</span>
 </pre></div>
 
     </div>
@@ -1717,7 +1626,36 @@ initFunction(initPrint)
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">speak</span><span class="p">(</span><span class="s1">&#39;Hello, World&#39;</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">class</span> <span class="nc">InvalidAgeError</span><span class="p">(</span><span class="ne">Exception</span><span class="p">):</span>
+    <span class="k">pass</span>
+<span class="o">...</span>
+
+<span class="k">class</span> <span class="nc">User</span><span class="p">:</span>
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">...</span><span class="p">):</span>
+        
+    <span class="k">def</span> <span class="nf">__repr__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="o">...</span>
+
+
+<span class="n">directory</span> <span class="o">=</span> <span class="p">{}</span>
+
+
+<span class="k">def</span> <span class="nf">add_user</span><span class="p">(</span><span class="o">...</span><span class="p">):</span>
+
+    <span class="k">if</span> <span class="n">age</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="k">raise</span> <span class="n">InvalidAgeError</span><span class="p">(</span><span class="n">age</span><span class="p">)</span>
+
+    <span class="o">...</span>
+        
+    <span class="n">directory</span><span class="p">[</span><span class="n">username</span><span class="p">]</span> <span class="o">=</span> <span class="n">User</span><span class="p">(</span><span class="n">username</span><span class="p">,</span> <span class="n">email</span><span class="p">,</span> <span class="n">age</span><span class="p">)</span>
+
+
+<span class="k">for</span> <span class="n">user</span> <span class="ow">in</span> <span class="n">user_data</span><span class="p">:</span>
+    <span class="k">try</span><span class="p">:</span>
+        <span class="n">add_user</span><span class="p">(</span><span class="o">*</span><span class="n">user</span><span class="p">)</span>
+    <span class="k">except</span> <span class="n">InvalidAgeError</span> <span class="k">as</span> <span class="n">exc</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Invalid age: </span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">exc</span><span class="o">.</span><span class="n">args</span><span class="p">[</span><span class="mi">0</span><span class="p">]))</span>
+    <span class="o">...</span>
 </pre></div>
 
     </div>
@@ -1734,107 +1672,7 @@ initFunction(initPrint)
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">whisper</span><span class="p">(</span><span class="s1">&#39;Yo&#39;</span><span class="p">)</span> <span class="c1"># не существует</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-</div>
-
-<div class="jb_cell">
-
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># ### можно вернуть функцию из функции</span>
-<span class="k">def</span> <span class="nf">get_speak_func</span><span class="p">(</span><span class="n">volume</span><span class="p">):</span>
-    <span class="k">def</span> <span class="nf">whisper</span><span class="p">(</span><span class="n">text</span><span class="p">):</span>
-        <span class="k">return</span> <span class="n">text</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="o">+</span> <span class="s1">&#39;...&#39;</span>
-    <span class="k">def</span> <span class="nf">yell</span><span class="p">(</span><span class="n">text</span><span class="p">):</span>
-        <span class="k">return</span> <span class="n">text</span><span class="o">.</span><span class="n">upper</span><span class="p">()</span> <span class="o">+</span> <span class="s1">&#39;!&#39;</span>
-
-    <span class="k">if</span> <span class="n">volume</span> <span class="o">&gt;</span> <span class="mf">0.5</span><span class="p">:</span>
-        <span class="k">return</span> <span class="n">yell</span>
-    <span class="k">else</span><span class="p">:</span>
-        <span class="k">return</span> <span class="n">whisper</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-</div>
-
-<div class="jb_cell">
-
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">get_speak_func</span><span class="p">(</span><span class="mf">0.3</span><span class="p">)</span>
-<span class="n">get_speak_func</span><span class="p">(</span><span class="mf">0.7</span><span class="p">)</span>
-<span class="n">speak_func</span> <span class="o">=</span> <span class="n">get_speak_func</span><span class="p">(</span><span class="mf">0.7</span><span class="p">)</span>
-<span class="n">speak_func</span><span class="p">(</span><span class="s1">&#39;Hello&#39;</span><span class="p">)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-</div>
-
-<div class="jb_cell">
-
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="&#1092;&#1091;&#1085;&#1082;&#1094;&#1080;&#1080;-&#1089;&#1093;&#1074;&#1072;&#1090;&#1099;&#1074;&#1072;&#1102;&#1090;-&#1082;&#1086;&#1085;&#1090;&#1077;&#1082;&#1089;&#1090;">&#1092;&#1091;&#1085;&#1082;&#1094;&#1080;&#1080; &#1089;&#1093;&#1074;&#1072;&#1090;&#1099;&#1074;&#1072;&#1102;&#1090; &#1082;&#1086;&#1085;&#1090;&#1077;&#1082;&#1089;&#1090;<a class="anchor-link" href="#&#1092;&#1091;&#1085;&#1082;&#1094;&#1080;&#1080;-&#1089;&#1093;&#1074;&#1072;&#1090;&#1099;&#1074;&#1072;&#1102;&#1090;-&#1082;&#1086;&#1085;&#1090;&#1077;&#1082;&#1089;&#1090;"> </a></h3>
-</div>
-</div>
-</div>
-</div>
-
-<div class="jb_cell">
-
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">get_speak_func</span><span class="p">(</span><span class="n">text</span><span class="p">,</span> <span class="n">volume</span><span class="p">):</span>
-    <span class="k">def</span> <span class="nf">whisper</span><span class="p">():</span>
-        <span class="k">return</span> <span class="n">text</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="o">+</span> <span class="s1">&#39;...&#39;</span>
-    <span class="k">def</span> <span class="nf">yell</span><span class="p">():</span>
-        <span class="k">return</span> <span class="n">text</span><span class="o">.</span><span class="n">upper</span><span class="p">()</span> <span class="o">+</span> <span class="s1">&#39;!&#39;</span>
-
-    <span class="k">if</span> <span class="n">volume</span> <span class="o">&gt;</span> <span class="mf">0.5</span><span class="p">:</span>
-        <span class="k">return</span> <span class="n">yell</span>
-    <span class="k">else</span><span class="p">:</span>
-        <span class="k">return</span> <span class="n">whisper</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-</div>
-
-<div class="jb_cell">
-
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">get_speak_func</span><span class="p">(</span><span class="s1">&#39;Hello, World&#39;</span><span class="p">,</span> <span class="mf">0.7</span><span class="p">)()</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">directory</span>
 </pre></div>
 
     </div>
@@ -1848,9 +1686,14 @@ initFunction(initPrint)
 
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Это называется (лексическое) <em>замыкание</em> (lexical closures)</p>
-<p>Можно конфигурировать поведение</p>
-
+<h1 id="6.-&#1052;&#1085;&#1086;&#1078;&#1077;&#1089;&#1090;&#1074;&#1077;&#1085;&#1085;&#1086;&#1077;-&#1085;&#1072;&#1089;&#1083;&#1077;&#1076;&#1086;&#1074;&#1072;&#1085;&#1080;&#1077;">6. &#1052;&#1085;&#1086;&#1078;&#1077;&#1089;&#1090;&#1074;&#1077;&#1085;&#1085;&#1086;&#1077; &#1085;&#1072;&#1089;&#1083;&#1077;&#1076;&#1086;&#1074;&#1072;&#1085;&#1080;&#1077;<a class="anchor-link" href="#6.-&#1052;&#1085;&#1086;&#1078;&#1077;&#1089;&#1090;&#1074;&#1077;&#1085;&#1085;&#1086;&#1077;-&#1085;&#1072;&#1089;&#1083;&#1077;&#1076;&#1086;&#1074;&#1072;&#1085;&#1080;&#1077;"> </a></h1><h3 id="&#1047;&#1072;&#1076;&#1072;&#1095;&#1072;-6.1:">&#1047;&#1072;&#1076;&#1072;&#1095;&#1072; 6.1:<a class="anchor-link" href="#&#1047;&#1072;&#1076;&#1072;&#1095;&#1072;-6.1:"> </a></h3><p>Создайте mix-in классы:</p>
+<ul>
+<li><code>Vehicle</code> c атрибутом <code>position</code> и методом <code>travel(n)</code>, который изменит <code>position = position + n</code> и выведет текущую позицию</li>
+<li><code>ResettableMixin</code> с методом <code>reset()</code>, который сбросит позицию</li>
+<li><code>TeleportableMixin</code> с методом <code>teleport(position)</code>, который изменит позицию</li>
+</ul>
+<p>Создайте три соответствующих класса: <code>ResettableCar</code>, <code>TeleportableCar</code> и <code>Car</code> (с обоими mix-in). Сравните их поведение.</p>
+<h3 id="&#1056;&#1077;&#1096;&#1077;&#1085;&#1080;&#1077;:">&#1056;&#1077;&#1096;&#1077;&#1085;&#1080;&#1077;:<a class="anchor-link" href="#&#1056;&#1077;&#1096;&#1077;&#1085;&#1080;&#1077;:"> </a></h3>
 </div>
 </div>
 </div>
@@ -1863,16 +1706,74 @@ initFunction(initPrint)
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">make_adder</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
-    <span class="k">def</span> <span class="nf">add</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
-        <span class="k">return</span> <span class="n">x</span> <span class="o">+</span> <span class="n">n</span>
-    <span class="k">return</span> <span class="n">add</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="o">...</span>
 
-<span class="n">plus_3</span> <span class="o">=</span> <span class="n">make_adder</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
-<span class="n">plus_5</span> <span class="o">=</span> <span class="n">make_adder</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+<span class="k">class</span> <span class="nc">ResettableCar</span><span class="p">(</span><span class="n">Vehicle</span><span class="p">,</span> <span class="n">ResettableMixin</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+</pre></div>
 
-<span class="n">plus_3</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span>
-<span class="n">plus_5</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span>
+    </div>
+</div>
+</div>
+
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">rc</span> <span class="o">=</span> <span class="n">ResettableCar</span><span class="p">(</span><span class="mi">42</span><span class="p">)</span>
+<span class="n">rc</span><span class="o">.</span><span class="n">travel</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+<span class="n">rc</span><span class="o">.</span><span class="n">travel</span><span class="p">(</span><span class="o">-</span><span class="mi">10</span><span class="p">)</span>
+<span class="n">rc</span><span class="o">.</span><span class="n">reset</span><span class="p">()</span>
+<span class="n">rc</span><span class="o">.</span><span class="n">travel</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">tc</span> <span class="o">=</span> <span class="n">TeleportableCar</span><span class="p">(</span><span class="o">-</span><span class="mi">100</span><span class="p">)</span>
+<span class="n">tc</span><span class="o">.</span><span class="n">travel</span><span class="p">(</span><span class="mi">30</span><span class="p">)</span>
+<span class="n">tc</span><span class="o">.</span><span class="n">teleport</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
+<span class="n">tc</span><span class="o">.</span><span class="n">travel</span><span class="p">(</span><span class="mi">30</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">c</span> <span class="o">=</span> <span class="n">Car</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+<span class="n">c</span><span class="o">.</span><span class="n">travel</span><span class="p">(</span><span class="mi">30</span><span class="p">)</span>
+<span class="n">c</span><span class="o">.</span><span class="n">reset</span><span class="p">()</span>
+<span class="n">c</span><span class="o">.</span><span class="n">travel</span><span class="p">(</span><span class="mi">40</span><span class="p">)</span>
+<span class="n">c</span><span class="o">.</span><span class="n">teleport</span><span class="p">(</span><span class="o">-</span><span class="mi">100</span><span class="p">)</span>
+<span class="n">c</span><span class="o">.</span><span class="n">travel</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -1886,21 +1787,28 @@ initFunction(initPrint)
 
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="&#1086;&#1073;&#1098;&#1077;&#1082;&#1090;&#1099;-&#1084;&#1086;&#1075;&#1091;&#1090;-&#1074;&#1077;&#1089;&#1090;&#1080;-&#1089;&#1077;&#1073;&#1103;-&#1082;&#1072;&#1082;-&#1092;&#1091;&#1085;&#1082;&#1094;&#1080;&#1080;">&#1086;&#1073;&#1098;&#1077;&#1082;&#1090;&#1099; &#1084;&#1086;&#1075;&#1091;&#1090; &#1074;&#1077;&#1089;&#1090;&#1080; &#1089;&#1077;&#1073;&#1103; &#1082;&#1072;&#1082; &#1092;&#1091;&#1085;&#1082;&#1094;&#1080;&#1080;<a class="anchor-link" href="#&#1086;&#1073;&#1098;&#1077;&#1082;&#1090;&#1099;-&#1084;&#1086;&#1075;&#1091;&#1090;-&#1074;&#1077;&#1089;&#1090;&#1080;-&#1089;&#1077;&#1073;&#1103;-&#1082;&#1072;&#1082;-&#1092;&#1091;&#1085;&#1082;&#1094;&#1080;&#1080;"> </a></h3>
-</div>
-</div>
-</div>
-</div>
+<h1 id="7.-&#1048;&#1085;&#1090;&#1077;&#1088;&#1092;&#1077;&#1081;&#1089;&#1099;-(&#1087;&#1086;&#1083;&#1080;&#1084;&#1086;&#1088;&#1092;&#1080;&#1079;&#1084;)">7. &#1048;&#1085;&#1090;&#1077;&#1088;&#1092;&#1077;&#1081;&#1089;&#1099; (&#1087;&#1086;&#1083;&#1080;&#1084;&#1086;&#1088;&#1092;&#1080;&#1079;&#1084;)<a class="anchor-link" href="#7.-&#1048;&#1085;&#1090;&#1077;&#1088;&#1092;&#1077;&#1081;&#1089;&#1099;-(&#1087;&#1086;&#1083;&#1080;&#1084;&#1086;&#1088;&#1092;&#1080;&#1079;&#1084;)"> </a></h1><p><code>NotImplementedError</code>, <code>metaclass=abc.ABCMeta</code>, <code>abc.abstractmethod</code>, <code>isinstance</code>, <code>hasattr</code></p>
+<h3 id="&#1047;&#1072;&#1076;&#1072;&#1095;&#1072;-7.1:">&#1047;&#1072;&#1076;&#1072;&#1095;&#1072; 7.1:<a class="anchor-link" href="#&#1047;&#1072;&#1076;&#1072;&#1095;&#1072;-7.1:"> </a></h3><p>Напишите «абстрактный» класс <code>Box</code> и используйте его для определения некоторых методов, которые должен иметь любой объект <code>Box</code>:</p>
+<ul>
+<li><code>add</code> - для добавления любого количества элементов в поле,</li>
+<li><code>empty</code> -  чтобы вынуть все предметы из коробки и вернуть их в виде списка,</li>
+<li><code>count</code> - для подсчета предметов, которые в настоящее время находятся в коробке.</li>
+</ul>
+<p>Напишите простой класс <code>Item</code>, который имеет:</p>
+<ul>
+<li>атрибут <code>name</code> </li>
+<li>атрибут <code>value</code></li>
+</ul>
+<p>вы можете предположить, что все предметы, которые вы будете использовать, будут объектами класса <code>Item</code>.</p>
+<p>Теперь напишите два подкласса Box, которые используют разные базовые коллекции для хранения предметов:</p>
+<ul>
+<li><code>ListBox</code> должен использовать список,</li>
+<li><code>DictBox</code> должен использовать словарь.</li>
+</ul>
 
-<div class="jb_cell">
-class Adder:
-    def __init__(self, n):
-        self.n = n
-    def __call__(self, x): # dunder метод
-        return self.n + x
-
-plus_3 = Adder(3)
-plus_3(4)
+</div>
+</div>
+</div>
 </div>
 
 <div class="jb_cell">
@@ -1910,13 +1818,23 @@ plus_3(4)
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># ### args, kwargs</span>
-<span class="k">def</span> <span class="nf">foo</span><span class="p">(</span><span class="n">required</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">required</span><span class="p">)</span>
-    <span class="k">if</span> <span class="n">args</span><span class="p">:</span>
-        <span class="nb">print</span><span class="p">(</span><span class="n">args</span><span class="p">)</span>
-    <span class="k">if</span> <span class="n">kwargs</span><span class="p">:</span>
-        <span class="nb">print</span><span class="p">(</span><span class="n">kwargs</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">abc</span>
+
+<span class="k">class</span> <span class="nc">Box</span><span class="p">(</span><span class="n">metaclass</span><span class="o">=</span><span class="n">abc</span><span class="o">.</span><span class="n">ABCMeta</span><span class="p">):</span>
+    <span class="nd">@abc</span><span class="o">.</span><span class="n">abstractmethod</span>
+    <span class="k">def</span> <span class="nf">add</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">*</span><span class="n">items</span><span class="p">):</span>
+        <span class="k">raise</span> <span class="ne">NotImplementedError</span>
+    <span class="o">...</span>
+   
+
+<span class="k">class</span> <span class="nc">Item</span><span class="p">:</span>
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">...</span><span class="p">):</span>
+        <span class="o">...</span>
+        
+    <span class="k">def</span> <span class="nf">__repr__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="o">...</span>
+
+<span class="o">...</span>
 </pre></div>
 
     </div>
@@ -1933,40 +1851,11 @@ plus_3(4)
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">foo</span><span class="p">()</span>
-
-<span class="n">foo</span><span class="p">(</span><span class="s1">&#39;hello&#39;</span><span class="p">)</span>
-
-<span class="n">foo</span><span class="p">(</span><span class="s1">&#39;hello&#39;</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
-
-<span class="n">foo</span><span class="p">(</span><span class="s1">&#39;hello&#39;</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="n">key1</span><span class="o">=</span><span class="s1">&#39;value&#39;</span><span class="p">,</span> <span class="n">key2</span><span class="o">=</span><span class="mi">999</span><span class="p">)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-</div>
-
-<div class="jb_cell">
-
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="lambda----&#1073;&#1077;&#1079;&#1099;&#1084;&#1103;&#1085;&#1085;&#1099;&#1077;-&#1092;&#1091;&#1085;&#1082;&#1094;&#1080;&#1080;">lambda -- &#1073;&#1077;&#1079;&#1099;&#1084;&#1103;&#1085;&#1085;&#1099;&#1077; &#1092;&#1091;&#1085;&#1082;&#1094;&#1080;&#1080;<a class="anchor-link" href="#lambda----&#1073;&#1077;&#1079;&#1099;&#1084;&#1103;&#1085;&#1085;&#1099;&#1077;-&#1092;&#1091;&#1085;&#1082;&#1094;&#1080;&#1080;"> </a></h3>
-</div>
-</div>
-</div>
-</div>
-
-<div class="jb_cell">
-
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">add</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">:</span> <span class="n">x</span> <span class="o">+</span> <span class="n">y</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">lb</span> <span class="o">=</span> <span class="n">ListBox</span><span class="p">()</span>
+<span class="n">lb</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">Item</span><span class="p">(</span><span class="s1">&#39;a&#39;</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span>
+<span class="n">lb</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">Item</span><span class="p">(</span><span class="s1">&#39;b&#39;</span><span class="p">,</span> <span class="mi">2</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">lb</span><span class="o">.</span><span class="n">count</span><span class="p">())</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">lb</span><span class="o">.</span><span class="n">empty</span><span class="p">())</span>
 </pre></div>
 
     </div>
@@ -1983,7 +1872,11 @@ plus_3(4)
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">add</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">db</span> <span class="o">=</span> <span class="n">DictBox</span><span class="p">()</span>
+<span class="n">db</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">Item</span><span class="p">(</span><span class="s1">&#39;a&#39;</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span>
+<span class="n">db</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">Item</span><span class="p">(</span><span class="s1">&#39;b&#39;</span><span class="p">,</span> <span class="mi">2</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">db</span><span class="o">.</span><span class="n">count</span><span class="p">())</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">db</span><span class="o">.</span><span class="n">empty</span><span class="p">())</span>
 </pre></div>
 
     </div>
@@ -2000,73 +1893,7 @@ plus_3(4)
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">add</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">):</span>
-    <span class="k">return</span> <span class="n">x</span> <span class="o">+</span> <span class="n">y</span>
-
-<span class="n">add</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-</div>
-
-<div class="jb_cell">
-
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Лямбды ограничены одним выражением (expressions). Т.е нельзя использовать statements и таким образом даже <code>return</code>.</p>
-<p>Т.е. лямбда -- single expression function</p>
-
-</div>
-</div>
-</div>
-</div>
-
-<div class="jb_cell">
-
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">sorted</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="o">-</span><span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">),</span> <span class="n">key</span><span class="o">=</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span> <span class="o">*</span> <span class="n">x</span><span class="p">)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-</div>
-
-<div class="jb_cell">
-
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">list</span><span class="p">(</span><span class="nb">filter</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">,</span> <span class="nb">range</span><span class="p">(</span><span class="mi">16</span><span class="p">)))</span> <span class="c1"># так не надо</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-</div>
-
-<div class="jb_cell">
-
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="p">[</span><span class="n">x</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">16</span><span class="p">)</span> <span class="k">if</span> <span class="n">x</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">]</span> <span class="c1"># лучше так</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">b</span> <span class="o">=</span> <span class="n">Box</span><span class="p">()</span>
 </pre></div>
 
     </div>
@@ -2080,8 +1907,17 @@ plus_3(4)
 
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="decorators">decorators<a class="anchor-link" href="#decorators"> </a></h2><p>Декораторы -- оборачивают (wrap) другую функцию и позволяет выполнить какой-то код до или после нее.</p>
-<h3 id="&quot;&#1085;&#1091;&#1083;&#1077;&#1074;&#1086;&#1081;&quot;-&#1076;&#1077;&#1082;&#1086;&#1088;&#1072;&#1090;&#1086;&#1088;">"&#1085;&#1091;&#1083;&#1077;&#1074;&#1086;&#1081;" &#1076;&#1077;&#1082;&#1086;&#1088;&#1072;&#1090;&#1086;&#1088;<a class="anchor-link" href="#&quot;&#1085;&#1091;&#1083;&#1077;&#1074;&#1086;&#1081;&quot;-&#1076;&#1077;&#1082;&#1086;&#1088;&#1072;&#1090;&#1086;&#1088;"> </a></h3>
+<h3 id="&#1047;&#1072;&#1076;&#1072;&#1095;&#1072;-7.2:">&#1047;&#1072;&#1076;&#1072;&#1095;&#1072; 7.2:<a class="anchor-link" href="#&#1047;&#1072;&#1076;&#1072;&#1095;&#1072;-7.2:"> </a></h3><p>Напишите функцию <code>repack_boxes</code>, которая</p>
+<ul>
+<li>принимает любое количество блоков в качестве параметров,</li>
+<li>собирает все предметы, которые они содержат,</li>
+<li>и перераспределяет их как можно более равномерно по всем коробкам.</li>
+<li>порядок не важен.</li>
+</ul>
+<p>Есть несколько способов сделать это. Проверьте свой код с помощью <code>ListBox</code> с 4 элементами, <code>ListBox</code> с 9 элементами и <code>DictBox</code> с 5 элементами.</p>
+<p>Вы должны получить две коробки с 6 предметами в каждой и одну коробку с 5 предметами.</p>
+<p><code>list.pop()</code>,  <code>while</code>,  <code>IndexError</code></p>
+
 </div>
 </div>
 </div>
@@ -2094,8 +1930,8 @@ plus_3(4)
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">null_decorator</span><span class="p">(</span><span class="n">func</span><span class="p">):</span>
-    <span class="k">return</span> <span class="n">func</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">repack_boxes</span><span class="p">(</span><span class="o">...</span><span class="p">):</span>
+    <span class="o">...</span>
 </pre></div>
 
     </div>
@@ -2112,41 +1948,18 @@ plus_3(4)
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">greet</span><span class="p">():</span>
-    <span class="k">return</span> <span class="s1">&#39;Hello!&#39;</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">box1</span> <span class="o">=</span> <span class="n">ListBox</span><span class="p">()</span>
+<span class="n">box1</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="o">*</span><span class="p">[</span><span class="n">Item</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">i</span><span class="p">),</span> <span class="n">i</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">4</span><span class="p">)])</span>
 
-<span class="n">greet</span> <span class="o">=</span> <span class="n">null_decorator</span><span class="p">(</span><span class="n">greet</span><span class="p">)</span>
-</pre></div>
+<span class="n">box2</span> <span class="o">=</span> <span class="n">ListBox</span><span class="p">()</span>
+<span class="n">box2</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="o">*</span><span class="p">[</span><span class="n">Item</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">i</span><span class="p">),</span> <span class="n">i</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">9</span><span class="p">)])</span>
 
-    </div>
-</div>
-</div>
+<span class="n">box3</span> <span class="o">=</span> <span class="n">DictBox</span><span class="p">()</span>
+<span class="n">box3</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="o">*</span><span class="p">[</span><span class="n">Item</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">i</span><span class="p">),</span> <span class="n">i</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">)])</span>
 
-</div>
-</div>
-
-<div class="jb_cell">
-
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<blockquote><p>a decorator is a callable that takes a callable as input and returns another callable.</p>
-</blockquote>
-<h3 id="@">@<a class="anchor-link" href="#@"> </a></h3>
-</div>
-</div>
-</div>
-</div>
-
-<div class="jb_cell">
-
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nd">@null_decorator</span>
-<span class="k">def</span> <span class="nf">greet</span><span class="p">():</span>
-    <span class="k">return</span> <span class="s1">&#39;Hello!&#39;</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">box1</span><span class="o">.</span><span class="n">count</span><span class="p">())</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">box2</span><span class="o">.</span><span class="n">count</span><span class="p">())</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">box3</span><span class="o">.</span><span class="n">count</span><span class="p">())</span>
 </pre></div>
 
     </div>
@@ -2163,70 +1976,11 @@ plus_3(4)
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">greet</span><span class="p">()</span>
-</pre></div>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">repack_boxes</span><span class="p">(</span><span class="n">box1</span><span class="p">,</span> <span class="n">box2</span><span class="p">,</span> <span class="n">box3</span><span class="p">)</span>
 
-    </div>
-</div>
-</div>
-
-</div>
-</div>
-
-<div class="jb_cell">
-
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># ### изменяем поведение</span>
-<span class="k">def</span> <span class="nf">uppercase</span><span class="p">(</span><span class="n">func</span><span class="p">):</span>
-    <span class="k">def</span> <span class="nf">wrapper</span><span class="p">():</span>
-        <span class="n">original_result</span> <span class="o">=</span> <span class="n">func</span><span class="p">()</span>
-        <span class="n">modified_result</span> <span class="o">=</span> <span class="n">original_result</span><span class="o">.</span><span class="n">upper</span><span class="p">()</span>
-        <span class="k">return</span> <span class="n">modified_result</span>
-    <span class="k">return</span> <span class="n">wrapper</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-</div>
-
-<div class="jb_cell">
-
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nd">@uppercase</span>
-    <span class="k">def</span> <span class="nf">greet</span><span class="p">():</span>
-        <span class="k">return</span> <span class="s1">&#39;Hello!&#39;</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-</div>
-
-<div class="jb_cell">
-
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">greet</span>
-
-<span class="n">null_decorator</span><span class="p">(</span><span class="n">greet</span><span class="p">)</span>
-
-<span class="n">uppercase</span><span class="p">(</span><span class="n">greet</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">box1</span><span class="o">.</span><span class="n">count</span><span class="p">())</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">box2</span><span class="o">.</span><span class="n">count</span><span class="p">())</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">box3</span><span class="o">.</span><span class="n">count</span><span class="p">())</span>
 </pre></div>
 
     </div>
@@ -2240,34 +1994,10 @@ plus_3(4)
 
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="&#1084;&#1085;&#1086;&#1078;&#1077;&#1089;&#1090;&#1074;&#1077;&#1085;&#1085;&#1086;&#1077;">&#1084;&#1085;&#1086;&#1078;&#1077;&#1089;&#1090;&#1074;&#1077;&#1085;&#1085;&#1086;&#1077;<a class="anchor-link" href="#&#1084;&#1085;&#1086;&#1078;&#1077;&#1089;&#1090;&#1074;&#1077;&#1085;&#1085;&#1086;&#1077;"> </a></h3>
+<h1 id="8.-&#1047;&#1072;&#1084;&#1077;&#1085;&#1072;-&#1085;&#1072;&#1089;&#1083;&#1077;&#1076;&#1086;&#1074;&#1072;&#1085;&#1080;&#1103;-&#1082;&#1086;&#1084;&#1087;&#1086;&#1079;&#1080;&#1094;&#1080;&#1077;&#1081;">8. &#1047;&#1072;&#1084;&#1077;&#1085;&#1072; &#1085;&#1072;&#1089;&#1083;&#1077;&#1076;&#1086;&#1074;&#1072;&#1085;&#1080;&#1103; &#1082;&#1086;&#1084;&#1087;&#1086;&#1079;&#1080;&#1094;&#1080;&#1077;&#1081;<a class="anchor-link" href="#8.-&#1047;&#1072;&#1084;&#1077;&#1085;&#1072;-&#1085;&#1072;&#1089;&#1083;&#1077;&#1076;&#1086;&#1074;&#1072;&#1085;&#1080;&#1103;-&#1082;&#1086;&#1084;&#1087;&#1086;&#1079;&#1080;&#1094;&#1080;&#1077;&#1081;"> </a></h1><h3 id="&#1047;&#1072;&#1076;&#1072;&#1085;&#1080;&#1077;-8.1:">&#1047;&#1072;&#1076;&#1072;&#1085;&#1080;&#1077; 8.1:<a class="anchor-link" href="#&#1047;&#1072;&#1076;&#1072;&#1085;&#1080;&#1077;-8.1:"> </a></h3><p>Замените множественное наследование и класс <code>Tutor</code> с использованием композиции объектов <code>Learner</code>, <code>Teacher</code> в классе <code>Person</code></p>
+
 </div>
 </div>
-</div>
-</div>
-
-<div class="jb_cell">
-
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">strong</span><span class="p">(</span><span class="n">func</span><span class="p">):</span>
-    <span class="k">def</span> <span class="nf">wrapper</span><span class="p">():</span>
-        <span class="k">return</span> <span class="s1">&#39;&lt;strong&gt;&#39;</span> <span class="o">+</span> <span class="n">func</span><span class="p">()</span> <span class="o">+</span> <span class="s1">&#39;&lt;/strong&gt;&#39;</span>
-    <span class="k">return</span> <span class="n">wrapper</span>
-
-<span class="k">def</span> <span class="nf">emphasis</span><span class="p">(</span><span class="n">func</span><span class="p">):</span>
-    <span class="k">def</span> <span class="nf">wrapper</span><span class="p">():</span>
-        <span class="k">return</span> <span class="s1">&#39;&lt;em&gt;&#39;</span> <span class="o">+</span> <span class="n">func</span><span class="p">()</span> <span class="o">+</span> <span class="s1">&#39;&lt;/em&gt;&#39;</span>
-    <span class="k">return</span> <span class="n">wrapper</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
 </div>
 </div>
 
@@ -2278,29 +2008,38 @@ plus_3(4)
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nd">@strong</span>
-<span class="nd">@emphasis</span>
-<span class="k">def</span> <span class="nf">greet</span><span class="p">():</span>
-    <span class="k">return</span> <span class="s1">&#39;Hello!&#39;</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">class</span> <span class="nc">Person</span><span class="p">:</span>
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">surname</span><span class="p">,</span> <span class="n">number</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">surname</span> <span class="o">=</span> <span class="n">surname</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">number</span> <span class="o">=</span> <span class="n">number</span>
 
-<span class="n">greet</span><span class="p">()</span>
-</pre></div>
 
-    </div>
-</div>
-</div>
+<span class="k">class</span> <span class="nc">LearnerMixin</span><span class="p">:</span>
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">classes</span> <span class="o">=</span> <span class="p">[]</span>
 
-</div>
-</div>
+    <span class="k">def</span> <span class="nf">enrol</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">course</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">classes</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">course</span><span class="p">)</span>
 
-<div class="jb_cell">
 
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
+<span class="k">class</span> <span class="nc">TeacherMixin</span><span class="p">:</span>
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">courses_taught</span> <span class="o">=</span> <span class="p">[]</span>
 
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">decorated_greet</span> <span class="o">=</span> <span class="n">strong</span><span class="p">(</span><span class="n">emphasis</span><span class="p">(</span><span class="n">greet</span><span class="p">))</span>
+    <span class="k">def</span> <span class="nf">assign_teaching</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">course</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">courses_taught</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">course</span><span class="p">)</span>
+
+
+<span class="k">class</span> <span class="nc">Tutor</span><span class="p">(</span><span class="n">Person</span><span class="p">,</span> <span class="n">LearnerMixin</span><span class="p">,</span> <span class="n">TeacherMixin</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+        <span class="n">LearnerMixin</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
+        <span class="n">TeacherMixin</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
+        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+
+<span class="n">jane</span> <span class="o">=</span> <span class="n">Tutor</span><span class="p">(</span><span class="s1">&#39;Jane&#39;</span><span class="p">,</span> <span class="s1">&#39;Smith&#39;</span><span class="p">,</span> <span class="s1">&#39;SMTJNX045&#39;</span><span class="p">)</span>
+<span class="n">jane</span><span class="o">.</span><span class="n">enrol</span><span class="p">(</span><span class="s1">&#39;some_course&#39;</span><span class="p">)</span>
+<span class="n">jane</span><span class="o">.</span><span class="n">assign_teaching</span><span class="p">(</span><span class="s1">&#39;some_other_course&#39;</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -2320,15 +2059,15 @@ plus_3(4)
               <nav class="c-page__nav">
   
     
-    <a id="js-page__nav__prev" class="c-page__nav__prev" href="/pythonsciencebook/not/advanced.html">
-      〈 <span class="u-margin-right-tiny"></span> Advanced Python
+    <a id="js-page__nav__prev" class="c-page__nav__prev" href="/pythonsciencebook/ipynb/oop/knn.html">
+      〈 <span class="u-margin-right-tiny"></span> Example
     </a>
   
 
   
     
-    <a id="js-page__nav__next" class="c-page__nav__next" href="/pythonsciencebook/not/packages.html">
-      Модули и пакеты <span class="u-margin-right-tiny"></span> 〉
+    <a id="js-page__nav__next" class="c-page__nav__next" href="/pythonsciencebook/ipynb/oop/special_methods.html">
+      Special methods <span class="u-margin-right-tiny"></span> 〉
     </a>
   
 </nav>

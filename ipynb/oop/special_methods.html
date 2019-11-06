@@ -5,16 +5,16 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width,minimum-scale=1">
 
-  <title>Деплой и инжиниринг</title>
-  <meta name="description" content="        Здесь мы обсудим вопросы деплояData Engineering &#1052;&#1080;&#1082;&#1088;&#1086;&#1089;&#1077;&#1088;&#1074;&#1080;&#1089;&#1099;, Flask &#1060;&#...">
+  <title>Special methods</title>
+  <meta name="description" content="        &#1057;&#1087;&#1077;&#1094;&#1080;&#1072;&#1083;&#1100;&#1085;&#1099;&#1077; &#1084;&#1077;&#1090;&#1086;&#1076;&#1099; Специальные (special) методы...">
 
-  <link rel="canonical" href="https://theotheo.github.io/pythonsciencebook/not/deploy.html">
+  <link rel="canonical" href="https://theotheo.github.io/pythonsciencebook/ipynb/oop/special_methods.html">
   <link rel="alternate" type="application/rss+xml" title="Python Science" href="https://theotheo.github.io/pythonsciencebook/feed.xml">
 
-  <meta property="og:url"         content="https://theotheo.github.io/pythonsciencebook/not/deploy.html" />
+  <meta property="og:url"         content="https://theotheo.github.io/pythonsciencebook/ipynb/oop/special_methods.html" />
 <meta property="og:type"        content="article" />
-<meta property="og:title"       content="Деплой и инжиниринг" />
-<meta property="og:description" content="        Здесь мы обсудим вопросы деплояData Engineering &#1052;&#1080;&#1082;&#1088;&#1086;&#1089;&#1077;&#1088;&#1074;&#1080;&#1089;&#1099;, Flask &#1060;&#..." />
+<meta property="og:title"       content="Special methods" />
+<meta property="og:description" content="        &#1057;&#1087;&#1077;&#1094;&#1080;&#1072;&#1083;&#1100;&#1085;&#1099;&#1077; &#1084;&#1077;&#1090;&#1086;&#1076;&#1099; Специальные (special) методы..." />
 <meta property="og:image"       content="https://theotheo.github.io/pythonsciencebook/images/logo/logo.png" />
 
 <meta name="twitter:card" content="summary">
@@ -24,11 +24,11 @@
   {
   "@context": "http://schema.org",
   "@type": "NewsArticle",
-  "mainEntityOfPage": "https://theotheo.github.io/pythonsciencebook/not/deploy.html",
-  "headline": "Деплой и инжиниринг",
+  "mainEntityOfPage": "https://theotheo.github.io/pythonsciencebook/ipynb/oop/special_methods.html",
+  "headline": "Special methods",
   "datePublished": "2019-11-07T01:16:40+03:00",
   "dateModified": "2019-11-07T01:16:40+03:00",
-  "description": "        Здесь мы обсудим вопросы деплояData Engineering &#1052;&#1080;&#1082;&#1088;&#1086;&#1089;&#1077;&#1088;&#1074;&#1080;&#1089;&#1099;, Flask &#1060;&#...",
+  "description": "        &#1057;&#1087;&#1077;&#1094;&#1080;&#1072;&#1083;&#1100;&#1085;&#1099;&#1077; &#1084;&#1077;&#1090;&#1086;&#1076;&#1099; Специальные (special) методы...",
   "author": {
     "@type": "Person",
     "name": "Ildar Belyalov"
@@ -1077,7 +1077,7 @@ initFunction(initPrint)
               
 
               <li class="c-sidebar__section">
-                <a class="c-sidebar__entry "
+                <a class="c-sidebar__entry c-sidebar__entry--active"
                   href="/pythonsciencebook/ipynb/oop/special_methods.html"
                 >
                   
@@ -1325,7 +1325,7 @@ initFunction(initPrint)
       
       
       <li class="c-sidebar__chapter">
-        <a class="c-sidebar__entry c-sidebar__entry--active"
+        <a class="c-sidebar__entry "
           href="/pythonsciencebook/not/deploy.html"
         >
           
@@ -1359,10 +1359,27 @@ initFunction(initPrint)
 <div class="download-buttons-dropdown">
     <button id="dropdown-button-trigger" class="interact-button"><img src="/pythonsciencebook/assets/images/download-solid.svg" alt="Download" /></button>
     <div class="download-buttons">
+        <a href="/pythonsciencebook/content/ipynb/oop/special_methods.ipynb" download>
+        <button id="interact-button-download" class="interact-button">.ipynb</button>
+        </a>
         
         <a id="interact-button-print"><button id="interact-button-download" class="interact-button">.pdf</button></a>
     </div>
 </div>
+
+
+  <button id="interact-button-thebelab" class="interact-button">Thebelab</button>
+
+  
+  
+
+
+
+
+
+
+<a href="https://mybinder.org/v2/gh/theotheo/pythonsciencebook/gh-pages?filepath=content%2Fipynb%2Foop%2Fspecial_methods.ipynb"><button class="interact-button" id="interact-button-binder"><img class="interact-button-logo" src="/pythonsciencebook/assets/images/logo_binder.svg" alt="Interact" />Interact</button></a>
+  
 
 
 </div>
@@ -1387,8 +1404,93 @@ initFunction(initPrint)
 
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Здесь мы обсудим вопросы деплоя</p>
-<h2 id="Data-Engineering">Data Engineering<a class="anchor-link" href="#Data-Engineering"> </a></h2><h2 id="&#1052;&#1080;&#1082;&#1088;&#1086;&#1089;&#1077;&#1088;&#1074;&#1080;&#1089;&#1099;,-Flask">&#1052;&#1080;&#1082;&#1088;&#1086;&#1089;&#1077;&#1088;&#1074;&#1080;&#1089;&#1099;, Flask<a class="anchor-link" href="#&#1052;&#1080;&#1082;&#1088;&#1086;&#1089;&#1077;&#1088;&#1074;&#1080;&#1089;&#1099;,-Flask"> </a></h2><h2 id="&#1060;&#1086;&#1088;&#1084;&#1072;&#1090;&#1099;-&#1087;&#1077;&#1088;&#1077;&#1085;&#1086;&#1089;&#1072;-&#1084;&#1086;&#1076;&#1077;&#1083;&#1077;&#1081;">&#1060;&#1086;&#1088;&#1084;&#1072;&#1090;&#1099; &#1087;&#1077;&#1088;&#1077;&#1085;&#1086;&#1089;&#1072; &#1084;&#1086;&#1076;&#1077;&#1083;&#1077;&#1081;<a class="anchor-link" href="#&#1060;&#1086;&#1088;&#1084;&#1072;&#1090;&#1099;-&#1087;&#1077;&#1088;&#1077;&#1085;&#1086;&#1089;&#1072;-&#1084;&#1086;&#1076;&#1077;&#1083;&#1077;&#1081;"> </a></h2><h2 id="&#1044;&#1077;&#1087;&#1083;&#1086;&#1081;-&#1085;&#1072;-&#1076;&#1088;&#1091;&#1075;&#1080;&#1093;-&#1103;&#1079;&#1099;&#1082;&#1072;&#1093;">&#1044;&#1077;&#1087;&#1083;&#1086;&#1081; &#1085;&#1072; &#1076;&#1088;&#1091;&#1075;&#1080;&#1093; &#1103;&#1079;&#1099;&#1082;&#1072;&#1093;<a class="anchor-link" href="#&#1044;&#1077;&#1087;&#1083;&#1086;&#1081;-&#1085;&#1072;-&#1076;&#1088;&#1091;&#1075;&#1080;&#1093;-&#1103;&#1079;&#1099;&#1082;&#1072;&#1093;"> </a></h2><h2 id="&#1052;&#1086;&#1085;&#1080;&#1090;&#1086;&#1088;&#1080;&#1085;&#1075;">&#1052;&#1086;&#1085;&#1080;&#1090;&#1086;&#1088;&#1080;&#1085;&#1075;<a class="anchor-link" href="#&#1052;&#1086;&#1085;&#1080;&#1090;&#1086;&#1088;&#1080;&#1085;&#1075;"> </a></h2>
+<h1 id="&#1057;&#1087;&#1077;&#1094;&#1080;&#1072;&#1083;&#1100;&#1085;&#1099;&#1077;-&#1084;&#1077;&#1090;&#1086;&#1076;&#1099;">&#1057;&#1087;&#1077;&#1094;&#1080;&#1072;&#1083;&#1100;&#1085;&#1099;&#1077; &#1084;&#1077;&#1090;&#1086;&#1076;&#1099;<a class="anchor-link" href="#&#1057;&#1087;&#1077;&#1094;&#1080;&#1072;&#1083;&#1100;&#1085;&#1099;&#1077;-&#1084;&#1077;&#1090;&#1086;&#1076;&#1099;"> </a></h1><p>Специальные (special) методы, так же иногда называемые магическими (magic) или дандерc-методы (dunders).</p>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="&#1052;&#1077;&#1090;&#1086;&#1076;&#1099;-&#1080;&#1085;&#1080;&#1094;&#1080;&#1072;&#1083;&#1080;&#1079;&#1072;&#1094;&#1080;&#1080;">&#1052;&#1077;&#1090;&#1086;&#1076;&#1099; &#1080;&#1085;&#1080;&#1094;&#1080;&#1072;&#1083;&#1080;&#1079;&#1072;&#1094;&#1080;&#1080;<a class="anchor-link" href="#&#1052;&#1077;&#1090;&#1086;&#1076;&#1099;-&#1080;&#1085;&#1080;&#1094;&#1080;&#1072;&#1083;&#1080;&#1079;&#1072;&#1094;&#1080;&#1080;"> </a></h2><p>Начнем с методов, связанных с жизненным циклом объекта.</p>
+<h3 id="__init__"><code>__init__</code><a class="anchor-link" href="#__init__"> </a></h3><p><code>__init__</code> -- пожалуй, самый важный метод и уже знакомый вам. Его часто называют конструктором, по аналогии с конструкторами объектов в других языках. В действительно, это скорее не самый корректный термин для этого метода.</p>
+<p><code>__init__(self, *args, **kwargs)</code></p>
+<h3 id="__new__"><code>__new__</code><a class="anchor-link" href="#__new__"> </a></h3><p><code>__new__(class_name, *args, **kwargs)</code></p>
+<h3 id="__del__"><code>__del__</code><a class="anchor-link" href="#__del__"> </a></h3><p><code>__del__(self)</code></p>
+<p>Данный метод вызывает когда сборщик мусора добирается до объекта.</p>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="&#1042;&#1099;&#1074;&#1086;&#1076;">&#1042;&#1099;&#1074;&#1086;&#1076;<a class="anchor-link" href="#&#1042;&#1099;&#1074;&#1086;&#1076;"> </a></h2><h3 id="__str__"><code>__str__</code><a class="anchor-link" href="#__str__"> </a></h3><h3 id="__repr__"><code>__repr__</code><a class="anchor-link" href="#__repr__"> </a></h3>
+</div>
+</div>
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="&#1040;&#1088;&#1080;&#1092;&#1084;&#1077;&#1090;&#1080;&#1095;&#1077;&#1089;&#1082;&#1080;&#1077;-&#1086;&#1087;&#1077;&#1088;&#1072;&#1094;&#1080;&#1080;">&#1040;&#1088;&#1080;&#1092;&#1084;&#1077;&#1090;&#1080;&#1095;&#1077;&#1089;&#1082;&#1080;&#1077; &#1086;&#1087;&#1077;&#1088;&#1072;&#1094;&#1080;&#1080;<a class="anchor-link" href="#&#1040;&#1088;&#1080;&#1092;&#1084;&#1077;&#1090;&#1080;&#1095;&#1077;&#1089;&#1082;&#1080;&#1077;-&#1086;&#1087;&#1077;&#1088;&#1072;&#1094;&#1080;&#1080;"> </a></h2><h3 id="__add__"><code>__add__</code><a class="anchor-link" href="#__add__"> </a></h3><h3 id="__sub__"><code>__sub__</code><a class="anchor-link" href="#__sub__"> </a></h3>
+</div>
+</div>
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="&#1057;&#1088;&#1072;&#1074;&#1085;&#1077;&#1085;&#1080;&#1077;">&#1057;&#1088;&#1072;&#1074;&#1085;&#1077;&#1085;&#1080;&#1077;<a class="anchor-link" href="#&#1057;&#1088;&#1072;&#1074;&#1085;&#1077;&#1085;&#1080;&#1077;"> </a></h2>
+</div>
+</div>
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="&#1050;&#1086;&#1085;&#1074;&#1077;&#1088;&#1089;&#1080;&#1103;-&#1090;&#1080;&#1087;&#1086;&#1074;">&#1050;&#1086;&#1085;&#1074;&#1077;&#1088;&#1089;&#1080;&#1103; &#1090;&#1080;&#1087;&#1086;&#1074;<a class="anchor-link" href="#&#1050;&#1086;&#1085;&#1074;&#1077;&#1088;&#1089;&#1080;&#1103;-&#1090;&#1080;&#1087;&#1086;&#1074;"> </a></h2>
+</div>
+</div>
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="&#1048;&#1090;&#1077;&#1088;&#1072;&#1094;&#1080;&#1080;">&#1048;&#1090;&#1077;&#1088;&#1072;&#1094;&#1080;&#1080;<a class="anchor-link" href="#&#1048;&#1090;&#1077;&#1088;&#1072;&#1094;&#1080;&#1080;"> </a></h2>
+</div>
+</div>
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="&#1048;&#1089;&#1090;&#1086;&#1095;&#1085;&#1080;&#1082;&#1080;-&#1080;-&#1076;&#1086;&#1087;&#1086;&#1083;&#1085;&#1080;&#1090;&#1077;&#1083;&#1100;&#1085;&#1086;&#1077;-&#1095;&#1090;&#1077;&#1085;&#1080;&#1077;">&#1048;&#1089;&#1090;&#1086;&#1095;&#1085;&#1080;&#1082;&#1080; &#1080; &#1076;&#1086;&#1087;&#1086;&#1083;&#1085;&#1080;&#1090;&#1077;&#1083;&#1100;&#1085;&#1086;&#1077; &#1095;&#1090;&#1077;&#1085;&#1080;&#1077;<a class="anchor-link" href="#&#1048;&#1089;&#1090;&#1086;&#1095;&#1085;&#1080;&#1082;&#1080;-&#1080;-&#1076;&#1086;&#1087;&#1086;&#1083;&#1085;&#1080;&#1090;&#1077;&#1083;&#1100;&#1085;&#1086;&#1077;-&#1095;&#1090;&#1077;&#1085;&#1080;&#1077;"> </a></h2><ul>
+<li><a href="https://docs.python.org/3/reference/datamodel.html#special-method-names">https://docs.python.org/3/reference/datamodel.html#special-method-names</a></li>
+<li><a href="https://web.archive.org/web/20110131211638/http://diveintopython3.org/special-method-names.html">https://web.archive.org/web/20110131211638/http://diveintopython3.org/special-method-names.html</a></li>
+<li><a href="http://www.ironpythoninaction.com/magic-methods.html">http://www.ironpythoninaction.com/magic-methods.html</a></li>
+<li><a href="https://www.omkarpathak.in/2018/08/26/python-magic-methods/">https://www.omkarpathak.in/2018/08/26/python-magic-methods/</a></li>
+<li><a href="https://dbader.org/blog/python-dunder-methods">https://dbader.org/blog/python-dunder-methods</a></li>
+<li><a href="https://docs.python.org/2.0/ref/specialnames.html">https://docs.python.org/2.0/ref/specialnames.html</a></li>
+<li><a href="https://www.python-course.eu/python3_magic_methods.php">https://www.python-course.eu/python3_magic_methods.php</a></li>
+</ul>
+
 </div>
 </div>
 </div>
@@ -1404,15 +1506,15 @@ initFunction(initPrint)
               <nav class="c-page__nav">
   
     
-    <a id="js-page__nav__prev" class="c-page__nav__prev" href="/pythonsciencebook/not/experiment-management.html">
-      〈 <span class="u-margin-right-tiny"></span> Управление экспериментами
+    <a id="js-page__nav__prev" class="c-page__nav__prev" href="/pythonsciencebook/ipynb/oop/exercises.html">
+      〈 <span class="u-margin-right-tiny"></span> Exercises
     </a>
   
 
   
     
-    <a id="js-page__nav__next" class="c-page__nav__next" href="">
-       <span class="u-margin-right-tiny"></span> 〉
+    <a id="js-page__nav__next" class="c-page__nav__next" href="/pythonsciencebook/not/data-management.html">
+      Данные <span class="u-margin-right-tiny"></span> 〉
     </a>
   
 </nav>
