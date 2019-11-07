@@ -14,3 +14,7 @@ https://en.wikipedia.org/wiki/Foreign_function_interface
 http://www.swig.org/tutorial.html
 
 ## R
+
+
+## Ссылки и источники
+- https://book.pythontips.com/en/latest/python_c_extension.html 

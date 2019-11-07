@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # ---
 # jupyter:
 #   jupytext:
@@ -13,53 +14,34 @@
 #     name: python3
 # ---
 
-# # Exceptions
-
-# ## Examples
+# # Исключения
+#
+# Программирование, как и любая другая деятельность, не обходится без ошибок. Более того, сложно себе даже представить программу, не содержащую ошибок.  
+#
+# Если сравнивать написание программы с чем-то, то в этом контексте оно похоже на написание школьного сочинения, за которое ставят 2 оценки. Одна оценка будет за орфографию, а вторая за содержание. И вам нужна 5 за орфографию, чтобы компьютер принял ваше "сочинение". В тоже время содержание он оценивать не очень умеет и готов ставить 5 за любую строки. Ошибки "по орфографии" принято в программировании называть "синтаксические". А все остальные зовутся семантическими или логическими, то есть ошибки в смысле (логике) кода. Причем некоторые из логическим ошибок являются фатальными для программы, а некоторые же остаются незамеченными и только приводят к неверным результатам. 
+#
+#
+# Одно из правил программировании гласящая "fail fast" , подразумевает, что программа должна выдавать ошибку как можно раньше. И связано это как раз с тем, чтобы ошибки не оставались незамеченными. В тоже время порой мы можем ожидать наличие каких-то проблем в работе и хотим, чтобы их появление не останавливало нашу программу. В силу этого в программировании придуман ряд механизмом как их нахождения ошибок, так и их обработки.
+#
+#  
+# В Python обработка ошибок базируется вокруг механизма исключений (exceptions). Наверняка, читатель, уже столкнулся с тем или иным исключением, даже если он того не подозревал. 
+#
+# Давайте рассмотрим несколько примеров.
 
 10 / 0
 
 prin(10)
 
+open('notexist.txt')
+
 for i in [1, 2]
     print(i)
 
-# ## Handling Exceptions
+# Среди этих исключений отдельное место занимается `SyntaxError` -- это исключение возникает, когда программа имеет синтакстическую ошибку и вызывается в момент интерпретации кода, то есть до его запуска. Таким образом, если такая ошибка есть в вашем коде, то такая программа вообще не запустится.
 
-try:
-    10 / 0
-except Exception:
-    print('Exception')
-
-try:
-    10 / 0
-except Exception as e:
-    print('Exception: {}'.format(e))
-
-while True:
-    try:
-        x = int(raw_input("Please enter a number: "))
-        break
-    except ValueError:
-        print( "Oops!  That was no valid number.  Try again...")
-
-# +
-import sys
-
-try:
-    f = open('myfile.txt')
-    s = f.readline()
-    i = int(s.strip())
-except IOError as e:
-    print( "I/O error({0}): {1}".format(e.errno, e.strerror))
-except ValueError:
-    print( "Could not convert data to an integer.")
-except:
-    print( "Unexpected error:", sys.exc_info()[0])
-    raise
-# -
-
-# ## Built-in exceptions
+# ## [Built-in exceptions](https://docs.python.org/3/library/exceptions.html)
+#
+# В Python существует ряд встроенных исключений:
 
 #       BaseException
 #       +-- SystemExit
@@ -126,42 +108,8 @@ except:
 #       +-- BytesWarning
 #       +-- ResourceWarning
 
-from IPython.display import HTML
-HTML('<iframe src="https://docs.python.org/3/library/exceptions.html#concrete-exceptions" width=600 height=600>')
-
 # ## Raise
+#
+# Исключения можно вызывать самостоятельно с помощью ключевого слова `raise`
 
 raise NameError('HiThere')
-
-# ## finally
-
-# +
-i = 1
-
-try:
-    print(10 / i)
-except ZeroDivisionError:
-    print('ZeroDivisionError')
-finally:
-    print('Goodbye, world!')
-
-
-# -
-
-# ## User-defined exceptions
-
-def validate(name):
-    if len(name) < 10:
-        raise ValueError
-
-
-validate('joe')
-
-
-class NameTooShortError(ValueError):
-    pass
-
-
-def validate(name):
-    if len(name) < 10:
-        raise NameTooShortError(name)

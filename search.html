@@ -26,8 +26,8 @@
   "@type": "NewsArticle",
   "mainEntityOfPage": "https://theotheo.github.io/pythonsciencebook/search",
   "headline": "Search the site",
-  "datePublished": "2019-11-07T01:16:40+03:00",
-  "dateModified": "2019-11-07T01:16:40+03:00",
+  "datePublished": "2019-11-07T05:53:19+03:00",
+  "dateModified": "2019-11-07T05:53:19+03:00",
   "description": "        ",
   "author": {
     "@type": "Person",
@@ -638,7 +638,7 @@ initFunction(initPrint)
 
               <li class="c-sidebar__section">
                 <a class="c-sidebar__entry "
-                  href="/pythonsciencebook/ipynb/jupyter.html"
+                  href="/pythonsciencebook/ipynb/tools/jupyter.html"
                 >
                   
                     1.2
@@ -695,7 +695,7 @@ initFunction(initPrint)
 
               <li class="c-sidebar__section">
                 <a class="c-sidebar__entry "
-                  href="/pythonsciencebook/ipynb/function-intro.html"
+                  href="/pythonsciencebook/ipynb/functions/intro.html"
                 >
                   
                     1.5
@@ -752,7 +752,7 @@ initFunction(initPrint)
 
               <li class="c-sidebar__section">
                 <a class="c-sidebar__entry "
-                  href="/pythonsciencebook/ipynb/introspection.html"
+                  href="/pythonsciencebook/ipynb/introspection/introspection.html"
                 >
                   
                     1.8
@@ -767,7 +767,7 @@ initFunction(initPrint)
 
                   <li class="c-sidebar__subsection">
                     <a class="c-sidebar__entry "
-                      href="/pythonsciencebook/ipynb/sys.html"
+                      href="/pythonsciencebook/ipynb/introspection/sys.html"
                     >
                       
                         1.8.1
@@ -781,7 +781,7 @@ initFunction(initPrint)
 
                   <li class="c-sidebar__subsection">
                     <a class="c-sidebar__entry "
-                      href="/pythonsciencebook/ipynb/reflection.html"
+                      href="/pythonsciencebook/ipynb/introspection/reflection.html"
                     >
                       
                         1.8.2
@@ -799,7 +799,7 @@ initFunction(initPrint)
 
               <li class="c-sidebar__section">
                 <a class="c-sidebar__entry "
-                  href="/pythonsciencebook/ipynb/exceptions-intro.html"
+                  href="/pythonsciencebook/ipynb/errors/exceptions.html"
                 >
                   
                     1.9
@@ -872,15 +872,57 @@ initFunction(initPrint)
 
               <li class="c-sidebar__section">
                 <a class="c-sidebar__entry "
-                  href="/pythonsciencebook/ipynb/functions.html"
+                  href=".html"
                 >
                   
                     2.1
                   
-                  Функции -- first-class citizen
+                  Функции
                 </a>
 
                 
+                
+                  
+                  
+
+                  <li class="c-sidebar__subsection">
+                    <a class="c-sidebar__entry "
+                      href="/pythonsciencebook/ipynb/functions/params.html"
+                    >
+                      
+                        2.1.1
+                        
+                      
+                      Params
+                    </a>
+                
+                  
+                  
+
+                  <li class="c-sidebar__subsection">
+                    <a class="c-sidebar__entry "
+                      href="/pythonsciencebook/ipynb/functions/first-class.html"
+                    >
+                      
+                        2.1.2
+                        
+                      
+                      Первоклассные жители
+                    </a>
+                
+                  
+                  
+
+                  <li class="c-sidebar__subsection">
+                    <a class="c-sidebar__entry "
+                      href="/pythonsciencebook/ipynb/functions/decorators.html"
+                    >
+                      
+                        2.1.3
+                        
+                      
+                      Декораторы
+                    </a>
                 
 
               </li>
@@ -1084,6 +1126,25 @@ initFunction(initPrint)
                     3.5
                   
                   Special methods
+                </a>
+
+                
+                
+
+              </li>
+              
+            
+              
+              
+
+              <li class="c-sidebar__section">
+                <a class="c-sidebar__entry "
+                  href="/pythonsciencebook/not/sklearn.html"
+                >
+                  
+                    3.6
+                  
+                  ООП в sklearn
                 </a>
 
                 
@@ -1440,6 +1501,14 @@ initFunction(initPrint)
         "title": "Исключения",
         
         "excerpt":
+            "про ошибки: они есть — в программах встречаются ошибки и все такое есть уровня компиляции (syntax errors), есть уровня выполнения (все остальные?) как можно обрабатывать ошибки? просто проверки и типа assert их можно обрабатываться специальным синтаксисом (try/except) ошибки можно вызывать (raise) можно и нужно создавать свой класс ошибок логгирование ошибок Handling Exceptions try: 10 / 0 except Exception: print(&#39;Exception&#39;) Exception try: 10 / 0 except Exception as e: print(&#39;Exception: {}&#39;.format(e)) Exception: division by zero while True: try: x = int(input(&quot;Please enter a number: &quot;)) break except ValueError: print( &quot;Oops! That was no valid number. Try again...&quot;) Oops! That was no...",
+        "categories": [],
+        "tags": [],
+        "url": "https://theotheo.github.io/pythonsciencebook/ipynb/errors/exceptions.html",
+        "teaser":null},{
+        "title": "Исключения",
+        
+        "excerpt":
             "Exceptions Examples 10 / 0 prin(10) for i in [1, 2] print(i) Handling Exceptions try: 10 / 0 except Exception: print(&#39;Exception&#39;) try: 10 / 0 except Exception as e: print(&#39;Exception: {}&#39;.format(e)) while True: try: x = int(raw_input(&quot;Please enter a number: &quot;)) break except ValueError: print( &quot;Oops! That was no valid number. Try again...&quot;) import sys try: f = open(&#39;myfile.txt&#39;) s = f.readline() i = int(s.strip()) except IOError as e: print( &quot;I/O error({0}): {1}&quot;.format(e.errno, e.strerror)) except ValueError: print( &quot;Could not convert data to an integer.&quot;) except: print( &quot;Unexpected error:&quot;, sys.exc_info()[0]) raise Built-in exceptions BaseException +-- SystemExit +-- KeyboardInterrupt +-- GeneratorExit +--...",
         "categories": [],
         "tags": [],
@@ -1460,6 +1529,38 @@ initFunction(initPrint)
         "categories": [],
         "tags": [],
         "url": "https://theotheo.github.io/pythonsciencebook/ipynb/functions.html",
+        "teaser":null},{
+        "title": "Декораторы",
+        
+        "excerpt":
+            "decorators Декораторы -- оборачивают (wrap) другую функцию и позволяет выполнить какой-то код до или после нее. \"&#1085;&#1091;&#1083;&#1077;&#1074;&#1086;&#1081;\" &#1076;&#1077;&#1082;&#1086;&#1088;&#1072;&#1090;&#1086;&#1088; def null_decorator(func): return func def greet(): return &#39;Hello!&#39; greet = null_decorator(greet) a decorator is a callable that takes a callable as input and returns another callable. @ @null_decorator def greet(): return &#39;Hello!&#39; greet() # ### изменяем поведение def uppercase(func): def wrapper(): original_result = func() modified_result = original_result.upper() return modified_result return wrapper @uppercase def greet(): return &#39;Hello!&#39; greet null_decorator(greet) uppercase(greet) &#1084;&#1085;&#1086;&#1078;&#1077;&#1089;&#1090;&#1074;&#1077;&#1085;&#1085;&#1086;&#1077; def strong(func): def wrapper(): return &#39;&lt;strong&gt;&#39; + func() + &#39;&lt;/strong&gt;&#39; return wrapper def emphasis(func): def wrapper(): return &#39;&lt;em&gt;&#39; + func() + &#39;&lt;/em&gt;&#39;...",
+        "categories": [],
+        "tags": [],
+        "url": "https://theotheo.github.io/pythonsciencebook/ipynb/functions/decorators.html",
+        "teaser":null},{
+        "title": "Первоклассные жители",
+        
+        "excerpt":
+            "Function first-class citizens Функции можно присваивать переменным, сохранять в структурах данных, передавать как аргументы другим функциям и возвращать как значение функций &#1087;&#1088;&#1080;&#1089;&#1074;&#1086;&#1077;&#1085;&#1080;&#1077; def yell(text): return text.upper() + &#39;!&#39; bark = yell # присваиваем bark(&#39;woof&#39;) del yell # удаляем yell(&#39;hello?&#39;) bark(&#39;hey&#39;) bark.__name__ # имя для дебага # ### сохраняем funcs = [bark, str.lower, str.capitalize] funcs for f in funcs: print(f, f(&#39;hey there&#39;)) funcs[0](&#39;heyho&#39;) &#1087;&#1077;&#1088;&#1077;&#1076;&#1072;&#1077;&#1084; &#1074; &#1092;&#1091;&#1085;&#1082;&#1094;&#1080;&#1102; def greet(func): greeting = func(&#39;Hi, I am a Python program&#39;) print(greeting) greet(bark) def whisper(text): return text.lower() + &#39;...&#39; greet(whisper) higher-order functions -- функции, которые принимают другие функции. например, map list(map(bark, [&#39;hello&#39;, &#39;hey&#39;, &#39;hi&#39;])) &#1074;&#1083;&#1086;&#1078;&#1077;&#1085;&#1085;&#1099;&#1077; &#1092;&#1091;&#1085;&#1082;&#1094;&#1080;&#1080;...",
+        "categories": [],
+        "tags": [],
+        "url": "https://theotheo.github.io/pythonsciencebook/ipynb/functions/first-class.html",
+        "teaser":null},{
+        "title": "Функции",
+        
+        "excerpt":
+            "              &#1060;&#1091;&#1085;&#1082;&#1094;&#1080;&#1080;  В Python, как и во многих других языках программирования можно создавать функции. Общий синтаксис выглядит так:   def name(arg1, arg2):     \"\"\"doc string\"\"\"     body     return stm где:   name -- имя функции arg1 и arg2 -- аргументы функции doc string -- строка документации body -- тело функции return -- ключевой слово, обозначающее что из функции будет происходить возврат в этом месте и этого значения  Соответственно использование данной функции выглядит примерно так:   my_var = name(a, b) Посмотрим крайне простой пример                   def foo(i, j):     &quot;&quot;&quot;Умножим i на 3 и прибавим j&quot;&quot;&quot;     return i * 3 + j                         foo(1, 2)                    5                        ",
+        "categories": [],
+        "tags": [],
+        "url": "https://theotheo.github.io/pythonsciencebook/ipynb/functions/intro.html",
+        "teaser":null},{
+        "title": "Params",
+        
+        "excerpt":
+            "              Params  args, kwargs                   def foo(required, *args, **kwargs):     print(required)     if args:         print(args)     if kwargs:         print(kwargs)                         foo()                   --------------------------------------------------------------------------- TypeError                                 Traceback (most recent call last) &lt;ipython-input-4-c19b6d9633cf&gt; in &lt;module&gt; ----&gt; 1 foo()  TypeError: foo() missing 1 required positional argument: &#39;required&#39;                     foo(&#39;hello&#39;)                  hello                      foo(&#39;hello&#39;, 1, 2, 3)                  hello (1, 2, 3)                      foo(&#39;hello&#39;, 1, 2, 3, key1=&#39;value&#39;, key2=999)                  hello (1, 2, 3) {&#39;key1&#39;: &#39;value&#39;, &#39;key2&#39;: 999}               &#1048;&#1089;&#1090;&#1086;&#1095;&#1085;&#1080;&#1082;&#1080; &#1080; &#1089;&#1089;&#1099;&#1083;&#1082;&#1080;   https://book.pythontips.com/en/latest/python_c_extension.html                     ",
+        "categories": [],
+        "tags": [],
+        "url": "https://theotheo.github.io/pythonsciencebook/ipynb/functions/params.html",
         "teaser":null},{
         "title": "История",
         
@@ -1484,6 +1585,30 @@ initFunction(initPrint)
         "categories": [],
         "tags": [],
         "url": "https://theotheo.github.io/pythonsciencebook/ipynb/introspection.html",
+        "teaser":null},{
+        "title": "Интроспекция и рефлексия",
+        
+        "excerpt":
+            "&#1048;&#1085;&#1090;&#1088;&#1086;&#1089;&#1087;&#1077;&#1082;&#1094;&#1080;&#1103; &#1080; &#1088;&#1077;&#1092;&#1083;&#1077;&#1082;&#1089;&#1080;&#1103; В философии и психологии инстроспекцией называют акт самонаблюдения, в процессе которого происходит более глубокое познание себя и своей психики. Интроспекцией (introspection) в computer science называют способность программы узнавать типы и свойства объектов во время выполнения. Так же существует термин рефлексия (reflection) развивающий идею интроспекции -- это уже способность программы менять свойства объектов. Интроспекция является важной частью Python и реализует в нем целым рядом способов. dir Пожалуй, самый полезный интроспективный метод. dir возвращает список того, что \"содержится\" в объекте: его функции и переменные. Или говоря корректнее, его методы и свойства. dir(1) [&#39;__abs__&#39;, &#39;__add__&#39;, &#39;__and__&#39;, &#39;__bool__&#39;, &#39;__ceil__&#39;, &#39;__class__&#39;, &#39;__delattr__&#39;,...",
+        "categories": [],
+        "tags": [],
+        "url": "https://theotheo.github.io/pythonsciencebook/ipynb/introspection/introspection.html",
+        "teaser":null},{
+        "title": "Рефлексия",
+        
+        "excerpt":
+            "              &#1056;&#1077;&#1092;&#1083;&#1077;&#1082;&#1089;&#1080;&#1103;            getattr  Позволяет получить любой аттрибут объект по его имени                   getattr(3, &quot;imag&quot;)                    0                      f = getattr(&#39;string&#39;, &#39;upper&#39;) f                    &lt;function str.upper&gt;                      f()                    &#39;STRING&#39;               getattr еще не меняет свойства объекта, это делает его напарник: setattr  setattr  // TODO: дописать описание примеры            &#1048;&#1089;&#1090;&#1086;&#1095;&#1085;&#1080;&#1082;&#1080; &#1080; &#1076;&#1086;&#1087;&#1086;&#1083;&#1085;&#1080;&#1090;&#1077;&#1083;&#1100;&#1085;&#1099;&#1077; &#1089;&#1089;&#1099;&#1083;&#1082;&#1080;:   https://www.bnmetrics.com/blog/introspection-reflection-in-python                     ",
+        "categories": [],
+        "tags": [],
+        "url": "https://theotheo.github.io/pythonsciencebook/ipynb/introspection/reflection.html",
+        "teaser":null},{
+        "title": "Модуль sys",
+        
+        "excerpt":
+            "sys import sys sys.executable &#39;/usr/bin/python3&#39; sys.platform &#39;linux&#39; sys.version &#39;3.6.8 (default, Oct 7 2019, 12:59:55) \\n[GCC 8.3.0]&#39; sys.argv [&#39;/home/i/.local/lib/python3.6/site-packages/ipykernel_launcher.py&#39;, &#39;-f&#39;, &#39;/run/user/1000/jupyter/kernel-19b3624d-a9e9-45b3-9c86-c7c450974563.json&#39;] sys.path [&#39;/usr/lib/python36.zip&#39;, &#39;/usr/lib/python3.6&#39;, &#39;/usr/lib/python3.6/lib-dynload&#39;, &#39;&#39;, &#39;/home/i/.local/lib/python3.6/site-packages&#39;, &#39;/home/i/JOBS/ai/AISpace2-0.7.11&#39;, &#39;/usr/local/lib/python3.6/dist-packages&#39;, &#39;/usr/lib/python3/dist-packages&#39;, &#39;/home/i/.local/lib/python3.6/site-packages/IPython/extensions&#39;, &#39;/home/i/.ipython&#39;] sys.modules {&#39;builtins&#39;: &lt;module &#39;builtins&#39; (built-in)&gt;, &#39;sys&#39;: &lt;module &#39;sys&#39; (built-in)&gt;, &#39;_frozen_importlib&#39;: &lt;module &#39;importlib._bootstrap&#39; (frozen)&gt;, &#39;_imp&#39;: &lt;module &#39;_imp&#39; (built-in)&gt;, &#39;_warnings&#39;: &lt;module &#39;_warnings&#39; (built-in)&gt;, &#39;_thread&#39;: &lt;module &#39;_thread&#39; (built-in)&gt;, &#39;_weakref&#39;: &lt;module &#39;_weakref&#39; (built-in)&gt;, &#39;_frozen_importlib_external&#39;: &lt;module &#39;importlib._bootstrap_external&#39; (frozen)&gt;, &#39;_io&#39;: &lt;module &#39;io&#39; (built-in)&gt;, &#39;marshal&#39;: &lt;module &#39;marshal&#39; (built-in)&gt;, &#39;posix&#39;: &lt;module &#39;posix&#39; (built-in)&gt;, &#39;zipimport&#39;: &lt;module &#39;zipimport&#39; (built-in)&gt;, &#39;encodings&#39;: &lt;module &#39;encodings&#39; from &#39;/usr/lib/python3.6/encodings/__init__.py&#39;&gt;, &#39;codecs&#39;: &lt;module &#39;codecs&#39; from &#39;/usr/lib/python3.6/codecs.py&#39;&gt;, &#39;_codecs&#39;: &lt;module &#39;_codecs&#39; (built-in)&gt;, &#39;encodings.aliases&#39;: &lt;module &#39;encodings.aliases&#39; from &#39;/usr/lib/python3.6/encodings/aliases.py&#39;&gt;, &#39;encodings.utf_8&#39;:...",
+        "categories": [],
+        "tags": [],
+        "url": "https://theotheo.github.io/pythonsciencebook/ipynb/introspection/sys.html",
         "teaser":null},{
         "title": "Jupyter",
         
@@ -1589,6 +1714,14 @@ initFunction(initPrint)
         "tags": [],
         "url": "https://theotheo.github.io/pythonsciencebook/ipynb/sys.html",
         "teaser":null},{
+        "title": "Jupyter",
+        
+        "excerpt":
+            "Jupyter Jupyter, а точнее Project Jupyter -- организация, активно развивающая несколько связанных opensource-проектов, посвященных интерактивным вычислениям. Флагманским проектом является Jupyter Notebook, который часто и называют просто Jupyter. Jupyter появился в 2014 году, как ответвление IPython. Название является отсылкой к 3 языкам программирования: Julia, Python и R; а так же данью тетрадками Галлилея, в которых он записал наблюдения лун Юпитера. Jupyter Notebook На данный момент Jupyter Notebook популярная среда разработки, в том числе разработки data-science приложений. Jupyter создан на базе web-стека, то есть с использованием технологий HTML/CSS/Javascript и клиент-серверной архитектуры, общающейся по HTTP. Иначе говоря, Jupyter Notebook -- это веб-приложение и...",
+        "categories": [],
+        "tags": [],
+        "url": "https://theotheo.github.io/pythonsciencebook/ipynb/tools/jupyter.html",
+        "teaser":null},{
         "title": "Абстракция и инкапсуляция",
         
         "excerpt":
@@ -1664,7 +1797,7 @@ initFunction(initPrint)
         "title": "Интеграция с другими языками",
         
         "excerpt":
-            "              Интеграция питона с другими языками  https://wiki.python.org/moin/IntegratingPythonWithOtherLanguages  FFI  https://ps-group.github.io/compilers/backend_ffi https://en.wikipedia.org/wiki/Foreign_function_interface  C  SWIG  http://www.swig.org/tutorial.html  R                     ",
+            "              Интеграция питона с другими языками  https://wiki.python.org/moin/IntegratingPythonWithOtherLanguages  FFI  https://ps-group.github.io/compilers/backend_ffi https://en.wikipedia.org/wiki/Foreign_function_interface  C  SWIG  http://www.swig.org/tutorial.html  R  &#1057;&#1089;&#1099;&#1083;&#1082;&#1080; &#1080; &#1080;&#1089;&#1090;&#1086;&#1095;&#1085;&#1080;&#1082;&#1080;   https://book.pythontips.com/en/latest/python_c_extension.html                      ",
         "categories": [],
         "tags": [],
         "url": "https://theotheo.github.io/pythonsciencebook/not/integration.html",
@@ -1700,6 +1833,14 @@ initFunction(initPrint)
         "categories": [],
         "tags": [],
         "url": "https://theotheo.github.io/pythonsciencebook/not/series.html",
+        "teaser":null},{
+        "title": "ООП в sklearn",
+        
+        "excerpt":
+            "              Здесь мы обсудим все что связано с sklearn  &#1048;&#1089;&#1090;&#1086;&#1088;&#1080;&#1103;  &#1041;&#1072;&#1079;&#1086;&#1074;&#1099;&#1081; &#1089;&#1080;&#1085;&#1090;&#1072;&#1082;&#1089;&#1080;&#1089;  &#1052;&#1086;&#1076;&#1077;&#1083;&#1080;  &#1052;&#1077;&#1090;&#1088;&#1080;&#1082;&#1080;  &#1048;&#1085;&#1089;&#1090;&#1088;&#1091;&#1084;&#1077;&#1085;&#1090;&#1099; &#1084;&#1086;&#1076;&#1077;&#1083;&#1080;&#1088;&#1086;&#1074;&#1072;&#1085;&#1080;&#1103;  &#1055;&#1072;&#1081;&#1087;&#1083;&#1072;&#1081;&#1085;&#1080;&#1085;&#1075;  &#1050;&#1072;&#1089;&#1090;&#1086;&#1084;&#1085;&#1099;&#1077; &#1090;&#1088;&#1072;&#1085;&#1089;&#1092;&#1086;&#1088;&#1084;&#1077;&#1088;&#1099;  &#1048;&#1085;&#1089;&#1090;&#1088;&#1091;&#1084;&#1077;&#1085;&#1090;&#1099; &#1086;&#1090; &#1089;&#1086;&#1086;&#1073;&#1097;&#1077;&#1089;&#1090;&#1074;&#1072; sklearn  Metric learn  Inbalanced Learn                     ",
+        "categories": [],
+        "tags": [],
+        "url": "https://theotheo.github.io/pythonsciencebook/not/sklearn.html",
         "teaser":null},{
         "title": "Текст",
         
