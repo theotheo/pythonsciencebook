@@ -26,8 +26,8 @@
   "@type": "NewsArticle",
   "mainEntityOfPage": "https://theotheo.github.io/pythonsciencebook/search",
   "headline": "Search the site",
-  "datePublished": "2019-11-07T18:31:36+03:00",
-  "dateModified": "2019-11-07T18:31:36+03:00",
+  "datePublished": "2019-11-07T18:33:45+03:00",
+  "dateModified": "2019-11-07T18:33:45+03:00",
   "description": "        ",
   "author": {
     "@type": "Person",
@@ -822,6 +822,20 @@ initFunction(initPrint)
                 </a>
 
                 
+                
+                  
+                  
+
+                  <li class="c-sidebar__subsection">
+                    <a class="c-sidebar__entry "
+                      href="/pythonsciencebook/ipynb/errors/exceptions.html"
+                    >
+                      
+                        1.9.1
+                        
+                      
+                      Обработка
+                    </a>
                 
 
               </li>
@@ -1740,7 +1754,7 @@ initFunction(initPrint)
         "title": "Composition",
         
         "excerpt":
-            "                     # Composition                  Composition versus inheritance  про это даже в википедии есть статья  https://en.wikipedia.org/wiki/Composition_over_inheritance  https://thoughtbot.com/blog/reusable-oo-composition-vs-inheritance  https://stackoverflow.com/questions/3085285/difference-between-cohesion-and-coupling  про это надо поговорить еще))))))))  о. придумал задание на это... дан большой класс с кучей всяких методов... и надо его разделить на несколько — чтобы High Cohesion  https://i.stack.imgur.com/DOEn7.png  ух какая картинка хорошая                     ",
+            "Composition Композиция -- это акт собирания нескольких объектов вместе, чтобы создать новый. Композиция обычно является хорошим выбором, когда один объект является частью другого объекта. Composition versus inheritance https://en.wikipedia.org/wiki/Composition_over_inheritance https://thoughtbot.com/blog/reusable-oo-composition-vs-inheritance https://stackoverflow.com/questions/3085285/difference-between-cohesion-and-coupling &#1047;&#1072;&#1076;&#1072;&#1085;&#1080;&#1077; Замените множественное наследование и класс Tutor с использованием композиции объектов Learner, Teacher в классе Person class Person: def __init__(self, name, surname, number): self.name = name self.surname = surname self.number = number class LearnerMixin: def __init__(self): self.classes = [] def enrol(self, course): self.classes.append(course) class TeacherMixin: def __init__(self): self.courses_taught = [] def assign_teaching(self, course): self.courses_taught.append(course) class Tutor(Person, LearnerMixin, TeacherMixin): def __init__(self, *args, **kwargs): LearnerMixin.__init__(self) TeacherMixin.__init__(self) super().__init__(*args, **kwargs) jane = Tutor(&#39;Jane&#39;, &#39;Smith&#39;,...",
         "categories": [],
         "tags": [],
         "url": "https://theotheo.github.io/pythonsciencebook/ipynb/oop/composition.html",
@@ -1812,7 +1826,7 @@ initFunction(initPrint)
         "title": "Синтаксис",
         
         "excerpt":
-            "              &#1057;&#1086;&#1079;&#1076;&#1072;&#1085;&#1080;&#1077; &#1082;&#1083;&#1072;&#1089;&#1089;&#1072;  Примерный синтаксис:   class ClassName(Parent1, Parent2):      \"\"\" doc string \"\"\"     def __init__(self):         block1      def foo(self):         block2      def bar(self, x):         block3           &#1047;&#1072;&#1076;&#1072;&#1095;&#1072;  Создайте класс Movie и определите конструктор класса со следующими параметрами:   заголовок режиссёр год выпуска  Создайте объекты:   «Титаник» (реж. Джеймс Кэмерон, 1997) «Звездные войны» (реж. Джордж Лукас, 1977) «Бойцовский клуб» (реж. Дэвид Финчер, 1999) и любой пожеланию  Затем создайте метод, который возвращает возраст фильма в годах                     ",
+            "&#1057;&#1086;&#1079;&#1076;&#1072;&#1085;&#1080;&#1077; &#1082;&#1083;&#1072;&#1089;&#1089;&#1072; Примерный синтаксис: class ClassName(Parent1, Parent2): \"\"\" doc string \"\"\" def __init__(self): block1 def foo(self): block2 def bar(self, x): block3 Важная деталь, которая может пройти незамеченной, это соглашения об именовании класса. Согласно PEP8 имя класса должно быть в т.н. CamelCase: CamelCase (с англ. — «ВерблюжийРегистр», также «ГорбатыйРегистр», «СтильВерблюда») — стиль написания составных слов, при котором несколько слов пишутся слитно без пробелов, при этом каждое слово внутри фразы пишется с прописной буквы. Стиль получил название CamelCase, поскольку прописные буквы внутри слова напоминают горбы верблюда (англ. Camel). class Person: def __init__(self, name): self.name = name def hi(self): print(&#39;Hi, my name is {}&#39;.format(self.name)) john...",
         "categories": [],
         "tags": [],
         "url": "https://theotheo.github.io/pythonsciencebook/ipynb/oop/syntax.html",
@@ -1820,7 +1834,7 @@ initFunction(initPrint)
         "title": "UML",
         
         "excerpt":
-            "              Unified Modeling Language (UML)            Часто встречающаяся иллюстрация к наследованию в ООП -- это таксономия животных.  На мой взгляд, это больше аллюзия, чем аналогия. Дело в том, что логика программирования связана с другими императивами, чем логика эволюции.    https://ru.wikipedia.org/wiki/Животные            Скорее иерархия классов в программирование будет похожа на ту, что описана Борхесом    https://pikabu.ru/story/kitayskie_zhivotnyie_5733992                   ## Архитектура ПО                                                     ",
+            "              Unified Modeling Language (UML)  много диаграмм   &#1044;&#1080;&#1072;&#1075;&#1088;&#1072;&#1084;&#1084;&#1072; &#1082;&#1083;&#1072;&#1089;&#1089;&#1086;&#1074;    &#1044;&#1080;&#1072;&#1075;&#1088;&#1072;&#1084;&#1084;&#1072; &#1087;&#1086;&#1089;&#1083;&#1077;&#1076;&#1086;&#1074;&#1072;&#1090;&#1077;&#1083;&#1100;&#1085;&#1086;&#1089;&#1090;&#1077;&#1081;              Часто встречающаяся иллюстрация к наследованию в ООП -- это таксономия животных.  На мой взгляд, это больше аллюзия, чем аналогия. Дело в том, что логика программирования связана с другими императивами, чем логика эволюции.    https://ru.wikipedia.org/wiki/Животные            Скорее иерархия классов в программирование будет похожа на ту, что описана Борхесом    https://pikabu.ru/story/kitayskie_zhivotnyie_5733992            Pynsource  ELI5              &#1040;&#1088;&#1093;&#1080;&#1090;&#1077;&#1082;&#1090;&#1091;&#1088;&#1072; &#1055;&#1054;                                                 ",
         "categories": [],
         "tags": [],
         "url": "https://theotheo.github.io/pythonsciencebook/ipynb/oop/uml.html",

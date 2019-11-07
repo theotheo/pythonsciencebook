@@ -26,8 +26,8 @@
   "@type": "NewsArticle",
   "mainEntityOfPage": "https://theotheo.github.io/pythonsciencebook/ipynb/oop/inheritance.html",
   "headline": "Inheritance",
-  "datePublished": "2019-11-07T18:31:36+03:00",
-  "dateModified": "2019-11-07T18:31:36+03:00",
+  "datePublished": "2019-11-07T18:33:45+03:00",
+  "dateModified": "2019-11-07T18:33:45+03:00",
   "description": "        &#1053;&#1072;&#1089;&#1083;&#1077;&#1076;&#1086;&#1074;&#1072;&#1085;&#1080;&#1077; Наследование -- одна из ключевых особенностей ООП. Под наследова...",
   "author": {
     "@type": "Person",
@@ -822,6 +822,20 @@ initFunction(initPrint)
                 </a>
 
                 
+                
+                  
+                  
+
+                  <li class="c-sidebar__subsection">
+                    <a class="c-sidebar__entry "
+                      href="/pythonsciencebook/ipynb/errors/exceptions.html"
+                    >
+                      
+                        1.9.1
+                        
+                      
+                      Обработка
+                    </a>
                 
 
               </li>
@@ -1889,7 +1903,7 @@ Back in my day...
 
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="&#1052;&#1085;&#1086;&#1078;&#1077;&#1089;&#1090;&#1074;&#1077;&#1085;&#1085;&#1086;&#1077;-&#1085;&#1072;&#1089;&#1083;&#1077;&#1076;&#1086;&#1074;&#1072;&#1085;&#1080;&#1077;">&#1052;&#1085;&#1086;&#1078;&#1077;&#1089;&#1090;&#1074;&#1077;&#1085;&#1085;&#1086;&#1077; &#1085;&#1072;&#1089;&#1083;&#1077;&#1076;&#1086;&#1074;&#1072;&#1085;&#1080;&#1077;<a class="anchor-link" href="#&#1052;&#1085;&#1086;&#1078;&#1077;&#1089;&#1090;&#1074;&#1077;&#1085;&#1085;&#1086;&#1077;-&#1085;&#1072;&#1089;&#1083;&#1077;&#1076;&#1086;&#1074;&#1072;&#1085;&#1080;&#1077;"> </a></h2>
+<h2 id="&#1052;&#1085;&#1086;&#1078;&#1077;&#1089;&#1090;&#1074;&#1077;&#1085;&#1085;&#1086;&#1077;-&#1085;&#1072;&#1089;&#1083;&#1077;&#1076;&#1086;&#1074;&#1072;&#1085;&#1080;&#1077;-&#1080;-MRO">&#1052;&#1085;&#1086;&#1078;&#1077;&#1089;&#1090;&#1074;&#1077;&#1085;&#1085;&#1086;&#1077; &#1085;&#1072;&#1089;&#1083;&#1077;&#1076;&#1086;&#1074;&#1072;&#1085;&#1080;&#1077; &#1080; MRO<a class="anchor-link" href="#&#1052;&#1085;&#1086;&#1078;&#1077;&#1089;&#1090;&#1074;&#1077;&#1085;&#1085;&#1086;&#1077;-&#1085;&#1072;&#1089;&#1083;&#1077;&#1076;&#1086;&#1074;&#1072;&#1085;&#1080;&#1077;-&#1080;-MRO"> </a></h2>
 </div>
 </div>
 </div>
@@ -2011,9 +2025,58 @@ d
 
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Method-Resolution-Order,-or-MRO">Method Resolution Order, or MRO<a class="anchor-link" href="#Method-Resolution-Order,-or-MRO"> </a></h2>
+<h2 id="Is-a">Is-a<a class="anchor-link" href="#Is-a"> </a></h2><p><img src="https://files.realpython.com/media/ic-basic-inheritance.f8dc9ffee4d7.jpg" alt=""></p>
+<p>Наследование задает is-a отношение. Т.е. Derived является Base.</p>
+
 </div>
 </div>
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="&#1047;&#1072;&#1076;&#1072;&#1095;&#1072;">&#1047;&#1072;&#1076;&#1072;&#1095;&#1072;<a class="anchor-link" href="#&#1047;&#1072;&#1076;&#1072;&#1095;&#1072;"> </a></h3><p>Очень распространенным вариантом использования наследования является создание пользовательской иерархии исключений.</p>
+<p>Напишите простую программу, которая перебирает список пользовательских данных (кортежи, содержащие имя пользователя, адрес электронной почты и возраст) и добавляет каждого пользователя в каталог, если он проходит по заданным ниже условиям.</p>
+<p>Напишите простую иерархию исключений, которая определяет разные исключения для каждого из следующих состояний ошибки:</p>
+<ul>
+<li>имя пользователя не уникально</li>
+<li>возраст не является положительным целым числом</li>
+<li>пользователь моложе 16 лет</li>
+<li>адрес электронной почты недействителен (достаточно просто проверить имя пользователя, символ @ и доменное имя). </li>
+</ul>
+<p>При несоблюдении этих условий поднимите соответвующие исключения в своей программе.</p>
+<p>Всякий раз, когда возникает исключение, ваша программа должна перейти к следующему набору данных в списке.</p>
+<p>Распечатайте разные сообщения об ошибках для каждого вида исключения.</p>
+<p>Вы можете считать адрес электронной почты действительным, если он содержит один символ @ и имеет непустое имя пользователя и имя домена.</p>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">user_data</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="p">(</span><span class="s2">&quot;jane&quot;</span><span class="p">,</span> <span class="s2">&quot;jane@example.com&quot;</span><span class="p">,</span> <span class="mi">21</span><span class="p">),</span>
+    <span class="p">(</span><span class="s2">&quot;bob&quot;</span><span class="p">,</span> <span class="s2">&quot;bob@example&quot;</span><span class="p">,</span> <span class="mi">19</span><span class="p">),</span>
+    <span class="p">(</span><span class="s2">&quot;jane&quot;</span><span class="p">,</span> <span class="s2">&quot;jane2@example.com&quot;</span><span class="p">,</span> <span class="mi">25</span><span class="p">),</span>
+    <span class="p">(</span><span class="s2">&quot;steve&quot;</span><span class="p">,</span> <span class="s2">&quot;steve@somewhere&quot;</span><span class="p">,</span> <span class="mi">15</span><span class="p">),</span>
+    <span class="p">(</span><span class="s2">&quot;joe&quot;</span><span class="p">,</span> <span class="s2">&quot;joe&quot;</span><span class="p">,</span> <span class="mi">23</span><span class="p">),</span>
+    <span class="p">(</span><span class="s2">&quot;anna&quot;</span><span class="p">,</span> <span class="s2">&quot;anna@example.com&quot;</span><span class="p">,</span> <span class="o">-</span><span class="mi">3</span><span class="p">),</span>
+<span class="p">]</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
 </div>
 </div>
 
