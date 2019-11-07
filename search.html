@@ -26,8 +26,8 @@
   "@type": "NewsArticle",
   "mainEntityOfPage": "https://theotheo.github.io/pythonsciencebook/search",
   "headline": "Search the site",
-  "datePublished": "2019-11-07T14:57:44+03:00",
-  "dateModified": "2019-11-07T14:57:44+03:00",
+  "datePublished": "2019-11-07T17:40:55+03:00",
+  "dateModified": "2019-11-07T17:40:55+03:00",
   "description": "        ",
   "author": {
     "@type": "Person",
@@ -1687,7 +1687,7 @@ initFunction(initPrint)
         "title": "Модуль inspect",
         
         "excerpt":
-            "              inspect                   import inspect                  signature                   def foo(a, *, b:int, **kwargs):     pass                         inspect.signature(foo)                    &lt;Signature (a, *, b:int, **kwargs)&gt;               &#1048;&#1089;&#1090;&#1086;&#1095;&#1085;&#1080;&#1082;&#1080; &#1080; &#1089;&#1089;&#1099;&#1083;&#1082;&#1080;   https://docs.python.org/3/library/inspect.html                     ",
+            "              inspect                   import inspect                  signature                   def foo(a, *, b:int, **kwargs):     pass                         inspect.signature(foo)                    &lt;Signature (a, *, b:int, **kwargs)&gt;               getclasstree                   inspect.getclasstree([int])                    [(object, ()), [(int, (object,))]]                      class Foo(): pass  class Bar(Foo): pass  class Baz(Bar): pass inspect.getclasstree([Baz])                    [(__main__.Bar, (__main__.Foo,)),  [(__main__.Baz, (__main__.Bar,))],  (object, ()),  [(__main__.Foo, (object,))]]               &#1048;&#1089;&#1090;&#1086;&#1095;&#1085;&#1080;&#1082;&#1080; &#1080; &#1089;&#1089;&#1099;&#1083;&#1082;&#1080;   https://docs.python.org/3/library/inspect.html                     ",
         "categories": [],
         "tags": [],
         "url": "https://theotheo.github.io/pythonsciencebook/ipynb/introspection/inspect.html",
@@ -1751,7 +1751,7 @@ initFunction(initPrint)
         "title": "Абстракция и инкапсуляция",
         
         "excerpt":
-            "                       ",
+            "&#1052;&#1086;&#1076;&#1077;&#1083;&#1080;&#1088;&#1086;&#1074;&#1072;&#1085;&#1080;&#1077; &#1057;&#1086;&#1082;&#1088;&#1099;&#1090;&#1080;&#1077; &#1080;&#1085;&#1092;&#1086;&#1088;&#1084;&#1072;&#1094;&#1080;&#1080; (information hiding) &#1080; &#1080;&#1085;&#1082;&#1072;&#1087;&#1089;&#1091;&#1083;&#1103;&#1094;&#1080;&#1103; (encapsulation) Сокрытие информации -- процесс сокрытия реализации или функциональных деталей объекта соответствующим образом. Это также иногда называют инкапсуляцией, но на самом деле инкапсуляция является более всеобъемлющим термином. Инкапсулированные данные не обязательно скрыты. Инкапсуляция -- это буквально создание капсулы -- можно представить создании капсулы времени. Если вы помещаете кучу информации в капсулу времени, закрываете ее и закапываете, она одновременно инкапсулирована, а информация скрыта. С другой стороны, если капсула времени не была похоронена и раскрыта или сделана из прозрачного пластика, предметы внутри нее все еще инкапсулированы, но информация не скрывается. Различие между инкапсуляцией и сокрытием...",
         "categories": [],
         "tags": [],
         "url": "https://theotheo.github.io/pythonsciencebook/ipynb/oop/abstraction.html",
@@ -1759,7 +1759,7 @@ initFunction(initPrint)
         "title": "Composition",
         
         "excerpt":
-            "                     # Composition                  про это даже в википедии есть статья  https://en.wikipedia.org/wiki/Composition_over_inheritance  https://thoughtbot.com/blog/reusable-oo-composition-vs-inheritance  https://stackoverflow.com/questions/3085285/difference-between-cohesion-and-coupling  про это надо поговорить еще))))))))  о. придумал задание на это... дан большой класс с кучей всяких методов... и надо его разделить на несколько — чтобы High Cohesion  https://i.stack.imgur.com/DOEn7.png  ух какая картинка хорошая                     ",
+            "                     # Composition                  Composition versus inheritance  про это даже в википедии есть статья  https://en.wikipedia.org/wiki/Composition_over_inheritance  https://thoughtbot.com/blog/reusable-oo-composition-vs-inheritance  https://stackoverflow.com/questions/3085285/difference-between-cohesion-and-coupling  про это надо поговорить еще))))))))  о. придумал задание на это... дан большой класс с кучей всяких методов... и надо его разделить на несколько — чтобы High Cohesion  https://i.stack.imgur.com/DOEn7.png  ух какая картинка хорошая                     ",
         "categories": [],
         "tags": [],
         "url": "https://theotheo.github.io/pythonsciencebook/ipynb/oop/composition.html",
@@ -1775,7 +1775,7 @@ initFunction(initPrint)
         "title": "Inheritance",
         
         "excerpt":
-            "              &#1053;&#1072;&#1089;&#1083;&#1077;&#1076;&#1086;&#1074;&#1072;&#1085;&#1080;&#1077;  Для начала рассмотрим простой пример.                   class A():     pass  class B(A):     pass                  Часто встречающаяся иллюстрация к наследованию в ООП -- это таксономия животных.  На мой взгляд, это больше аллюзия, чем аналогия. Дело в том, что логика программирования связана с другими императивами, чем логика эволюции.    https://ru.wikipedia.org/wiki/Животные            Скорее иерархия классов в программирование будет похожа на ту, что описана Борхесом    https://pikabu.ru/story/kitayskie_zhivotnyie_5733992                     ",
+            "&#1053;&#1072;&#1089;&#1083;&#1077;&#1076;&#1086;&#1074;&#1072;&#1085;&#1080;&#1077; Наследование -- одна из ключевых особенностей ООП. Под наследованием понимает особая возможность переиспользования кода. Для начала рассмотрим простой пример. class A: pass Посмотрим на внутренности нашего нового класса dir(A) [&#39;__class__&#39;, &#39;__delattr__&#39;, &#39;__dict__&#39;, &#39;__dir__&#39;, &#39;__doc__&#39;, &#39;__eq__&#39;, &#39;__format__&#39;, &#39;__ge__&#39;, &#39;__getattribute__&#39;, &#39;__gt__&#39;, &#39;__hash__&#39;, &#39;__init__&#39;, &#39;__init_subclass__&#39;, &#39;__le__&#39;, &#39;__lt__&#39;, &#39;__module__&#39;, &#39;__ne__&#39;, &#39;__new__&#39;, &#39;__reduce__&#39;, &#39;__reduce_ex__&#39;, &#39;__repr__&#39;, &#39;__setattr__&#39;, &#39;__sizeof__&#39;, &#39;__str__&#39;, &#39;__subclasshook__&#39;, &#39;__weakref__&#39;] Не смотря на то, что мы не создавали никаких атрибутов -- данный класс не пустой. Откуда это все? А дело в том, что наш класс неявно отнаследован от класса object. Это можно увидеть, если явно import inspect inspect.getclasstree([A]) [(object, ()), [(__main__.A, (object,))]] class A():...",
         "categories": [],
         "tags": [],
         "url": "https://theotheo.github.io/pythonsciencebook/ipynb/oop/inheritance.html",
@@ -1839,7 +1839,7 @@ initFunction(initPrint)
         "title": "UML",
         
         "excerpt":
-            "                       ",
+            "              Unified Modeling Language (UML)            Часто встречающаяся иллюстрация к наследованию в ООП -- это таксономия животных.  На мой взгляд, это больше аллюзия, чем аналогия. Дело в том, что логика программирования связана с другими императивами, чем логика эволюции.    https://ru.wikipedia.org/wiki/Животные            Скорее иерархия классов в программирование будет похожа на ту, что описана Борхесом    https://pikabu.ru/story/kitayskie_zhivotnyie_5733992                   ## Архитектура ПО                                                     ",
         "categories": [],
         "tags": [],
         "url": "https://theotheo.github.io/pythonsciencebook/ipynb/oop/uml.html",

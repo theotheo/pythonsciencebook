@@ -26,8 +26,8 @@
   "@type": "NewsArticle",
   "mainEntityOfPage": "https://theotheo.github.io/pythonsciencebook/ipynb/introspection/inspect.html",
   "headline": "Модуль inspect",
-  "datePublished": "2019-11-07T14:57:44+03:00",
-  "dateModified": "2019-11-07T14:57:44+03:00",
+  "datePublished": "2019-11-07T17:40:55+03:00",
+  "dateModified": "2019-11-07T17:40:55+03:00",
   "description": "        inspect     import inspect    signature     def foo(a, *, b:int, **kwargs):    pass        inspect.signature(foo)    &lt;Signature (a, *, b:int, **kw...",
   "author": {
     "@type": "Person",
@@ -1630,6 +1630,92 @@ initFunction(initPrint)
 
 <div class="output_text output_subarea output_execute_result">
 <pre>&lt;Signature (a, *, b:int, **kwargs)&gt;</pre>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="getclasstree"><code>getclasstree</code><a class="anchor-link" href="#getclasstree"> </a></h2>
+</div>
+</div>
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">inspect</span><span class="o">.</span><span class="n">getclasstree</span><span class="p">([</span><span class="nb">int</span><span class="p">])</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="jb_output_wrapper }}">
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>[(object, ()), [(int, (object,))]]</pre>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">class</span> <span class="nc">Foo</span><span class="p">():</span> <span class="k">pass</span>
+
+<span class="k">class</span> <span class="nc">Bar</span><span class="p">(</span><span class="n">Foo</span><span class="p">):</span> <span class="k">pass</span>
+
+<span class="k">class</span> <span class="nc">Baz</span><span class="p">(</span><span class="n">Bar</span><span class="p">):</span> <span class="k">pass</span>
+<span class="n">inspect</span><span class="o">.</span><span class="n">getclasstree</span><span class="p">([</span><span class="n">Baz</span><span class="p">])</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="jb_output_wrapper }}">
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>[(__main__.Bar, (__main__.Foo,)),
+ [(__main__.Baz, (__main__.Bar,))],
+ (object, ()),
+ [(__main__.Foo, (object,))]]</pre>
 </div>
 
 </div>
