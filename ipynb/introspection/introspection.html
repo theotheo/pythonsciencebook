@@ -26,8 +26,8 @@
   "@type": "NewsArticle",
   "mainEntityOfPage": "https://theotheo.github.io/pythonsciencebook/ipynb/introspection/introspection.html",
   "headline": "Интроспекция и рефлексия",
-  "datePublished": "2019-11-07T05:53:19+03:00",
-  "dateModified": "2019-11-07T05:53:19+03:00",
+  "datePublished": "2019-11-07T14:49:54+03:00",
+  "dateModified": "2019-11-07T14:49:54+03:00",
   "description": "        &#1048;&#1085;&#1090;&#1088;&#1086;&#1089;&#1087;&#1077;&#1082;&#1094;&#1080;&#1103; &#1080; &#1088;&#1077;&#1092;&#1083;&#1077;&#1082;&#1089;&#1080;...",
   "author": {
     "@type": "Person",
@@ -790,6 +790,20 @@ initFunction(initPrint)
                       Рефлексия
                     </a>
                 
+                  
+                  
+
+                  <li class="c-sidebar__subsection">
+                    <a class="c-sidebar__entry "
+                      href="/pythonsciencebook/ipynb/introspection/inspect.html"
+                    >
+                      
+                        1.8.3
+                        
+                      
+                      Модуль inspect
+                    </a>
+                
 
               </li>
               
@@ -799,7 +813,7 @@ initFunction(initPrint)
 
               <li class="c-sidebar__section">
                 <a class="c-sidebar__entry "
-                  href="/pythonsciencebook/ipynb/errors/exceptions.html"
+                  href="/pythonsciencebook/ipynb/errors/intro.html"
                 >
                   
                     1.9
@@ -1044,10 +1058,48 @@ initFunction(initPrint)
 
               <li class="c-sidebar__section">
                 <a class="c-sidebar__entry "
-                  href="/pythonsciencebook/not/abstraction.html"
+                  href="/pythonsciencebook/ipynb/oop/syntax.html"
                 >
                   
                     3.1
+                  
+                  Синтаксис
+                </a>
+
+                
+                
+
+              </li>
+              
+            
+              
+              
+
+              <li class="c-sidebar__section">
+                <a class="c-sidebar__entry "
+                  href="/pythonsciencebook/ipynb/oop/special_methods.html"
+                >
+                  
+                    3.2
+                  
+                  Special methods
+                </a>
+
+                
+                
+
+              </li>
+              
+            
+              
+              
+
+              <li class="c-sidebar__section">
+                <a class="c-sidebar__entry "
+                  href="/pythonsciencebook/ipynb/oop/abstraction.html"
+                >
+                  
+                    3.3
                   
                   Абстракция и инкапсуляция
                 </a>
@@ -1066,9 +1118,47 @@ initFunction(initPrint)
                   href="/pythonsciencebook/ipynb/oop/inheritance.html"
                 >
                   
-                    3.2
+                    3.4
                   
                   Inheritance
+                </a>
+
+                
+                
+
+              </li>
+              
+            
+              
+              
+
+              <li class="c-sidebar__section">
+                <a class="c-sidebar__entry "
+                  href="/pythonsciencebook/ipynb/oop/mixins.html"
+                >
+                  
+                    3.5
+                  
+                  Mixins
+                </a>
+
+                
+                
+
+              </li>
+              
+            
+              
+              
+
+              <li class="c-sidebar__section">
+                <a class="c-sidebar__entry "
+                  href="/pythonsciencebook/ipynb/oop/composition.html"
+                >
+                  
+                    3.6
+                  
+                  Composition
                 </a>
 
                 
@@ -1085,47 +1175,9 @@ initFunction(initPrint)
                   href="/pythonsciencebook/ipynb/oop/knn.html"
                 >
                   
-                    3.3
+                    3.7
                   
                   Example
-                </a>
-
-                
-                
-
-              </li>
-              
-            
-              
-              
-
-              <li class="c-sidebar__section">
-                <a class="c-sidebar__entry "
-                  href="/pythonsciencebook/ipynb/oop/exercises.html"
-                >
-                  
-                    3.4
-                  
-                  Exercises
-                </a>
-
-                
-                
-
-              </li>
-              
-            
-              
-              
-
-              <li class="c-sidebar__section">
-                <a class="c-sidebar__entry "
-                  href="/pythonsciencebook/ipynb/oop/special_methods.html"
-                >
-                  
-                    3.5
-                  
-                  Special methods
                 </a>
 
                 
@@ -1142,7 +1194,7 @@ initFunction(initPrint)
                   href="/pythonsciencebook/not/sklearn.html"
                 >
                   
-                    3.6
+                    3.8
                   
                   ООП в sklearn
                 </a>
@@ -2290,7 +2342,332 @@ initFunction(initPrint)
 
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="type">type<a class="anchor-link" href="#type"> </a></h2><p><code>type</code> показывает класс объекта</p>
+<h2 id="help-&#1080;-doc-string"><code>help</code> &#1080; <code>doc string</code><a class="anchor-link" href="#help-&#1080;-doc-string"> </a></h2><p>функция <code>help</code> печатает содержимое doc-string объекта</p>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">help</span><span class="p">(</span><span class="nb">int</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="jb_output_wrapper }}">
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Help on class int in module builtins:
+
+class int(object)
+ |  int(x=0) -&gt; integer
+ |  int(x, base=10) -&gt; integer
+ |  
+ |  Convert a number or string to an integer, or return 0 if no arguments
+ |  are given.  If x is a number, return x.__int__().  For floating point
+ |  numbers, this truncates towards zero.
+ |  
+ |  If x is not a number or if base is given, then x must be a string,
+ |  bytes, or bytearray instance representing an integer literal in the
+ |  given base.  The literal can be preceded by &#39;+&#39; or &#39;-&#39; and be surrounded
+ |  by whitespace.  The base defaults to 10.  Valid bases are 0 and 2-36.
+ |  Base 0 means to interpret the base from the string as an integer literal.
+ |  &gt;&gt;&gt; int(&#39;0b100&#39;, base=0)
+ |  4
+ |  
+ |  Methods defined here:
+ |  
+ |  __abs__(self, /)
+ |      abs(self)
+ |  
+ |  __add__(self, value, /)
+ |      Return self+value.
+ |  
+ |  __and__(self, value, /)
+ |      Return self&amp;value.
+ |  
+ |  __bool__(self, /)
+ |      self != 0
+ |  
+ |  __ceil__(...)
+ |      Ceiling of an Integral returns itself.
+ |  
+ |  __divmod__(self, value, /)
+ |      Return divmod(self, value).
+ |  
+ |  __eq__(self, value, /)
+ |      Return self==value.
+ |  
+ |  __float__(self, /)
+ |      float(self)
+ |  
+ |  __floor__(...)
+ |      Flooring an Integral returns itself.
+ |  
+ |  __floordiv__(self, value, /)
+ |      Return self//value.
+ |  
+ |  __format__(...)
+ |      default object formatter
+ |  
+ |  __ge__(self, value, /)
+ |      Return self&gt;=value.
+ |  
+ |  __getattribute__(self, name, /)
+ |      Return getattr(self, name).
+ |  
+ |  __getnewargs__(...)
+ |  
+ |  __gt__(self, value, /)
+ |      Return self&gt;value.
+ |  
+ |  __hash__(self, /)
+ |      Return hash(self).
+ |  
+ |  __index__(self, /)
+ |      Return self converted to an integer, if self is suitable for use as an index into a list.
+ |  
+ |  __int__(self, /)
+ |      int(self)
+ |  
+ |  __invert__(self, /)
+ |      ~self
+ |  
+ |  __le__(self, value, /)
+ |      Return self&lt;=value.
+ |  
+ |  __lshift__(self, value, /)
+ |      Return self&lt;&lt;value.
+ |  
+ |  __lt__(self, value, /)
+ |      Return self&lt;value.
+ |  
+ |  __mod__(self, value, /)
+ |      Return self%value.
+ |  
+ |  __mul__(self, value, /)
+ |      Return self*value.
+ |  
+ |  __ne__(self, value, /)
+ |      Return self!=value.
+ |  
+ |  __neg__(self, /)
+ |      -self
+ |  
+ |  __new__(*args, **kwargs) from builtins.type
+ |      Create and return a new object.  See help(type) for accurate signature.
+ |  
+ |  __or__(self, value, /)
+ |      Return self|value.
+ |  
+ |  __pos__(self, /)
+ |      +self
+ |  
+ |  __pow__(self, value, mod=None, /)
+ |      Return pow(self, value, mod).
+ |  
+ |  __radd__(self, value, /)
+ |      Return value+self.
+ |  
+ |  __rand__(self, value, /)
+ |      Return value&amp;self.
+ |  
+ |  __rdivmod__(self, value, /)
+ |      Return divmod(value, self).
+ |  
+ |  __repr__(self, /)
+ |      Return repr(self).
+ |  
+ |  __rfloordiv__(self, value, /)
+ |      Return value//self.
+ |  
+ |  __rlshift__(self, value, /)
+ |      Return value&lt;&lt;self.
+ |  
+ |  __rmod__(self, value, /)
+ |      Return value%self.
+ |  
+ |  __rmul__(self, value, /)
+ |      Return value*self.
+ |  
+ |  __ror__(self, value, /)
+ |      Return value|self.
+ |  
+ |  __round__(...)
+ |      Rounding an Integral returns itself.
+ |      Rounding with an ndigits argument also returns an integer.
+ |  
+ |  __rpow__(self, value, mod=None, /)
+ |      Return pow(value, self, mod).
+ |  
+ |  __rrshift__(self, value, /)
+ |      Return value&gt;&gt;self.
+ |  
+ |  __rshift__(self, value, /)
+ |      Return self&gt;&gt;value.
+ |  
+ |  __rsub__(self, value, /)
+ |      Return value-self.
+ |  
+ |  __rtruediv__(self, value, /)
+ |      Return value/self.
+ |  
+ |  __rxor__(self, value, /)
+ |      Return value^self.
+ |  
+ |  __sizeof__(...)
+ |      Returns size in memory, in bytes
+ |  
+ |  __str__(self, /)
+ |      Return str(self).
+ |  
+ |  __sub__(self, value, /)
+ |      Return self-value.
+ |  
+ |  __truediv__(self, value, /)
+ |      Return self/value.
+ |  
+ |  __trunc__(...)
+ |      Truncating an Integral returns itself.
+ |  
+ |  __xor__(self, value, /)
+ |      Return self^value.
+ |  
+ |  bit_length(...)
+ |      int.bit_length() -&gt; int
+ |      
+ |      Number of bits necessary to represent self in binary.
+ |      &gt;&gt;&gt; bin(37)
+ |      &#39;0b100101&#39;
+ |      &gt;&gt;&gt; (37).bit_length()
+ |      6
+ |  
+ |  conjugate(...)
+ |      Returns self, the complex conjugate of any int.
+ |  
+ |  from_bytes(...) from builtins.type
+ |      int.from_bytes(bytes, byteorder, *, signed=False) -&gt; int
+ |      
+ |      Return the integer represented by the given array of bytes.
+ |      
+ |      The bytes argument must be a bytes-like object (e.g. bytes or bytearray).
+ |      
+ |      The byteorder argument determines the byte order used to represent the
+ |      integer.  If byteorder is &#39;big&#39;, the most significant byte is at the
+ |      beginning of the byte array.  If byteorder is &#39;little&#39;, the most
+ |      significant byte is at the end of the byte array.  To request the native
+ |      byte order of the host system, use `sys.byteorder&#39; as the byte order value.
+ |      
+ |      The signed keyword-only argument indicates whether two&#39;s complement is
+ |      used to represent the integer.
+ |  
+ |  to_bytes(...)
+ |      int.to_bytes(length, byteorder, *, signed=False) -&gt; bytes
+ |      
+ |      Return an array of bytes representing an integer.
+ |      
+ |      The integer is represented using length bytes.  An OverflowError is
+ |      raised if the integer is not representable with the given number of
+ |      bytes.
+ |      
+ |      The byteorder argument determines the byte order used to represent the
+ |      integer.  If byteorder is &#39;big&#39;, the most significant byte is at the
+ |      beginning of the byte array.  If byteorder is &#39;little&#39;, the most
+ |      significant byte is at the end of the byte array.  To request the native
+ |      byte order of the host system, use `sys.byteorder&#39; as the byte order value.
+ |      
+ |      The signed keyword-only argument determines whether two&#39;s complement is
+ |      used to represent the integer.  If signed is False and a negative integer
+ |      is given, an OverflowError is raised.
+ |  
+ |  ----------------------------------------------------------------------
+ |  Data descriptors defined here:
+ |  
+ |  denominator
+ |      the denominator of a rational number in lowest terms
+ |  
+ |  imag
+ |      the imaginary part of a complex number
+ |  
+ |  numerator
+ |      the numerator of a rational number in lowest terms
+ |  
+ |  real
+ |      the real part of a complex number
+
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Эту же информацию (текст) можно получить обратившись напрямую к атрибуту <code>__doc__</code></p>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">int</span><span class="o">.</span><span class="vm">__doc__</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="jb_output_wrapper }}">
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>&#34;int(x=0) -&gt; integer\nint(x, base=10) -&gt; integer\n\nConvert a number or string to an integer, or return 0 if no arguments\nare given.  If x is a number, return x.__int__().  For floating point\nnumbers, this truncates towards zero.\n\nIf x is not a number or if base is given, then x must be a string,\nbytes, or bytearray instance representing an integer literal in the\ngiven base.  The literal can be preceded by &#39;+&#39; or &#39;-&#39; and be surrounded\nby whitespace.  The base defaults to 10.  Valid bases are 0 and 2-36.\nBase 0 means to interpret the base from the string as an integer literal.\n&gt;&gt;&gt; int(&#39;0b100&#39;, base=0)\n4&#34;</pre>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="type-&#1080;-__class__"><code>type</code> &#1080; <code>__class__</code><a class="anchor-link" href="#type-&#1080;-__class__"> </a></h2><p><code>type</code> показывает класс объекта</p>
 
 </div>
 </div>
@@ -2627,6 +3004,153 @@ initFunction(initPrint)
 
 <div class="output_text output_subarea output_execute_result">
 <pre>module</pre>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>так же эту информацию можно получить обратившись напрямую к атрибуту <code>__class__</code></p>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span><span class="o">.</span><span class="vm">__class__</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="jb_output_wrapper }}">
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>tuple</pre>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="p">(</span><span class="mi">2</span><span class="p">)</span><span class="o">.</span><span class="vm">__class__</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="jb_output_wrapper }}">
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>int</pre>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="p">)</span><span class="o">.</span><span class="vm">__class__</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="jb_output_wrapper }}">
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>tuple</pre>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="p">)</span><span class="o">.</span><span class="vm">__class__</span><span class="o">.</span><span class="vm">__class__</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="jb_output_wrapper }}">
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>type</pre>
 </div>
 
 </div>

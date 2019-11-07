@@ -26,8 +26,8 @@
   "@type": "NewsArticle",
   "mainEntityOfPage": "https://theotheo.github.io/pythonsciencebook/search",
   "headline": "Search the site",
-  "datePublished": "2019-11-07T05:53:19+03:00",
-  "dateModified": "2019-11-07T05:53:19+03:00",
+  "datePublished": "2019-11-07T14:49:54+03:00",
+  "dateModified": "2019-11-07T14:49:54+03:00",
   "description": "        ",
   "author": {
     "@type": "Person",
@@ -790,6 +790,20 @@ initFunction(initPrint)
                       Рефлексия
                     </a>
                 
+                  
+                  
+
+                  <li class="c-sidebar__subsection">
+                    <a class="c-sidebar__entry "
+                      href="/pythonsciencebook/ipynb/introspection/inspect.html"
+                    >
+                      
+                        1.8.3
+                        
+                      
+                      Модуль inspect
+                    </a>
+                
 
               </li>
               
@@ -799,7 +813,7 @@ initFunction(initPrint)
 
               <li class="c-sidebar__section">
                 <a class="c-sidebar__entry "
-                  href="/pythonsciencebook/ipynb/errors/exceptions.html"
+                  href="/pythonsciencebook/ipynb/errors/intro.html"
                 >
                   
                     1.9
@@ -1044,10 +1058,48 @@ initFunction(initPrint)
 
               <li class="c-sidebar__section">
                 <a class="c-sidebar__entry "
-                  href="/pythonsciencebook/not/abstraction.html"
+                  href="/pythonsciencebook/ipynb/oop/syntax.html"
                 >
                   
                     3.1
+                  
+                  Синтаксис
+                </a>
+
+                
+                
+
+              </li>
+              
+            
+              
+              
+
+              <li class="c-sidebar__section">
+                <a class="c-sidebar__entry "
+                  href="/pythonsciencebook/ipynb/oop/special_methods.html"
+                >
+                  
+                    3.2
+                  
+                  Special methods
+                </a>
+
+                
+                
+
+              </li>
+              
+            
+              
+              
+
+              <li class="c-sidebar__section">
+                <a class="c-sidebar__entry "
+                  href="/pythonsciencebook/ipynb/oop/abstraction.html"
+                >
+                  
+                    3.3
                   
                   Абстракция и инкапсуляция
                 </a>
@@ -1066,9 +1118,47 @@ initFunction(initPrint)
                   href="/pythonsciencebook/ipynb/oop/inheritance.html"
                 >
                   
-                    3.2
+                    3.4
                   
                   Inheritance
+                </a>
+
+                
+                
+
+              </li>
+              
+            
+              
+              
+
+              <li class="c-sidebar__section">
+                <a class="c-sidebar__entry "
+                  href="/pythonsciencebook/ipynb/oop/mixins.html"
+                >
+                  
+                    3.5
+                  
+                  Mixins
+                </a>
+
+                
+                
+
+              </li>
+              
+            
+              
+              
+
+              <li class="c-sidebar__section">
+                <a class="c-sidebar__entry "
+                  href="/pythonsciencebook/ipynb/oop/composition.html"
+                >
+                  
+                    3.6
+                  
+                  Composition
                 </a>
 
                 
@@ -1085,47 +1175,9 @@ initFunction(initPrint)
                   href="/pythonsciencebook/ipynb/oop/knn.html"
                 >
                   
-                    3.3
+                    3.7
                   
                   Example
-                </a>
-
-                
-                
-
-              </li>
-              
-            
-              
-              
-
-              <li class="c-sidebar__section">
-                <a class="c-sidebar__entry "
-                  href="/pythonsciencebook/ipynb/oop/exercises.html"
-                >
-                  
-                    3.4
-                  
-                  Exercises
-                </a>
-
-                
-                
-
-              </li>
-              
-            
-              
-              
-
-              <li class="c-sidebar__section">
-                <a class="c-sidebar__entry "
-                  href="/pythonsciencebook/ipynb/oop/special_methods.html"
-                >
-                  
-                    3.5
-                  
-                  Special methods
                 </a>
 
                 
@@ -1142,7 +1194,7 @@ initFunction(initPrint)
                   href="/pythonsciencebook/not/sklearn.html"
                 >
                   
-                    3.6
+                    3.8
                   
                   ООП в sklearn
                 </a>
@@ -1509,6 +1561,14 @@ initFunction(initPrint)
         "title": "Исключения",
         
         "excerpt":
+            "&#1048;&#1089;&#1082;&#1083;&#1102;&#1095;&#1077;&#1085;&#1080;&#1103; Программирование, как и любая другая деятельность, не обходится без ошибок. Более того, сложно себе даже представить программу, не содержащую ошибок. Если сравнивать написание программы с чем-то, то в этом контексте оно похоже на написание школьного сочинения, за которое ставят 2 оценки. Одна оценка будет за орфографию, а вторая за содержание. И вам нужна 5 за орфографию, чтобы компьютер принял ваше \"сочинение\". В тоже время содержание он оценивать не очень умеет и готов ставить 5 за любую строки. Ошибки \"по орфографии\" принято в программировании называть \"синтаксические\". А все остальные зовутся семантическими или логическими, то есть ошибки в смысле (логике) кода....",
+        "categories": [],
+        "tags": [],
+        "url": "https://theotheo.github.io/pythonsciencebook/ipynb/errors/intro.html",
+        "teaser":null},{
+        "title": "Исключения",
+        
+        "excerpt":
             "Exceptions Examples 10 / 0 prin(10) for i in [1, 2] print(i) Handling Exceptions try: 10 / 0 except Exception: print(&#39;Exception&#39;) try: 10 / 0 except Exception as e: print(&#39;Exception: {}&#39;.format(e)) while True: try: x = int(raw_input(&quot;Please enter a number: &quot;)) break except ValueError: print( &quot;Oops! That was no valid number. Try again...&quot;) import sys try: f = open(&#39;myfile.txt&#39;) s = f.readline() i = int(s.strip()) except IOError as e: print( &quot;I/O error({0}): {1}&quot;.format(e.errno, e.strerror)) except ValueError: print( &quot;Could not convert data to an integer.&quot;) except: print( &quot;Unexpected error:&quot;, sys.exc_info()[0]) raise Built-in exceptions BaseException +-- SystemExit +-- KeyboardInterrupt +-- GeneratorExit +--...",
         "categories": [],
         "tags": [],
@@ -1586,6 +1646,14 @@ initFunction(initPrint)
         "tags": [],
         "url": "https://theotheo.github.io/pythonsciencebook/ipynb/introspection.html",
         "teaser":null},{
+        "title": "Модуль inspect",
+        
+        "excerpt":
+            "              inspect                   import inspect                  signature                   def foo(a, *, b:int, **kwargs):     pass                         inspect.signature(foo)                    &lt;Signature (a, *, b:int, **kwargs)&gt;               &#1048;&#1089;&#1090;&#1086;&#1095;&#1085;&#1080;&#1082;&#1080; &#1080; &#1089;&#1089;&#1099;&#1083;&#1082;&#1080;   https://docs.python.org/3/library/inspect.html                     ",
+        "categories": [],
+        "tags": [],
+        "url": "https://theotheo.github.io/pythonsciencebook/ipynb/introspection/inspect.html",
+        "teaser":null},{
         "title": "Интроспекция и рефлексия",
         
         "excerpt":
@@ -1642,6 +1710,22 @@ initFunction(initPrint)
         "tags": [],
         "url": "https://theotheo.github.io/pythonsciencebook/ipynb/oop-knn.html",
         "teaser":null},{
+        "title": "Абстракция и инкапсуляция",
+        
+        "excerpt":
+            "                       ",
+        "categories": [],
+        "tags": [],
+        "url": "https://theotheo.github.io/pythonsciencebook/ipynb/oop/abstraction.html",
+        "teaser":null},{
+        "title": "Composition",
+        
+        "excerpt":
+            "                     # Composition                  про это даже в википедии есть статья  https://en.wikipedia.org/wiki/Composition_over_inheritance  https://thoughtbot.com/blog/reusable-oo-composition-vs-inheritance  https://stackoverflow.com/questions/3085285/difference-between-cohesion-and-coupling  про это надо поговорить еще))))))))  о. придумал задание на это... дан большой класс с кучей всяких методов... и надо его разделить на несколько — чтобы High Cohesion  https://i.stack.imgur.com/DOEn7.png  ух какая картинка хорошая                     ",
+        "categories": [],
+        "tags": [],
+        "url": "https://theotheo.github.io/pythonsciencebook/ipynb/oop/composition.html",
+        "teaser":null},{
         "title": "Exercises",
         
         "excerpt":
@@ -1674,13 +1758,29 @@ initFunction(initPrint)
         "tags": [],
         "url": "https://theotheo.github.io/pythonsciencebook/ipynb/oop/knn.html",
         "teaser":null},{
+        "title": "Mixins",
+        
+        "excerpt":
+            "Mixins Миксины -- это особый вариант наследования. Вы можете использовать миксины, чтобы разделять методы между любыми классами, что наследуются от миксина. Рассмотрим простой пример import math class DistanceToMixin: def distance_to_origin(self): return math.hypot(self.x, self.y) def distance_to(self, other): return math.hypot(self.x - other.x, self.y - other.y) class PointD(DistanceToMixin): __slots__ = (&quot;x&quot;, &quot;y&quot;) def __init__(self, x=0, y=0): self.x = x self.y = y def manhattan_length(self, other=None): if other is None: other = self.__class__() # Point(0, 0) return math.fabs(self.x - other.x) + math.fabs(self.y - other.y) p1 = PointD(10, 10) p1 &lt;__main__.PointD at 0x7ff9900f68b8&gt; p1.distance_to_origin() 14.142135623730951 p2 = PointD(0, -15) p1.manhattan_length(p2) 35.0 Или представим себе более...",
+        "categories": [],
+        "tags": [],
+        "url": "https://theotheo.github.io/pythonsciencebook/ipynb/oop/mixins.html",
+        "teaser":null},{
         "title": "Special methods",
         
         "excerpt":
-            "              &#1057;&#1087;&#1077;&#1094;&#1080;&#1072;&#1083;&#1100;&#1085;&#1099;&#1077; &#1084;&#1077;&#1090;&#1086;&#1076;&#1099;  Специальные (special) методы, так же иногда называемые магическими (magic) или дандерc-методы (dunders).            &#1052;&#1077;&#1090;&#1086;&#1076;&#1099; &#1080;&#1085;&#1080;&#1094;&#1080;&#1072;&#1083;&#1080;&#1079;&#1072;&#1094;&#1080;&#1080;  Начнем с методов, связанных с жизненным циклом объекта.  __init__  __init__ -- пожалуй, самый важный метод и уже знакомый вам. Его часто называют конструктором, по аналогии с конструкторами объектов в других языках. В действительно, это скорее не самый корректный термин для этого метода.  __init__(self, *args, **kwargs)  __new__  __new__(class_name, *args, **kwargs)  __del__  __del__(self)  Данный метод вызывает когда сборщик мусора добирается до объекта.            &#1042;&#1099;&#1074;&#1086;&#1076;  __str__  __repr__            &#1040;&#1088;&#1080;&#1092;&#1084;&#1077;&#1090;&#1080;&#1095;&#1077;&#1089;&#1082;&#1080;&#1077; &#1086;&#1087;&#1077;&#1088;&#1072;&#1094;&#1080;&#1080;  __add__  __sub__            &#1057;&#1088;&#1072;&#1074;&#1085;&#1077;&#1085;&#1080;&#1077;            &#1050;&#1086;&#1085;&#1074;&#1077;&#1088;&#1089;&#1080;&#1103; &#1090;&#1080;&#1087;&#1086;&#1074;            &#1048;&#1090;&#1077;&#1088;&#1072;&#1094;&#1080;&#1080;            &#1048;&#1089;&#1090;&#1086;&#1095;&#1085;&#1080;&#1082;&#1080; &#1080; &#1076;&#1086;&#1087;&#1086;&#1083;&#1085;&#1080;&#1090;&#1077;&#1083;&#1100;&#1085;&#1086;&#1077; &#1095;&#1090;&#1077;&#1085;&#1080;&#1077;   https://docs.python.org/3/reference/datamodel.html#special-method-names https://web.archive.org/web/20110131211638/http://diveintopython3.org/special-method-names.html http://www.ironpythoninaction.com/magic-methods.html https://www.omkarpathak.in/2018/08/26/python-magic-methods/ https://dbader.org/blog/python-dunder-methods https://docs.python.org/2.0/ref/specialnames.html https://www.python-course.eu/python3_magic_methods.php                     ",
+            "&#1057;&#1087;&#1077;&#1094;&#1080;&#1072;&#1083;&#1100;&#1085;&#1099;&#1077; &#1084;&#1077;&#1090;&#1086;&#1076;&#1099; Специальные (special) методы, так же иногда называемые магическими (magic) или дандерc-методы (dunders, double underscores). Если поле сигнатура пустое в таблице, то значит, что метод не принимает никаких аргументов, кроме self. Другими словами его сигнатура: ___method_name__(self) &#1052;&#1077;&#1090;&#1086;&#1076;&#1099; &#1080;&#1085;&#1080;&#1094;&#1080;&#1072;&#1083;&#1080;&#1079;&#1072;&#1094;&#1080;&#1080; Начнем с методов, связанных с жизненным циклом объекта. метод сигнатура описание __init__ __init__(self[, ...]) \"конструктор\". нужен для кастомизации только что созданного объекта __new__ __new__(cls[, ...]) настоящий конструктор. возвращает новый объект (чаще всего) класса cls __del__ __del__(self) вызывает когда сборщик мусора добирается до объекта __init__ -- пожалуй, самый важный метод и уже знакомый вам. Его часто называют конструктором, по аналогии с конструкторами...",
         "categories": [],
         "tags": [],
         "url": "https://theotheo.github.io/pythonsciencebook/ipynb/oop/special_methods.html",
+        "teaser":null},{
+        "title": "Синтаксис",
+        
+        "excerpt":
+            "              &#1057;&#1086;&#1079;&#1076;&#1072;&#1085;&#1080;&#1077; &#1082;&#1083;&#1072;&#1089;&#1089;&#1072;  Примерный синтаксис:   class ClassName(Parent1, Parent2):      \"\"\" doc string \"\"\"     def __init__(self):         block1      def foo(self):         block2      def bar(self, x):         block3           &#1047;&#1072;&#1076;&#1072;&#1095;&#1072;  Создайте класс Movie и определите конструктор класса со следующими параметрами:   заголовок режиссёр год выпуска  Создайте объекты:   «Титаник» (реж. Джеймс Кэмерон, 1997) «Звездные войны» (реж. Джордж Лукас, 1977) «Бойцовский клуб» (реж. Дэвид Финчер, 1999) и любой пожеланию  Затем создайте метод, который возвращает возраст фильма в годах                     ",
+        "categories": [],
+        "tags": [],
+        "url": "https://theotheo.github.io/pythonsciencebook/ipynb/oop/syntax.html",
         "teaser":null},{
         "title": "OOPython",
         

@@ -26,8 +26,8 @@
   "@type": "NewsArticle",
   "mainEntityOfPage": "https://theotheo.github.io/pythonsciencebook/ipynb/oop/special_methods.html",
   "headline": "Special methods",
-  "datePublished": "2019-11-07T05:53:19+03:00",
-  "dateModified": "2019-11-07T05:53:19+03:00",
+  "datePublished": "2019-11-07T14:49:54+03:00",
+  "dateModified": "2019-11-07T14:49:54+03:00",
   "description": "        &#1057;&#1087;&#1077;&#1094;&#1080;&#1072;&#1083;&#1100;&#1085;&#1099;&#1077; &#1084;&#1077;&#1090;&#1086;&#1076;&#1099; Специальные (special) методы...",
   "author": {
     "@type": "Person",
@@ -790,6 +790,20 @@ initFunction(initPrint)
                       Рефлексия
                     </a>
                 
+                  
+                  
+
+                  <li class="c-sidebar__subsection">
+                    <a class="c-sidebar__entry "
+                      href="/pythonsciencebook/ipynb/introspection/inspect.html"
+                    >
+                      
+                        1.8.3
+                        
+                      
+                      Модуль inspect
+                    </a>
+                
 
               </li>
               
@@ -799,7 +813,7 @@ initFunction(initPrint)
 
               <li class="c-sidebar__section">
                 <a class="c-sidebar__entry "
-                  href="/pythonsciencebook/ipynb/errors/exceptions.html"
+                  href="/pythonsciencebook/ipynb/errors/intro.html"
                 >
                   
                     1.9
@@ -1044,10 +1058,48 @@ initFunction(initPrint)
 
               <li class="c-sidebar__section">
                 <a class="c-sidebar__entry "
-                  href="/pythonsciencebook/not/abstraction.html"
+                  href="/pythonsciencebook/ipynb/oop/syntax.html"
                 >
                   
                     3.1
+                  
+                  Синтаксис
+                </a>
+
+                
+                
+
+              </li>
+              
+            
+              
+              
+
+              <li class="c-sidebar__section">
+                <a class="c-sidebar__entry c-sidebar__entry--active"
+                  href="/pythonsciencebook/ipynb/oop/special_methods.html"
+                >
+                  
+                    3.2
+                  
+                  Special methods
+                </a>
+
+                
+                
+
+              </li>
+              
+            
+              
+              
+
+              <li class="c-sidebar__section">
+                <a class="c-sidebar__entry "
+                  href="/pythonsciencebook/ipynb/oop/abstraction.html"
+                >
+                  
+                    3.3
                   
                   Абстракция и инкапсуляция
                 </a>
@@ -1066,9 +1118,47 @@ initFunction(initPrint)
                   href="/pythonsciencebook/ipynb/oop/inheritance.html"
                 >
                   
-                    3.2
+                    3.4
                   
                   Inheritance
+                </a>
+
+                
+                
+
+              </li>
+              
+            
+              
+              
+
+              <li class="c-sidebar__section">
+                <a class="c-sidebar__entry "
+                  href="/pythonsciencebook/ipynb/oop/mixins.html"
+                >
+                  
+                    3.5
+                  
+                  Mixins
+                </a>
+
+                
+                
+
+              </li>
+              
+            
+              
+              
+
+              <li class="c-sidebar__section">
+                <a class="c-sidebar__entry "
+                  href="/pythonsciencebook/ipynb/oop/composition.html"
+                >
+                  
+                    3.6
+                  
+                  Composition
                 </a>
 
                 
@@ -1085,47 +1175,9 @@ initFunction(initPrint)
                   href="/pythonsciencebook/ipynb/oop/knn.html"
                 >
                   
-                    3.3
+                    3.7
                   
                   Example
-                </a>
-
-                
-                
-
-              </li>
-              
-            
-              
-              
-
-              <li class="c-sidebar__section">
-                <a class="c-sidebar__entry "
-                  href="/pythonsciencebook/ipynb/oop/exercises.html"
-                >
-                  
-                    3.4
-                  
-                  Exercises
-                </a>
-
-                
-                
-
-              </li>
-              
-            
-              
-              
-
-              <li class="c-sidebar__section">
-                <a class="c-sidebar__entry c-sidebar__entry--active"
-                  href="/pythonsciencebook/ipynb/oop/special_methods.html"
-                >
-                  
-                    3.5
-                  
-                  Special methods
                 </a>
 
                 
@@ -1142,7 +1194,7 @@ initFunction(initPrint)
                   href="/pythonsciencebook/not/sklearn.html"
                 >
                   
-                    3.6
+                    3.8
                   
                   ООП в sklearn
                 </a>
@@ -1465,7 +1517,8 @@ initFunction(initPrint)
 
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="&#1057;&#1087;&#1077;&#1094;&#1080;&#1072;&#1083;&#1100;&#1085;&#1099;&#1077;-&#1084;&#1077;&#1090;&#1086;&#1076;&#1099;">&#1057;&#1087;&#1077;&#1094;&#1080;&#1072;&#1083;&#1100;&#1085;&#1099;&#1077; &#1084;&#1077;&#1090;&#1086;&#1076;&#1099;<a class="anchor-link" href="#&#1057;&#1087;&#1077;&#1094;&#1080;&#1072;&#1083;&#1100;&#1085;&#1099;&#1077;-&#1084;&#1077;&#1090;&#1086;&#1076;&#1099;"> </a></h1><p>Специальные (special) методы, так же иногда называемые магическими (magic) или дандерc-методы (dunders).</p>
+<h1 id="&#1057;&#1087;&#1077;&#1094;&#1080;&#1072;&#1083;&#1100;&#1085;&#1099;&#1077;-&#1084;&#1077;&#1090;&#1086;&#1076;&#1099;">&#1057;&#1087;&#1077;&#1094;&#1080;&#1072;&#1083;&#1100;&#1085;&#1099;&#1077; &#1084;&#1077;&#1090;&#1086;&#1076;&#1099;<a class="anchor-link" href="#&#1057;&#1087;&#1077;&#1094;&#1080;&#1072;&#1083;&#1100;&#1085;&#1099;&#1077;-&#1084;&#1077;&#1090;&#1086;&#1076;&#1099;"> </a></h1><p>Специальные (special) методы, так же иногда называемые магическими (magic) или дандерc-методы (dunders, double underscores).</p>
+<p><em>Если поле <strong>сигнатура</strong> пустое в таблице, то значит, что метод не принимает никаких аргументов, кроме self. Другими словами его сигнатура: <code>___method_name__(self)</code></em></p>
 
 </div>
 </div>
@@ -1477,11 +1530,32 @@ initFunction(initPrint)
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="&#1052;&#1077;&#1090;&#1086;&#1076;&#1099;-&#1080;&#1085;&#1080;&#1094;&#1080;&#1072;&#1083;&#1080;&#1079;&#1072;&#1094;&#1080;&#1080;">&#1052;&#1077;&#1090;&#1086;&#1076;&#1099; &#1080;&#1085;&#1080;&#1094;&#1080;&#1072;&#1083;&#1080;&#1079;&#1072;&#1094;&#1080;&#1080;<a class="anchor-link" href="#&#1052;&#1077;&#1090;&#1086;&#1076;&#1099;-&#1080;&#1085;&#1080;&#1094;&#1080;&#1072;&#1083;&#1080;&#1079;&#1072;&#1094;&#1080;&#1080;"> </a></h2><p>Начнем с методов, связанных с жизненным циклом объекта.</p>
-<h3 id="__init__"><code>__init__</code><a class="anchor-link" href="#__init__"> </a></h3><p><code>__init__</code> -- пожалуй, самый важный метод и уже знакомый вам. Его часто называют конструктором, по аналогии с конструкторами объектов в других языках. В действительно, это скорее не самый корректный термин для этого метода.</p>
-<p><code>__init__(self, *args, **kwargs)</code></p>
-<h3 id="__new__"><code>__new__</code><a class="anchor-link" href="#__new__"> </a></h3><p><code>__new__(class_name, *args, **kwargs)</code></p>
-<h3 id="__del__"><code>__del__</code><a class="anchor-link" href="#__del__"> </a></h3><p><code>__del__(self)</code></p>
-<p>Данный метод вызывает когда сборщик мусора добирается до объекта.</p>
+<table>
+<thead><tr>
+<th>метод</th>
+<th>сигнатура</th>
+<th>описание</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>__init__</code></td>
+<td><code>__init__(self[, ...])</code></td>
+<td>"конструктор". нужен для кастомизации только что созданного объекта</td>
+</tr>
+<tr>
+<td><code>__new__</code></td>
+<td><code>__new__(cls[, ...])</code></td>
+<td>настоящий конструктор. возвращает новый объект (чаще всего) класса <code>cls</code></td>
+</tr>
+<tr>
+<td><code>__del__</code></td>
+<td><code>__del__(self)</code></td>
+<td>вызывает когда сборщик мусора добирается до объекта</td>
+</tr>
+</tbody>
+</table>
+<p><code>__init__</code> -- пожалуй, самый важный метод и уже знакомый вам. Его часто называют конструктором, по аналогии с конструкторами объектов в других языках. В действительно, это скорее не самый корректный термин для этого метода. Ведь когда он вызывает, объект уже создан. Этот метод не может вернуть ничего кроме None</p>
 
 </div>
 </div>
@@ -1492,7 +1566,135 @@ initFunction(initPrint)
 
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="&#1042;&#1099;&#1074;&#1086;&#1076;">&#1042;&#1099;&#1074;&#1086;&#1076;<a class="anchor-link" href="#&#1042;&#1099;&#1074;&#1086;&#1076;"> </a></h2><h3 id="__str__"><code>__str__</code><a class="anchor-link" href="#__str__"> </a></h3><h3 id="__repr__"><code>__repr__</code><a class="anchor-link" href="#__repr__"> </a></h3>
+<h2 id="&#1055;&#1077;&#1095;&#1072;&#1090;&#1085;&#1086;&#1077;-&#1087;&#1088;&#1077;&#1076;&#1089;&#1090;&#1072;&#1074;&#1083;&#1077;&#1085;&#1080;&#1077;">&#1055;&#1077;&#1095;&#1072;&#1090;&#1085;&#1086;&#1077; &#1087;&#1088;&#1077;&#1076;&#1089;&#1090;&#1072;&#1074;&#1083;&#1077;&#1085;&#1080;&#1077;<a class="anchor-link" href="#&#1055;&#1077;&#1095;&#1072;&#1090;&#1085;&#1086;&#1077;-&#1087;&#1088;&#1077;&#1076;&#1089;&#1090;&#1072;&#1074;&#1083;&#1077;&#1085;&#1080;&#1077;"> </a></h2><p>Вы можете контролировать отображение объектов с помощью нескольких методов</p>
+<table>
+<thead><tr>
+<th>метод</th>
+<th>сигнатура</th>
+<th>описание</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>__str__</code></td>
+<td></td>
+<td>используется при превращение в строку, например, при вызове <code>str</code> -- подразумевается приятным для чтения человеком</td>
+</tr>
+<tr>
+<td><code>__repr__</code></td>
+<td></td>
+<td>должно однозначно характеризовывать объект и следовательно полностью выводить информацию о нем</td>
+</tr>
+<tr>
+<td><code>__unicode__</code></td>
+<td></td>
+<td>метод Python 2</td>
+</tr>
+</tbody>
+</table>
+<p>Если нету <code>__str__</code>, то будет вызван <code>__repr__</code></p>
+<p>Разницу между ними настолько не очевидная, что породило популярный вопрос на <a href="https://stackoverflow.com/questions/1436703/difference-between-str-and-repr">SO</a></p>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">class</span> <span class="nc">Notebook</span><span class="p">:</span>
+    <span class="n">counter</span> <span class="o">=</span> <span class="mi">0</span>
+    
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="s1">&#39;Untitled&#39;</span><span class="p">,</span> <span class="n">kernel</span><span class="o">=</span><span class="s1">&#39;Python&#39;</span><span class="p">):</span>
+        <span class="k">if</span> <span class="n">Notebook</span><span class="o">.</span><span class="n">counter</span> <span class="ow">and</span> <span class="n">title</span> <span class="o">==</span> <span class="s1">&#39;Untitled&#39;</span><span class="p">:</span>
+            <span class="n">title</span> <span class="o">=</span> <span class="s1">&#39;</span><span class="si">{}{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">title</span><span class="p">,</span> <span class="n">Notebook</span><span class="o">.</span><span class="n">counter</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">title</span> <span class="o">=</span> <span class="n">title</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">kernel</span> <span class="o">=</span> <span class="n">kernel</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_cells</span> <span class="o">=</span> <span class="p">[]</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">nb1</span> <span class="o">=</span> <span class="n">Notebook</span><span class="p">(</span><span class="s1">&#39;U&#39;</span><span class="p">,</span> <span class="mi">1000</span><span class="p">)</span>
+<span class="n">nb1</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="jb_output_wrapper }}">
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>&lt;__main__.Notebook at 0x7f91a4593198&gt;</pre>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="&#1041;&#1080;&#1085;&#1072;&#1088;&#1085;&#1099;&#1077;-&#1086;&#1087;&#1077;&#1088;&#1072;&#1094;&#1080;&#1080;">&#1041;&#1080;&#1085;&#1072;&#1088;&#1085;&#1099;&#1077; &#1086;&#1087;&#1077;&#1088;&#1072;&#1094;&#1080;&#1080;<a class="anchor-link" href="#&#1041;&#1080;&#1085;&#1072;&#1088;&#1085;&#1099;&#1077;-&#1086;&#1087;&#1077;&#1088;&#1072;&#1094;&#1080;&#1080;"> </a></h2><table>
+<thead><tr>
+<th>метод</th>
+<th>сигнатура</th>
+<th>оператор</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>__add__</code></td>
+<td><code>__add__(self, other)</code></td>
+<td>+</td>
+</tr>
+<tr>
+<td><code>__sub__</code></td>
+<td><code>__sub__(self, other)</code></td>
+<td>-</td>
+</tr>
+<tr>
+<td><code>__mul__</code></td>
+<td><code>__mul__(self, other)</code></td>
+<td>*</td>
+</tr>
+<tr>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+</tr>
+</tbody>
+</table>
+
 </div>
 </div>
 </div>
@@ -1502,7 +1704,10 @@ initFunction(initPrint)
 
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="&#1040;&#1088;&#1080;&#1092;&#1084;&#1077;&#1090;&#1080;&#1095;&#1077;&#1089;&#1082;&#1080;&#1077;-&#1086;&#1087;&#1077;&#1088;&#1072;&#1094;&#1080;&#1080;">&#1040;&#1088;&#1080;&#1092;&#1084;&#1077;&#1090;&#1080;&#1095;&#1077;&#1089;&#1082;&#1080;&#1077; &#1086;&#1087;&#1077;&#1088;&#1072;&#1094;&#1080;&#1080;<a class="anchor-link" href="#&#1040;&#1088;&#1080;&#1092;&#1084;&#1077;&#1090;&#1080;&#1095;&#1077;&#1089;&#1082;&#1080;&#1077;-&#1086;&#1087;&#1077;&#1088;&#1072;&#1094;&#1080;&#1080;"> </a></h2><h3 id="__add__"><code>__add__</code><a class="anchor-link" href="#__add__"> </a></h3><h3 id="__sub__"><code>__sub__</code><a class="anchor-link" href="#__sub__"> </a></h3>
+<p>Так же есть аналогичные методы, но начинающиеся с буквы <code>r</code>, т.е например, <code>__radd__</code> или <code>__rsub__</code></p>
+<p>Разницу между ними можно понять из картинки
+<img src="https://www.python-course.eu/images/operator_overloading__radd__.png" alt=""></p>
+
 </div>
 </div>
 </div>
@@ -1512,7 +1717,37 @@ initFunction(initPrint)
 
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="&#1057;&#1088;&#1072;&#1074;&#1085;&#1077;&#1085;&#1080;&#1077;">&#1057;&#1088;&#1072;&#1074;&#1085;&#1077;&#1085;&#1080;&#1077;<a class="anchor-link" href="#&#1057;&#1088;&#1072;&#1074;&#1085;&#1077;&#1085;&#1080;&#1077;"> </a></h2>
+<h2 id="&#1059;&#1085;&#1072;&#1088;&#1085;&#1099;&#1077;-&#1086;&#1087;&#1077;&#1088;&#1072;&#1094;&#1080;&#1080;">&#1059;&#1085;&#1072;&#1088;&#1085;&#1099;&#1077; &#1086;&#1087;&#1077;&#1088;&#1072;&#1094;&#1080;&#1080;<a class="anchor-link" href="#&#1059;&#1085;&#1072;&#1088;&#1085;&#1099;&#1077;-&#1086;&#1087;&#1077;&#1088;&#1072;&#1094;&#1080;&#1080;"> </a></h2><table>
+<thead><tr>
+<th>метод</th>
+<th>сигнатура</th>
+<th>оператор</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>__neg__</code></td>
+<td><code>__neg__(self)</code></td>
+<td>-</td>
+</tr>
+<tr>
+<td><code>__pos__</code></td>
+<td><code>__pos__(self)</code></td>
+<td>+</td>
+</tr>
+<tr>
+<td><code>__abs__</code></td>
+<td><code>__abs__(self)</code></td>
+<td>abs()</td>
+</tr>
+<tr>
+<td><code>__invert__</code></td>
+<td><code>__invert__(self)</code></td>
+<td>~</td>
+</tr>
+</tbody>
+</table>
+
 </div>
 </div>
 </div>
@@ -1522,7 +1757,47 @@ initFunction(initPrint)
 
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="&#1050;&#1086;&#1085;&#1074;&#1077;&#1088;&#1089;&#1080;&#1103;-&#1090;&#1080;&#1087;&#1086;&#1074;">&#1050;&#1086;&#1085;&#1074;&#1077;&#1088;&#1089;&#1080;&#1103; &#1090;&#1080;&#1087;&#1086;&#1074;<a class="anchor-link" href="#&#1050;&#1086;&#1085;&#1074;&#1077;&#1088;&#1089;&#1080;&#1103;-&#1090;&#1080;&#1087;&#1086;&#1074;"> </a></h2>
+<h2 id="&#1057;&#1088;&#1072;&#1074;&#1085;&#1077;&#1085;&#1080;&#1077;">&#1057;&#1088;&#1072;&#1074;&#1085;&#1077;&#1085;&#1080;&#1077;<a class="anchor-link" href="#&#1057;&#1088;&#1072;&#1074;&#1085;&#1077;&#1085;&#1080;&#1077;"> </a></h2><table>
+<thead><tr>
+<th>метод</th>
+<th>сигнатура</th>
+<th>оператор</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>__lt__</code></td>
+<td><code>__lt__(self, other)</code></td>
+<td>&lt;</td>
+</tr>
+<tr>
+<td><code>__le__</code></td>
+<td><code>__le__(self, other)</code></td>
+<td>&lt;=</td>
+</tr>
+<tr>
+<td><code>__eq__</code></td>
+<td><code>__eq__(self, other)</code></td>
+<td>==</td>
+</tr>
+<tr>
+<td><code>__ne__</code></td>
+<td><code>__ne__(self, other)</code></td>
+<td>!=</td>
+</tr>
+<tr>
+<td><code>__ge__</code></td>
+<td><code>__ge__(self, other)</code></td>
+<td>&gt;=</td>
+</tr>
+<tr>
+<td><code>__gt__</code></td>
+<td><code>__gt__(self, other)</code></td>
+<td>&gt;</td>
+</tr>
+</tbody>
+</table>
+
 </div>
 </div>
 </div>
@@ -1532,9 +1807,376 @@ initFunction(initPrint)
 
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="&#1048;&#1090;&#1077;&#1088;&#1072;&#1094;&#1080;&#1080;">&#1048;&#1090;&#1077;&#1088;&#1072;&#1094;&#1080;&#1080;<a class="anchor-link" href="#&#1048;&#1090;&#1077;&#1088;&#1072;&#1094;&#1080;&#1080;"> </a></h2>
+<h2 id="&#1050;&#1086;&#1085;&#1074;&#1077;&#1088;&#1089;&#1080;&#1103;-&#1090;&#1080;&#1087;&#1086;&#1074;">&#1050;&#1086;&#1085;&#1074;&#1077;&#1088;&#1089;&#1080;&#1103; &#1090;&#1080;&#1087;&#1086;&#1074;<a class="anchor-link" href="#&#1050;&#1086;&#1085;&#1074;&#1077;&#1088;&#1089;&#1080;&#1103;-&#1090;&#1080;&#1087;&#1086;&#1074;"> </a></h2><table>
+<thead><tr>
+<th>метод</th>
+<th>сигнатура</th>
+<th>оператор</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>__complex__</code></td>
+<td><code>__complex__(self)</code></td>
+<td>complex()</td>
+</tr>
+<tr>
+<td><code>__int__</code></td>
+<td><code>__int__(self)</code></td>
+<td>int()</td>
+</tr>
+<tr>
+<td><code>__long__</code></td>
+<td><code>__long__(self)</code></td>
+<td>long()</td>
+</tr>
+<tr>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+</tr>
+<tr>
+<td><code>__float__</code></td>
+<td><code>__float__(self)</code></td>
+<td>float()</td>
+</tr>
+</tbody>
+</table>
+
 </div>
 </div>
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="&#1048;&#1090;&#1077;&#1088;&#1072;&#1094;&#1080;&#1080;">&#1048;&#1090;&#1077;&#1088;&#1072;&#1094;&#1080;&#1080;<a class="anchor-link" href="#&#1048;&#1090;&#1077;&#1088;&#1072;&#1094;&#1080;&#1080;"> </a></h2><p>Вы уже неоднократно сталкивались с итерация, Python позволяет наделить итеративными "качествами" любой объект</p>
+<table>
+<thead><tr>
+<th>метод</th>
+<th>сигнатура</th>
+<th>описание</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>__iter__</code></td>
+<td></td>
+<td>вызывает когда запрашивается итератор у объекта</td>
+</tr>
+<tr>
+<td><code>__next__</code></td>
+<td></td>
+<td>возвращает следующий элемент либо вызывает <code>StopIteration</code>, если элементы закончились</td>
+</tr>
+</tbody>
+</table>
+<p>Посмотрим на пример из <a href="https://diveinto.org/python3/iterators.html">книжки "Dive in Python 3"</a></p>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">class</span> <span class="nc">Fib</span><span class="p">:</span>
+    <span class="sd">&#39;&#39;&#39;iterator that yields numbers in the Fibonacci sequence&#39;&#39;&#39;</span>
+
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="nb">max</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">max</span> <span class="o">=</span> <span class="nb">max</span>
+
+    <span class="k">def</span> <span class="nf">__iter__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">a</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">b</span> <span class="o">=</span> <span class="mi">1</span>
+        <span class="k">return</span> <span class="bp">self</span>
+
+    <span class="k">def</span> <span class="nf">__next__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="n">fib</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">a</span>
+        <span class="k">if</span> <span class="n">fib</span> <span class="o">&gt;</span> <span class="bp">self</span><span class="o">.</span><span class="n">max</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">StopIteration</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">a</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">b</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">b</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">a</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">b</span>
+        <span class="k">return</span> <span class="n">fib</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">fib1</span> <span class="o">=</span> <span class="n">Fib</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">fib1</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="jb_output_wrapper }}">
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>0
+1
+1
+2
+3
+5
+8
+13
+21
+34
+55
+89
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">fib2</span> <span class="o">=</span> <span class="n">Fib</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
+<span class="n">fib2</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="jb_output_wrapper }}">
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>&lt;__main__.Fib at 0x7f91a46184e0&gt;</pre>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">iterator</span> <span class="o">=</span> <span class="nb">iter</span><span class="p">(</span><span class="n">fib2</span><span class="p">)</span>
+<span class="n">iterator</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="jb_output_wrapper }}">
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>&lt;__main__.Fib at 0x7f91a4618080&gt;</pre>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">next</span><span class="p">(</span><span class="n">iterator</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="jb_output_wrapper }}">
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>0</pre>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">next</span><span class="p">(</span><span class="n">iterator</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="jb_output_wrapper }}">
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>1</pre>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">next</span><span class="p">(</span><span class="n">iterator</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="jb_output_wrapper }}">
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>1</pre>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">next</span><span class="p">(</span><span class="n">iterator</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="jb_output_wrapper }}">
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>2</pre>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -1545,11 +2187,14 @@ initFunction(initPrint)
 <h2 id="&#1048;&#1089;&#1090;&#1086;&#1095;&#1085;&#1080;&#1082;&#1080;-&#1080;-&#1076;&#1086;&#1087;&#1086;&#1083;&#1085;&#1080;&#1090;&#1077;&#1083;&#1100;&#1085;&#1086;&#1077;-&#1095;&#1090;&#1077;&#1085;&#1080;&#1077;">&#1048;&#1089;&#1090;&#1086;&#1095;&#1085;&#1080;&#1082;&#1080; &#1080; &#1076;&#1086;&#1087;&#1086;&#1083;&#1085;&#1080;&#1090;&#1077;&#1083;&#1100;&#1085;&#1086;&#1077; &#1095;&#1090;&#1077;&#1085;&#1080;&#1077;<a class="anchor-link" href="#&#1048;&#1089;&#1090;&#1086;&#1095;&#1085;&#1080;&#1082;&#1080;-&#1080;-&#1076;&#1086;&#1087;&#1086;&#1083;&#1085;&#1080;&#1090;&#1077;&#1083;&#1100;&#1085;&#1086;&#1077;-&#1095;&#1090;&#1077;&#1085;&#1080;&#1077;"> </a></h2><ul>
 <li><a href="https://docs.python.org/3/reference/datamodel.html#special-method-names">https://docs.python.org/3/reference/datamodel.html#special-method-names</a></li>
 <li><a href="https://web.archive.org/web/20110131211638/http://diveintopython3.org/special-method-names.html">https://web.archive.org/web/20110131211638/http://diveintopython3.org/special-method-names.html</a></li>
+<li><a href="https://diveinto.org/python3/special-method-names.html">https://diveinto.org/python3/special-method-names.html</a></li>
 <li><a href="http://www.ironpythoninaction.com/magic-methods.html">http://www.ironpythoninaction.com/magic-methods.html</a></li>
 <li><a href="https://www.omkarpathak.in/2018/08/26/python-magic-methods/">https://www.omkarpathak.in/2018/08/26/python-magic-methods/</a></li>
 <li><a href="https://dbader.org/blog/python-dunder-methods">https://dbader.org/blog/python-dunder-methods</a></li>
 <li><a href="https://docs.python.org/2.0/ref/specialnames.html">https://docs.python.org/2.0/ref/specialnames.html</a></li>
 <li><a href="https://www.python-course.eu/python3_magic_methods.php">https://www.python-course.eu/python3_magic_methods.php</a></li>
+<li><a href="https://stackoverflow.com/questions/39625229/difference-between-ab-and-a-add-b">https://stackoverflow.com/questions/39625229/difference-between-ab-and-a-add-b</a></li>
+<li><a href="https://docs.python.org/2/library/operator.html">https://docs.python.org/2/library/operator.html</a></li>
 </ul>
 
 </div>
@@ -1567,8 +2212,8 @@ initFunction(initPrint)
               <nav class="c-page__nav">
   
     
-    <a id="js-page__nav__prev" class="c-page__nav__prev" href="/pythonsciencebook/ipynb/oop/exercises.html">
-      〈 <span class="u-margin-right-tiny"></span> Exercises
+    <a id="js-page__nav__prev" class="c-page__nav__prev" href="/pythonsciencebook/ipynb/oop/knn.html">
+      〈 <span class="u-margin-right-tiny"></span> Example
     </a>
   
 
